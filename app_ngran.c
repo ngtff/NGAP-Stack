@@ -981,7 +981,7 @@ void __ngran_ngap_create_and_send_NGSetupRequest()
 
 	if( strcmp( "GlobalGNB-ID", eNB_ID_Type) == 0)
 	{
-		objNGSetupRequest.globalRANNodeID->SelectedChoice = GlobalRANNodeID_globalGNB_ID_val;
+		objNGSetupRequest.globalRANNodeID->SelectedChoice = 0;//GlobalRANNodeID_globalGNB_ID_val;
 		
 		__si_amf_init_GlobalGNB_ID( &objNGSetupRequest.globalRANNodeID->u.globalGNB_ID);
 		__si_amf_init_PLMNIdentity( &objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->pLMNIdentity);							// SI_AMF_DT_PLMNIdentity
@@ -993,6 +993,7 @@ void __ngran_ngap_create_and_send_NGSetupRequest()
 		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->pLMNIdentity->length = 3;		
 		
 		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->SelectedChoice = 0;
+		
 		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->u.gNB_ID->data = (unsigned char *) __si_allocM( 3);
 		memcpy( objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->u.gNB_ID->data, "123", 3);
 		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->u.gNB_ID->length = 3;

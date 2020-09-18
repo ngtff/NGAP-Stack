@@ -22,11 +22,15 @@
 #include <sys/ioctl.h>
 #include <net/if.h> 
 
+//#include "sirik_core.h"
+//#include "libAsn.h"
 
 #ifndef SIRIK_AMF_ASN_H
 #define SIRIK_AMF_ASN_H
 
 void __si_amf_debug_pdu( uint8_t * buffer, int len);
+
+
 
 
 
@@ -480,7 +484,7 @@ typedef struct __si_amf_dt_AdditionalDLUPTNLInformationForHOItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AdditionalDLUPTNLInformationForHOItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AdditionalDLUPTNLInformationForHOItem_ExtIEs;
@@ -541,7 +545,7 @@ typedef struct __si_amf_dt_AllocationAndRetentionPriority
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AllocationAndRetentionPriority_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AllocationAndRetentionPriority_ExtIEs;
@@ -598,7 +602,7 @@ typedef struct __si_amf_dt_AllowedNSSAI_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AllowedNSSAI_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AllowedNSSAI_Item_ExtIEs;
@@ -832,7 +836,7 @@ typedef struct __si_amf_dt_AMFPagingTarget
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_AMFPagingTarget_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AMFPagingTarget_ExtIEs;
@@ -905,7 +909,7 @@ typedef struct __si_amf_dt_AMF_TNLAssociationSetupItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AMF_TNLAssociationSetupItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AMF_TNLAssociationSetupItem_ExtIEs;
@@ -956,7 +960,7 @@ typedef struct __si_amf_dt_AMF_TNLAssociationToAddItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AMF_TNLAssociationToAddItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AMF_TNLAssociationToAddItem_ExtIEs;
@@ -983,7 +987,7 @@ typedef struct __si_amf_dt_AMF_TNLAssociationToRemoveItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AMF_TNLAssociationToRemoveItem_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//CPTransportLayerInformation,  optional
 	SI_AMF_DT_CPTransportLayerInformation * tNLAssociationTransportLayerAddressNGRAN;
 	int isPresent_tNLAssociationTransportLayerAddressNGRAN;
@@ -1019,7 +1023,7 @@ typedef struct __si_amf_dt_AMF_TNLAssociationToUpdateItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AMF_TNLAssociationToUpdateItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AMF_TNLAssociationToUpdateItem_ExtIEs;
@@ -1077,7 +1081,7 @@ typedef struct __si_amf_dt_AreaOfInterest
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AreaOfInterest_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AreaOfInterest_ExtIEs;
@@ -1157,7 +1161,7 @@ typedef struct __si_amf_dt_AreaOfInterestCellItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AreaOfInterestCellItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AreaOfInterestCellItem_ExtIEs;
@@ -1194,7 +1198,7 @@ typedef struct __si_amf_dt_AreaOfInterestItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AreaOfInterestItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AreaOfInterestItem_ExtIEs;
@@ -1213,7 +1217,7 @@ typedef struct __si_amf_dt_AreaOfInterestRANNodeItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AreaOfInterestRANNodeItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AreaOfInterestRANNodeItem_ExtIEs;
@@ -1232,7 +1236,7 @@ typedef struct __si_amf_dt_AreaOfInterestTAIItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AreaOfInterestTAIItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AreaOfInterestTAIItem_ExtIEs;
@@ -1321,7 +1325,7 @@ typedef struct __si_amf_dt_AssistanceDataForPaging
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AssistanceDataForPaging_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AssistanceDataForPaging_ExtIEs;
@@ -1331,7 +1335,7 @@ typedef struct __si_amf_dt_AssistanceDataForPaging_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AssistanceDataForRecommendedCells_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AssistanceDataForRecommendedCells_ExtIEs;
@@ -1379,7 +1383,7 @@ typedef struct __si_amf_dt_AssociatedQosFlowItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_AssociatedQosFlowItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_AssociatedQosFlowItem_ExtIEs;
@@ -1484,7 +1488,7 @@ typedef struct __si_amf_dt_BroadcastCancelledAreaList
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_BroadcastCancelledAreaList_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_BroadcastCancelledAreaList_ExtIEs;
@@ -1573,7 +1577,7 @@ typedef struct __si_amf_dt_BroadcastCompletedAreaList
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_BroadcastCompletedAreaList_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_BroadcastCompletedAreaList_ExtIEs;
@@ -1610,7 +1614,7 @@ typedef struct __si_amf_dt_BroadcastPLMNItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_BroadcastPLMNItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_BroadcastPLMNItem_ExtIEs;
@@ -1655,7 +1659,7 @@ typedef struct __si_amf_dt_CancelledCellsInEAI_EUTRA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CancelledCellsInEAI_EUTRA_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CancelledCellsInEAI_EUTRA_Item_ExtIEs;
@@ -1684,7 +1688,7 @@ typedef struct __si_amf_dt_CancelledCellsInEAI_NR_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CancelledCellsInEAI_NR_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CancelledCellsInEAI_NR_Item_ExtIEs;
@@ -1713,7 +1717,7 @@ typedef struct __si_amf_dt_CancelledCellsInTAI_EUTRA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CancelledCellsInTAI_EUTRA_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CancelledCellsInTAI_EUTRA_Item_ExtIEs;
@@ -1742,7 +1746,7 @@ typedef struct __si_amf_dt_CancelledCellsInTAI_NR_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CancelledCellsInTAI_NR_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CancelledCellsInTAI_NR_Item_ExtIEs;
@@ -1882,7 +1886,7 @@ typedef struct __si_amf_dt_Cause
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_Cause_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_Cause_ExtIEs;
@@ -1901,7 +1905,7 @@ typedef struct __si_amf_dt_CellIDBroadcastEUTRA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CellIDBroadcastEUTRA_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CellIDBroadcastEUTRA_Item_ExtIEs;
@@ -1920,7 +1924,7 @@ typedef struct __si_amf_dt_CellIDBroadcastNR_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CellIDBroadcastNR_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CellIDBroadcastNR_Item_ExtIEs;
@@ -1941,7 +1945,7 @@ typedef struct __si_amf_dt_CellIDCancelledEUTRA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CellIDCancelledEUTRA_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CellIDCancelledEUTRA_Item_ExtIEs;
@@ -1962,7 +1966,7 @@ typedef struct __si_amf_dt_CellIDCancelledNR_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CellIDCancelledNR_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CellIDCancelledNR_Item_ExtIEs;
@@ -2007,7 +2011,7 @@ typedef struct __si_amf_dt_CellIDListForRestart
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_CellIDListForRestart_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CellIDListForRestart_ExtIEs;
@@ -2038,7 +2042,7 @@ typedef struct __si_amf_dt_CellType
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CellType_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CellType_ExtIEs;
@@ -2152,7 +2156,7 @@ typedef struct __si_amf_dt_CNAssistedRANTuning
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CNAssistedRANTuning_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CNAssistedRANTuning_ExtIEs;
@@ -2191,7 +2195,7 @@ typedef struct __si_amf_dt_CNTypeRestrictionsForEquivalentItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CNTypeRestrictionsForEquivalentItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CNTypeRestrictionsForEquivalentItem_ExtIEs;
@@ -2235,7 +2239,7 @@ typedef struct __si_amf_dt_CompletedCellsInEAI_EUTRA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CompletedCellsInEAI_EUTRA_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CompletedCellsInEAI_EUTRA_Item_ExtIEs;
@@ -2262,7 +2266,7 @@ typedef struct __si_amf_dt_CompletedCellsInEAI_NR_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CompletedCellsInEAI_NR_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CompletedCellsInEAI_NR_Item_ExtIEs;
@@ -2289,7 +2293,7 @@ typedef struct __si_amf_dt_CompletedCellsInTAI_EUTRA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CompletedCellsInTAI_EUTRA_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CompletedCellsInTAI_EUTRA_Item_ExtIEs;
@@ -2316,7 +2320,7 @@ typedef struct __si_amf_dt_CompletedCellsInTAI_NR_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CompletedCellsInTAI_NR_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CompletedCellsInTAI_NR_Item_ExtIEs;
@@ -2440,7 +2444,7 @@ typedef struct __si_amf_dt_CoreNetworkAssistanceInformationForInactive
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CoreNetworkAssistanceInformationForInactive_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CoreNetworkAssistanceInformationForInactive_ExtIEs;
@@ -2477,7 +2481,7 @@ typedef struct __si_amf_dt_COUNTValueForPDCP_SN12
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_COUNTValueForPDCP_SN12_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_COUNTValueForPDCP_SN12_ExtIEs;
@@ -2514,7 +2518,7 @@ typedef struct __si_amf_dt_COUNTValueForPDCP_SN18
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_COUNTValueForPDCP_SN18_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_COUNTValueForPDCP_SN18_ExtIEs;
@@ -2544,7 +2548,7 @@ typedef struct __si_amf_dt_EndpointIPAddressAndPort
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_CPTransportLayerInformation_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//EndpointIPAddressAndPort,  mandatory
 	SI_AMF_DT_EndpointIPAddressAndPort * endpointIPAddressAndPort;
 	int isPresent_endpointIPAddressAndPort;
@@ -2607,7 +2611,7 @@ typedef struct __si_amf_dt_CriticalityDiagnostics
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CriticalityDiagnostics_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CriticalityDiagnostics_ExtIEs;
@@ -2656,7 +2660,7 @@ typedef struct __si_amf_dt_CriticalityDiagnostics_IE_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_CriticalityDiagnostics_IE_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_CriticalityDiagnostics_IE_Item_ExtIEs;
@@ -2723,7 +2727,7 @@ typedef struct __si_amf_dt_DataForwardingResponseDRBItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_DataForwardingResponseDRBItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_DataForwardingResponseDRBItem_ExtIEs;
@@ -2887,7 +2891,7 @@ typedef struct __si_amf_dt_DRBsSubjectToStatusTransferItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_DRBsSubjectToStatusTransferItem_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//AssociatedQosFlowList,  optional
 	SI_AMF_DT_AssociatedQosFlowList * oldAssociatedQosFlowListULendmarkerexpected;
 	int isPresent_oldAssociatedQosFlowListULendmarkerexpected;
@@ -2899,7 +2903,7 @@ typedef struct __si_amf_dt_DRBsSubjectToStatusTransferItem_ExtIEs
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_DRBStatusDL_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_DRBStatusDL_ExtIEs;
@@ -2909,7 +2913,7 @@ typedef struct __si_amf_dt_DRBStatusDL_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_DRBStatusDL12_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_DRBStatusDL12_ExtIEs;
@@ -2919,7 +2923,7 @@ typedef struct __si_amf_dt_DRBStatusDL12_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_DRBStatusDL18_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_DRBStatusDL18_ExtIEs;
@@ -2929,7 +2933,7 @@ typedef struct __si_amf_dt_DRBStatusDL18_ExtIEs
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_DRBStatusUL_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_DRBStatusUL_ExtIEs;
@@ -2939,7 +2943,7 @@ typedef struct __si_amf_dt_DRBStatusUL_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_DRBStatusUL12_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_DRBStatusUL12_ExtIEs;
@@ -2949,7 +2953,7 @@ typedef struct __si_amf_dt_DRBStatusUL12_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_DRBStatusUL18_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_DRBStatusUL18_ExtIEs;
@@ -2978,7 +2982,7 @@ typedef struct __si_amf_dt_DRBsToQosFlowsMappingItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_DRBsToQosFlowsMappingItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_DRBsToQosFlowsMappingItem_ExtIEs;
@@ -3065,7 +3069,7 @@ typedef struct __si_amf_dt_Dynamic5QIDescriptor
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_Dynamic5QIDescriptor_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_Dynamic5QIDescriptor_ExtIEs;
@@ -3095,7 +3099,7 @@ typedef struct __si_amf_dt_EmergencyAreaIDBroadcastEUTRA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs;
@@ -3116,7 +3120,7 @@ typedef struct __si_amf_dt_EmergencyAreaIDBroadcastNR_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_EmergencyAreaIDBroadcastNR_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_EmergencyAreaIDBroadcastNR_Item_ExtIEs;
@@ -3137,7 +3141,7 @@ typedef struct __si_amf_dt_EmergencyAreaIDCancelledEUTRA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs;
@@ -3158,7 +3162,7 @@ typedef struct __si_amf_dt_EmergencyAreaIDCancelledNR_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_EmergencyAreaIDCancelledNR_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_EmergencyAreaIDCancelledNR_Item_ExtIEs;
@@ -3215,7 +3219,7 @@ typedef struct __si_amf_dt_EmergencyFallbackIndicator
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_EmergencyFallbackIndicator_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_EmergencyFallbackIndicator_ExtIEs;
@@ -3234,7 +3238,7 @@ typedef struct __si_amf_dt_EN_DCSONConfigurationTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_EndpointIPAddressAndPort_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_EndpointIPAddressAndPort_ExtIEs;
@@ -3272,7 +3276,7 @@ typedef struct __si_amf_dt_EPS_TAI
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_EPS_TAI_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_EPS_TAI_ExtIEs;
@@ -3311,7 +3315,7 @@ typedef struct __si_amf_dt_E_RABInformationItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_E_RABInformationItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_E_RABInformationItem_ExtIEs;
@@ -3321,7 +3325,7 @@ typedef struct __si_amf_dt_E_RABInformationItem_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_EUTRA_CGI_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_EUTRA_CGI_ExtIEs;
@@ -3372,7 +3376,7 @@ typedef enum __si_amf_dt_EventType
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_ExpectedUEActivityBehaviour_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_ExpectedUEActivityBehaviour_ExtIEs;
@@ -3382,7 +3386,7 @@ typedef struct __si_amf_dt_ExpectedUEActivityBehaviour_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_ExpectedUEBehaviour_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_ExpectedUEBehaviour_ExtIEs;
@@ -3412,7 +3416,7 @@ typedef struct __si_amf_dt_ExpectedUEMovingTrajectoryItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_ExpectedUEMovingTrajectoryItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_ExpectedUEMovingTrajectoryItem_ExtIEs;
@@ -3444,7 +3448,7 @@ typedef struct __si_amf_dt_FiveG_S_TMSI
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_FiveG_S_TMSI_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_FiveG_S_TMSI_ExtIEs;
@@ -3481,7 +3485,7 @@ typedef struct __si_amf_dt_ForbiddenAreaInformation_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_ForbiddenAreaInformation_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_ForbiddenAreaInformation_Item_ExtIEs;
@@ -3532,7 +3536,7 @@ typedef struct __si_amf_dt_GBR_QosInformation
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_GBR_QosInformation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_GBR_QosInformation_ExtIEs;
@@ -3542,7 +3546,7 @@ typedef struct __si_amf_dt_GBR_QosInformation_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_GlobalGNB_ID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_GlobalGNB_ID_ExtIEs;
@@ -3552,7 +3556,7 @@ typedef struct __si_amf_dt_GlobalGNB_ID_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_GlobalN3IWF_ID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_GlobalN3IWF_ID_ExtIEs;
@@ -3562,7 +3566,7 @@ typedef struct __si_amf_dt_GlobalN3IWF_ID_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_GlobalNgENB_ID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_GlobalNgENB_ID_ExtIEs;
@@ -3572,7 +3576,7 @@ typedef struct __si_amf_dt_GlobalNgENB_ID_ExtIEs
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_GlobalRANNodeID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_GlobalRANNodeID_ExtIEs;
@@ -3582,7 +3586,7 @@ typedef struct __si_amf_dt_GlobalRANNodeID_ExtIEs
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_GNB_ID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_GNB_ID_ExtIEs;
@@ -3592,7 +3596,7 @@ typedef struct __si_amf_dt_GNB_ID_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_GTPTunnel_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_GTPTunnel_ExtIEs;
@@ -3617,7 +3621,7 @@ typedef struct __si_amf_dt_GUAMI
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_GUAMI_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_GUAMI_ExtIEs;
@@ -3667,7 +3671,7 @@ typedef struct __si_amf_dt_UPTransportLayerInformationList
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_HandoverCommandTransfer_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//QosFlowPerTNLInformationList,  optional
 	SI_AMF_DT_QosFlowPerTNLInformationList * additionalDLForwardingUPTNLInformation;
 	int isPresent_additionalDLForwardingUPTNLInformation;
@@ -3704,7 +3708,7 @@ typedef struct __si_amf_dt_HandoverPreparationUnsuccessfulTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_HandoverPreparationUnsuccessfulTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_HandoverPreparationUnsuccessfulTransfer_ExtIEs;
@@ -3767,7 +3771,7 @@ typedef struct __si_amf_dt_HandoverRequestAcknowledgeTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_HandoverRequestAcknowledgeTransfer_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//AdditionalDLUPTNLInformationForHOList,  optional
 	SI_AMF_DT_AdditionalDLUPTNLInformationForHOList * additionalDLUPTNLInformationForHOList;
 	int isPresent_additionalDLUPTNLInformationForHOList;
@@ -3798,7 +3802,7 @@ typedef struct __si_amf_dt_HandoverRequiredTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_HandoverRequiredTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_HandoverRequiredTransfer_ExtIEs;
@@ -3820,7 +3824,7 @@ typedef struct __si_amf_dt_HandoverResourceAllocationUnsuccessfulTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs;
@@ -3885,7 +3889,7 @@ typedef struct __si_amf_dt_InfoOnRecommendedCellsAndRANNodesForPaging
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs;
@@ -4002,7 +4006,7 @@ typedef struct __si_amf_dt_LastVisitedCellInformation
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_LastVisitedCellInformation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_LastVisitedCellInformation_ExtIEs;
@@ -4021,7 +4025,7 @@ typedef struct __si_amf_dt_LastVisitedCellItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_LastVisitedCellItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_LastVisitedCellItem_ExtIEs;
@@ -4031,7 +4035,7 @@ typedef struct __si_amf_dt_LastVisitedCellItem_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_LastVisitedNGRANCellInformation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_LastVisitedNGRANCellInformation_ExtIEs;
@@ -4076,7 +4080,7 @@ typedef struct __si_amf_dt_LocationReportingRequestType
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_LocationReportingRequestType_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//LocationReportingAdditionalInfo,  optional
 	int selected_elocationReportingAdditionalInfo;
 	int isPresent_locationReportingAdditionalInfo;
@@ -4154,7 +4158,7 @@ typedef struct __si_amf_dt_MobilityRestrictionList
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_MobilityRestrictionList_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//PLMNIdentity,  optional
 	SI_AMF_DT_PLMNIdentity * lastEUTRANPLMNIdentity;
 	int isPresent_lastEUTRANPLMNIdentity;
@@ -4174,7 +4178,7 @@ typedef struct __si_amf_dt_MobilityRestrictionList_ExtIEs
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_N3IWF_ID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_N3IWF_ID_ExtIEs;
@@ -4226,7 +4230,7 @@ typedef struct __si_amf_dt_NextHopChainingCount
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_NgENB_ID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_NgENB_ID_ExtIEs;
@@ -4236,7 +4240,7 @@ typedef struct __si_amf_dt_NgENB_ID_ExtIEs
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_NGRAN_CGI_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_NGRAN_CGI_ExtIEs;
@@ -4266,7 +4270,7 @@ typedef struct __si_amf_dt_NGRAN_TNLAssociationToRemoveItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_NGRAN_TNLAssociationToRemoveItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_NGRAN_TNLAssociationToRemoveItem_ExtIEs;
@@ -4303,7 +4307,7 @@ typedef struct __si_amf_dt_NonDynamic5QIDescriptor
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_NonDynamic5QIDescriptor_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_NonDynamic5QIDescriptor_ExtIEs;
@@ -4330,7 +4334,7 @@ typedef enum __si_amf_dt_NotificationCause
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_NR_CGI_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_NR_CGI_ExtIEs;
@@ -4412,7 +4416,7 @@ typedef struct __si_amf_dt_OverloadResponse
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_OverloadResponse_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_OverloadResponse_ExtIEs;
@@ -4461,7 +4465,7 @@ typedef struct __si_amf_dt_OverloadStartNSSAIItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_OverloadStartNSSAIItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_OverloadStartNSSAIItem_ExtIEs;
@@ -4471,7 +4475,7 @@ typedef struct __si_amf_dt_OverloadStartNSSAIItem_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PacketErrorRate_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PacketErrorRate_ExtIEs;
@@ -4481,7 +4485,7 @@ typedef struct __si_amf_dt_PacketErrorRate_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PagingAttemptInformation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PagingAttemptInformation_ExtIEs;
@@ -4552,7 +4556,7 @@ typedef struct __si_amf_dt_UPTransportLayerInformationPairList
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PathSwitchRequestAcknowledgeTransfer_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//UPTransportLayerInformationPairList,  optional
 	SI_AMF_DT_UPTransportLayerInformationPairList * additionalNGUUPTNLInformation;
 	int isPresent_additionalNGUUPTNLInformation;
@@ -4573,7 +4577,7 @@ typedef struct __si_amf_dt_PathSwitchRequestSetupFailedTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PathSwitchRequestSetupFailedTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PathSwitchRequestSetupFailedTransfer_ExtIEs;
@@ -4620,7 +4624,7 @@ typedef struct __si_amf_dt_PathSwitchRequestTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PathSwitchRequestTransfer_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//QosFlowPerTNLInformationList,  optional
 	SI_AMF_DT_QosFlowPerTNLInformationList * additionalDLQosFlowPerTNLInformation;
 	int isPresent_additionalDLQosFlowPerTNLInformation;
@@ -4641,7 +4645,7 @@ typedef struct __si_amf_dt_PathSwitchRequestUnsuccessfulTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PathSwitchRequestUnsuccessfulTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PathSwitchRequestUnsuccessfulTransfer_ExtIEs;
@@ -4662,7 +4666,7 @@ typedef struct __si_amf_dt_PDUSessionAggregateMaximumBitRate
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionAggregateMaximumBitRate_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionAggregateMaximumBitRate_ExtIEs;
@@ -4708,7 +4712,7 @@ typedef struct __si_amf_dt_PDUSessionResourceAdmittedItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceAdmittedItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceAdmittedItem_ExtIEs;
@@ -4746,7 +4750,7 @@ typedef struct __si_amf_dt_PDUSessionResourceFailedToModifyItemModCfm
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceFailedToModifyItemModCfm_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceFailedToModifyItemModCfm_ExtIEs;
@@ -4784,7 +4788,7 @@ typedef struct __si_amf_dt_PDUSessionResourceFailedToModifyItemModRes
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceFailedToModifyItemModRes_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceFailedToModifyItemModRes_ExtIEs;
@@ -4822,7 +4826,7 @@ typedef struct __si_amf_dt_PDUSessionResourceFailedToSetupItemCxtFail
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceFailedToSetupItemCxtFail_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceFailedToSetupItemCxtFail_ExtIEs;
@@ -4851,7 +4855,7 @@ typedef struct __si_amf_dt_PDUSessionResourceFailedToSetupItemCxtRes
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceFailedToSetupItemCxtRes_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceFailedToSetupItemCxtRes_ExtIEs;
@@ -4889,7 +4893,7 @@ typedef struct __si_amf_dt_PDUSessionResourceFailedToSetupItemHOAck
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceFailedToSetupItemHOAck_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceFailedToSetupItemHOAck_ExtIEs;
@@ -4927,7 +4931,7 @@ typedef struct __si_amf_dt_PDUSessionResourceFailedToSetupItemPSReq
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceFailedToSetupItemPSReq_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceFailedToSetupItemPSReq_ExtIEs;
@@ -4956,7 +4960,7 @@ typedef struct __si_amf_dt_PDUSessionResourceFailedToSetupItemSURes
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceFailedToSetupItemSURes_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceFailedToSetupItemSURes_ExtIEs;
@@ -4994,7 +4998,7 @@ typedef struct __si_amf_dt_PDUSessionResourceHandoverItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceHandoverItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceHandoverItem_ExtIEs;
@@ -5034,7 +5038,7 @@ typedef struct __si_amf_dt_PDUSessionResourceInformationItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceInformationItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceInformationItem_ExtIEs;
@@ -5070,7 +5074,7 @@ typedef struct __si_amf_dt_PDUSessionResourceReleaseResponseTransferOctStr
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceItemCxtRelCpl_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//PDUSessionResourceReleaseResponseTransferOctStr,  optional
 	SI_AMF_DT_PDUSessionResourceReleaseResponseTransferOctStr * pDUSessionResourceReleaseResponseTransfer;
 	int isPresent_pDUSessionResourceReleaseResponseTransfer;
@@ -5099,7 +5103,7 @@ typedef struct __si_amf_dt_PDUSessionResourceItemCxtRelReq
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceItemCxtRelReq_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceItemCxtRelReq_ExtIEs;
@@ -5137,7 +5141,7 @@ typedef struct __si_amf_dt_PDUSessionResourceItemHORqd
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceItemHORqd_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceItemHORqd_ExtIEs;
@@ -5172,7 +5176,7 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyConfirmTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceModifyConfirmTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceModifyConfirmTransfer_ExtIEs;
@@ -5191,7 +5195,7 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyIndicationUnsuccessfulTransfe
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceModifyIndicationUnsuccessfulTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceModifyIndicationUnsuccessfulTransfer_ExtIEs;
@@ -5224,7 +5228,7 @@ typedef struct __si_amf_dt_QosFlowAddOrModifyRequestList
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceModifyRequestTransferIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//PDUSessionAggregateMaximumBitRate,  optional
 	SI_AMF_DT_PDUSessionAggregateMaximumBitRate * pDUSessionAggregateMaximumBitRate;
 	int isPresent_pDUSessionAggregateMaximumBitRate;
@@ -5290,7 +5294,7 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyResponseTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceModifyResponseTransfer_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//UPTransportLayerInformationPairList,  optional
 	SI_AMF_DT_UPTransportLayerInformationPairList * additionalNGUUPTNLInformation;
 	int isPresent_additionalNGUUPTNLInformation;
@@ -5375,7 +5379,7 @@ typedef struct __si_amf_dt_SecondaryRATUsageInformation
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceModifyIndicationTransfer_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//SecondaryRATUsageInformation,  optional
 	SI_AMF_DT_SecondaryRATUsageInformation * secondaryRATUsageInformation;
 	int isPresent_secondaryRATUsageInformation;
@@ -5419,7 +5423,7 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyItemModCfm
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceModifyItemModCfm_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceModifyItemModCfm_ExtIEs;
@@ -5457,7 +5461,7 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyItemModInd
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceModifyItemModInd_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceModifyItemModInd_ExtIEs;
@@ -5498,7 +5502,7 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyItemModReq
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceModifyItemModReq_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//S-NSSAI,  optional
 	SI_AMF_DT_S_NSSAI * sNSSAI;
 	int isPresent_sNSSAI;
@@ -5538,7 +5542,7 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyItemModRes
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceModifyItemModRes_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceModifyItemModRes_ExtIEs;
@@ -5560,7 +5564,7 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyUnsuccessfulTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceModifyUnsuccessfulTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceModifyUnsuccessfulTransfer_ExtIEs;
@@ -5598,7 +5602,7 @@ typedef struct __si_amf_dt_PDUSessionResourceNotifyItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceNotifyItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceNotifyItem_ExtIEs;
@@ -5617,7 +5621,7 @@ typedef struct __si_amf_dt_PDUSessionResourceNotifyReleasedTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceNotifyReleasedTransfer_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//SecondaryRATUsageInformation,  optional
 	SI_AMF_DT_SecondaryRATUsageInformation * secondaryRATUsageInformation;
 	int isPresent_secondaryRATUsageInformation;
@@ -5650,7 +5654,7 @@ typedef struct __si_amf_dt_PDUSessionResourceNotifyTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceNotifyTransfer_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//SecondaryRATUsageInformation,  optional
 	SI_AMF_DT_SecondaryRATUsageInformation * secondaryRATUsageInformation;
 	int isPresent_secondaryRATUsageInformation;
@@ -5671,7 +5675,7 @@ typedef struct __si_amf_dt_PDUSessionResourceReleaseCommandTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceReleaseCommandTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceReleaseCommandTransfer_ExtIEs;
@@ -5709,7 +5713,7 @@ typedef struct __si_amf_dt_PDUSessionResourceReleasedItemNot
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceReleasedItemNot_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceReleasedItemNot_ExtIEs;
@@ -5747,7 +5751,7 @@ typedef struct __si_amf_dt_PDUSessionResourceReleasedItemPSAck
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceReleasedItemPSAck_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceReleasedItemPSAck_ExtIEs;
@@ -5776,7 +5780,7 @@ typedef struct __si_amf_dt_PDUSessionResourceReleasedItemPSFail
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceReleasedItemPSFail_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceReleasedItemPSFail_ExtIEs;
@@ -5805,7 +5809,7 @@ typedef struct __si_amf_dt_PDUSessionResourceReleasedItemRelRes
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceReleasedItemRelRes_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceReleasedItemRelRes_ExtIEs;
@@ -5822,7 +5826,7 @@ typedef struct __si_amf_dt_PDUSessionResourceReleaseResponseTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceReleaseResponseTransfer_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//SecondaryRATUsageInformation,  optional
 	SI_AMF_DT_SecondaryRATUsageInformation * secondaryRATUsageInformation;
 	int isPresent_secondaryRATUsageInformation;
@@ -5862,7 +5866,7 @@ typedef struct __si_amf_dt_PDUSessionResourceSecondaryRATUsageItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceSecondaryRATUsageItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceSecondaryRATUsageItem_ExtIEs;
@@ -5905,7 +5909,7 @@ typedef struct __si_amf_dt_PDUSessionResourceSetupItemCxtReq
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceSetupItemCxtReq_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceSetupItemCxtReq_ExtIEs;
@@ -5943,7 +5947,7 @@ typedef struct __si_amf_dt_PDUSessionResourceSetupItemCxtRes
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceSetupItemCxtRes_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceSetupItemCxtRes_ExtIEs;
@@ -5974,7 +5978,7 @@ typedef struct __si_amf_dt_PDUSessionResourceSetupItemHOReq
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceSetupItemHOReq_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceSetupItemHOReq_ExtIEs;
@@ -6008,7 +6012,7 @@ typedef struct __si_amf_dt_PDUSessionResourceSetupItemSUReq
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceSetupItemSUReq_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceSetupItemSUReq_ExtIEs;
@@ -6037,7 +6041,7 @@ typedef struct __si_amf_dt_PDUSessionResourceSetupItemSURes
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceSetupItemSURes_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceSetupItemSURes_ExtIEs;
@@ -6072,7 +6076,7 @@ typedef struct __si_amf_dt_PDUSessionResourceSetupResponseTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceSetupResponseTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceSetupResponseTransfer_ExtIEs;
@@ -6094,7 +6098,7 @@ typedef struct __si_amf_dt_PDUSessionResourceSetupUnsuccessfulTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs;
@@ -6132,7 +6136,7 @@ typedef struct __si_amf_dt_PDUSessionResourceSwitchedItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceSwitchedItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceSwitchedItem_ExtIEs;
@@ -6170,7 +6174,7 @@ typedef struct __si_amf_dt_PDUSessionResourceToBeSwitchedDLItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceToBeSwitchedDLItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceToBeSwitchedDLItem_ExtIEs;
@@ -6208,7 +6212,7 @@ typedef struct __si_amf_dt_PDUSessionResourceToReleaseItemHOCmd
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceToReleaseItemHOCmd_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceToReleaseItemHOCmd_ExtIEs;
@@ -6246,7 +6250,7 @@ typedef struct __si_amf_dt_PDUSessionResourceToReleaseItemRelCmd
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionResourceToReleaseItemRelCmd_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionResourceToReleaseItemRelCmd_ExtIEs;
@@ -6268,7 +6272,7 @@ typedef enum __si_amf_dt_PDUSessionType
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PDUSessionUsageReport_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PDUSessionUsageReport_ExtIEs;
@@ -6297,7 +6301,7 @@ typedef struct __si_amf_dt_PLMNSupportItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_PLMNSupportItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PLMNSupportItem_ExtIEs;
@@ -6326,7 +6330,7 @@ typedef struct __si_amf_dt_PWSFailedCellIDList
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_PWSFailedCellIDList_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_PWSFailedCellIDList_ExtIEs;
@@ -6355,7 +6359,7 @@ typedef struct __si_amf_dt_QosCharacteristics
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_QosCharacteristics_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosCharacteristics_ExtIEs;
@@ -6374,7 +6378,7 @@ typedef struct __si_amf_dt_QosFlowAcceptedItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowAcceptedItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowAcceptedItem_ExtIEs;
@@ -6429,7 +6433,7 @@ typedef struct __si_amf_dt_QosFlowAddOrModifyRequestItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowAddOrModifyRequestItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowAddOrModifyRequestItem_ExtIEs;
@@ -6448,7 +6452,7 @@ typedef struct __si_amf_dt_QosFlowAddOrModifyResponseItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowAddOrModifyResponseItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowAddOrModifyResponseItem_ExtIEs;
@@ -6479,7 +6483,7 @@ typedef enum __si_amf_dt_ULForwarding
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowInformationItem_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//ULForwarding,  optional
 	int selected_euLForwarding;
 	int isPresent_uLForwarding;
@@ -6491,7 +6495,7 @@ typedef struct __si_amf_dt_QosFlowInformationItem_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowLevelQosParameters_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowLevelQosParameters_ExtIEs;
@@ -6512,7 +6516,7 @@ typedef struct __si_amf_dt_QosFlowWithCauseItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowWithCauseItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowWithCauseItem_ExtIEs;
@@ -6531,7 +6535,7 @@ typedef struct __si_amf_dt_QosFlowModifyConfirmItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowModifyConfirmItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowModifyConfirmItem_ExtIEs;
@@ -6553,7 +6557,7 @@ typedef struct __si_amf_dt_QosFlowNotifyItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowNotifyItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowNotifyItem_ExtIEs;
@@ -6563,7 +6567,7 @@ typedef struct __si_amf_dt_QosFlowNotifyItem_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowPerTNLInformation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowPerTNLInformation_ExtIEs;
@@ -6582,7 +6586,7 @@ typedef struct __si_amf_dt_QosFlowPerTNLInformationItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowPerTNLInformationItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowPerTNLInformationItem_ExtIEs;
@@ -6614,7 +6618,7 @@ typedef struct __si_amf_dt_QosFlowSetupRequestItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowSetupRequestItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowSetupRequestItem_ExtIEs;
@@ -6637,7 +6641,7 @@ typedef struct __si_amf_dt_QosFlowItemWithDataForwarding
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowItemWithDataForwarding_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowItemWithDataForwarding_ExtIEs;
@@ -6664,7 +6668,7 @@ typedef struct __si_amf_dt_QosFlowSetupResponseItemSURes
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowSetupResponseItemSURes_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowSetupResponseItemSURes_ExtIEs;
@@ -6683,7 +6687,7 @@ typedef struct __si_amf_dt_QosFlowToBeForwardedItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QosFlowToBeForwardedItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QosFlowToBeForwardedItem_ExtIEs;
@@ -6716,7 +6720,7 @@ typedef struct __si_amf_dt_QoSFlowsUsageReport_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_QoSFlowsUsageReport_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_QoSFlowsUsageReport_Item_ExtIEs;
@@ -6752,7 +6756,7 @@ typedef struct __si_amf_dt_RANStatusTransfer_TransparentContainer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_RANStatusTransfer_TransparentContainer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_RANStatusTransfer_TransparentContainer_ExtIEs;
@@ -6791,7 +6795,7 @@ typedef struct __si_amf_dt_RATRestrictions_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_RATRestrictions_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_RATRestrictions_Item_ExtIEs;
@@ -6801,7 +6805,7 @@ typedef struct __si_amf_dt_RATRestrictions_Item_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_RecommendedCellsForPaging_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_RecommendedCellsForPaging_ExtIEs;
@@ -6831,7 +6835,7 @@ typedef struct __si_amf_dt_RecommendedCellItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_RecommendedCellItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_RecommendedCellItem_ExtIEs;
@@ -6841,7 +6845,7 @@ typedef struct __si_amf_dt_RecommendedCellItem_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_RecommendedRANNodesForPaging_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_RecommendedRANNodesForPaging_ExtIEs;
@@ -6860,7 +6864,7 @@ typedef struct __si_amf_dt_RecommendedRANNodeItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_RecommendedRANNodeItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_RecommendedRANNodeItem_ExtIEs;
@@ -6929,7 +6933,7 @@ typedef struct __si_amf_dt_ResetType
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_ResetType_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_ResetType_ExtIEs;
@@ -7002,7 +7006,7 @@ typedef struct __si_amf_dt_SCTP_TLAs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SecondaryRATUsageInformation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SecondaryRATUsageInformation_ExtIEs;
@@ -7022,7 +7026,7 @@ typedef struct __si_amf_dt_SecondaryRATDataUsageReportTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SecondaryRATDataUsageReportTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SecondaryRATDataUsageReportTransfer_ExtIEs;
@@ -7053,7 +7057,7 @@ typedef struct __si_amf_dt_SecurityContext
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SecurityContext_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SecurityContext_ExtIEs;
@@ -7063,7 +7067,7 @@ typedef struct __si_amf_dt_SecurityContext_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SecurityIndication_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//MaximumIntegrityProtectedDataRate,  optional
 	int selected_emaximumIntegrityProtectedDataRateDL;
 	int isPresent_maximumIntegrityProtectedDataRateDL;
@@ -7075,7 +7079,7 @@ typedef struct __si_amf_dt_SecurityIndication_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SecurityResult_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SecurityResult_ExtIEs;
@@ -7115,7 +7119,7 @@ typedef struct __si_amf_dt_ServedGUAMIItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_ServedGUAMIItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_ServedGUAMIItem_ExtIEs;
@@ -7140,7 +7144,7 @@ typedef struct __si_amf_dt_ServiceAreaInformation_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_ServiceAreaInformation_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_ServiceAreaInformation_Item_ExtIEs;
@@ -7159,7 +7163,7 @@ typedef struct __si_amf_dt_SliceOverloadItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SliceOverloadItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SliceOverloadItem_ExtIEs;
@@ -7178,7 +7182,7 @@ typedef struct __si_amf_dt_SliceSupportItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SliceSupportItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SliceSupportItem_ExtIEs;
@@ -7188,7 +7192,7 @@ typedef struct __si_amf_dt_SliceSupportItem_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_S_NSSAI_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_S_NSSAI_ExtIEs;
@@ -7301,7 +7305,7 @@ typedef struct __si_amf_dt_SONConfigurationTransfer
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SONConfigurationTransfer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SONConfigurationTransfer_ExtIEs;
@@ -7311,7 +7315,7 @@ typedef struct __si_amf_dt_SONConfigurationTransfer_ExtIEs
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_SONInformation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SONInformation_ExtIEs;
@@ -7321,7 +7325,7 @@ typedef struct __si_amf_dt_SONInformation_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SONInformationReply_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SONInformationReply_ExtIEs;
@@ -7361,7 +7365,7 @@ typedef struct __si_amf_dt_SourceNGRANNode_ToTargetNGRANNode_TransparentContaine
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs;
@@ -7371,7 +7375,7 @@ typedef struct __si_amf_dt_SourceNGRANNode_ToTargetNGRANNode_TransparentContaine
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SourceRANNodeID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SourceRANNodeID_ExtIEs;
@@ -7433,7 +7437,7 @@ typedef struct __si_amf_dt_SourceToTarget_AMFInformationReroute
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SourceToTarget_AMFInformationReroute_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SourceToTarget_AMFInformationReroute_ExtIEs;
@@ -7462,7 +7466,7 @@ typedef struct __si_amf_dt_SupportedTAItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_SupportedTAItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_SupportedTAItem_ExtIEs;
@@ -7472,7 +7476,7 @@ typedef struct __si_amf_dt_SupportedTAItem_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TAI_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TAI_ExtIEs;
@@ -7493,7 +7497,7 @@ typedef struct __si_amf_dt_TAIBroadcastEUTRA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TAIBroadcastEUTRA_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TAIBroadcastEUTRA_Item_ExtIEs;
@@ -7514,7 +7518,7 @@ typedef struct __si_amf_dt_TAIBroadcastNR_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TAIBroadcastNR_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TAIBroadcastNR_Item_ExtIEs;
@@ -7535,7 +7539,7 @@ typedef struct __si_amf_dt_TAICancelledEUTRA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TAICancelledEUTRA_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TAICancelledEUTRA_Item_ExtIEs;
@@ -7556,7 +7560,7 @@ typedef struct __si_amf_dt_TAICancelledNR_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TAICancelledNR_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TAICancelledNR_Item_ExtIEs;
@@ -7575,7 +7579,7 @@ typedef struct __si_amf_dt_TAIListForInactiveItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TAIListForInactiveItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TAIListForInactiveItem_ExtIEs;
@@ -7602,7 +7606,7 @@ typedef struct __si_amf_dt_TAIListForPagingItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TAIListForPagingItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TAIListForPagingItem_ExtIEs;
@@ -7639,7 +7643,7 @@ typedef struct __si_amf_dt_TargeteNB_ID
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TargeteNB_ID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TargeteNB_ID_ExtIEs;
@@ -7668,7 +7672,7 @@ typedef struct __si_amf_dt_TargetID
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_TargetID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TargetID_ExtIEs;
@@ -7687,7 +7691,7 @@ typedef struct __si_amf_dt_TargetNGRANNode_ToSourceNGRANNode_TransparentContaine
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs;
@@ -7697,7 +7701,7 @@ typedef struct __si_amf_dt_TargetNGRANNode_ToSourceNGRANNode_TransparentContaine
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TargetRANNodeID_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TargetRANNodeID_ExtIEs;
@@ -7765,7 +7769,7 @@ typedef struct __si_amf_dt_TNLAssociationItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TNLAssociationItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TNLAssociationItem_ExtIEs;
@@ -7804,7 +7808,7 @@ typedef struct __si_amf_dt_TraceActivation
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_TraceActivation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_TraceActivation_ExtIEs;
@@ -7825,7 +7829,7 @@ typedef struct __si_amf_dt_UEAggregateMaximumBitRate
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UEAggregateMaximumBitRate_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UEAggregateMaximumBitRate_ExtIEs;
@@ -7848,7 +7852,7 @@ typedef struct __si_amf_dt_UE_associatedLogicalNG_connectionItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UE_associatedLogicalNG_connectionItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UE_associatedLogicalNG_connectionItem_ExtIEs;
@@ -7866,7 +7870,7 @@ typedef enum __si_amf_dt_UEContextRequest
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_UEIdentityIndexValue_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UEIdentityIndexValue_ExtIEs;
@@ -7906,7 +7910,7 @@ typedef struct __si_amf_dt_UE_NGAP_IDs
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_UE_NGAP_IDs_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UE_NGAP_IDs_ExtIEs;
@@ -7916,7 +7920,7 @@ typedef struct __si_amf_dt_UE_NGAP_IDs_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UE_NGAP_ID_pair_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UE_NGAP_ID_pair_ExtIEs;
@@ -7942,7 +7946,7 @@ typedef struct __si_amf_dt_UEPagingIdentity
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_UEPagingIdentity_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UEPagingIdentity_ExtIEs;
@@ -7982,7 +7986,7 @@ typedef struct __si_amf_dt_UEPresenceInAreaOfInterestItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UEPresenceInAreaOfInterestItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UEPresenceInAreaOfInterestItem_ExtIEs;
@@ -8032,7 +8036,7 @@ typedef struct __si_amf_dt_UERadioCapabilityForPaging
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UERadioCapabilityForPaging_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UERadioCapabilityForPaging_ExtIEs;
@@ -8065,7 +8069,7 @@ typedef struct __si_amf_dt_UESecurityCapabilities
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UESecurityCapabilities_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UESecurityCapabilities_ExtIEs;
@@ -8086,7 +8090,7 @@ typedef struct __si_amf_dt_UL_NGU_UP_TNLModifyItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UL_NGU_UP_TNLModifyItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UL_NGU_UP_TNLModifyItem_ExtIEs;
@@ -8120,7 +8124,7 @@ typedef struct __si_amf_dt_UnavailableGUAMIItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UnavailableGUAMIItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UnavailableGUAMIItem_ExtIEs;
@@ -8130,7 +8134,7 @@ typedef struct __si_amf_dt_UnavailableGUAMIItem_ExtIEs
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_UPTransportLayerInformation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UPTransportLayerInformation_ExtIEs;
@@ -8149,7 +8153,7 @@ typedef struct __si_amf_dt_UPTransportLayerInformationItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UPTransportLayerInformationItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UPTransportLayerInformationItem_ExtIEs;
@@ -8170,7 +8174,7 @@ typedef struct __si_amf_dt_UPTransportLayerInformationPairItem
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UPTransportLayerInformationPairItem_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UPTransportLayerInformationPairItem_ExtIEs;
@@ -8241,7 +8245,7 @@ typedef struct __si_amf_dt_UserLocationInformation
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_UserLocationInformation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UserLocationInformation_ExtIEs;
@@ -8251,7 +8255,7 @@ typedef struct __si_amf_dt_UserLocationInformation_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UserLocationInformationEUTRA_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//NGRAN-CGI,  optional
 	SI_AMF_DT_NGRAN_CGI * pSCellInformation;
 	int isPresent_pSCellInformation;
@@ -8263,7 +8267,7 @@ typedef struct __si_amf_dt_UserLocationInformationEUTRA_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UserLocationInformationN3IWF_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UserLocationInformationN3IWF_ExtIEs;
@@ -8273,7 +8277,7 @@ typedef struct __si_amf_dt_UserLocationInformationN3IWF_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UserLocationInformationNR_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//NGRAN-CGI,  optional
 	SI_AMF_DT_NGRAN_CGI * pSCellInformation;
 	int isPresent_pSCellInformation;
@@ -8285,7 +8289,7 @@ typedef struct __si_amf_dt_UserLocationInformationNR_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_UserPlaneSecurityInformation_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_UserPlaneSecurityInformation_ExtIEs;
@@ -8327,7 +8331,7 @@ typedef struct __si_amf_dt_VolumeTimedReport_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_VolumeTimedReport_Item_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_VolumeTimedReport_Item_ExtIEs;
@@ -8371,7 +8375,7 @@ typedef struct __si_amf_dt_WarningAreaList
 // ADT=2  DT=3 Container
 typedef struct __si_amf_dt_WarningAreaList_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_WarningAreaList_ExtIEs;
@@ -8429,7 +8433,7 @@ typedef struct __si_amf_dt_XnExtTLA_Item
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_XnExtTLA_Item_ExtIEs
 {
-	// Got Success L:2862
+	// Got Success L:2926
 	//SCTP-TLAs,  optional
 	SI_AMF_DT_SCTP_TLAs * sCTPTLAs;
 	int isPresent_sCTPTLAs;
@@ -8441,7 +8445,7 @@ typedef struct __si_amf_dt_XnExtTLA_Item_ExtIEs
 // ADT=1  DT=3 Container
 typedef struct __si_amf_dt_XnTNLConfigurationInfo_ExtIEs
 {
-	// Got Failed L:2855
+	// Got Failed L:2919
 	// {...}
 	// {}
 } SI_AMF_DT_XnTNLConfigurationInfo_ExtIEs;
@@ -8457,6 +8461,8 @@ int __si_amf_Encode_AdditionalDLUPTNLInformationForHOList( SI_AMF_DT_AdditionalD
 
 void __si_amf_init_TransportLayerAddress( SI_AMF_DT_TransportLayerAddress ** data);
 
+void __si_amf_init_TransportLayerAddress2( SI_AMF_DT_TransportLayerAddress ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_TransportLayerAddress( char * key, SI_AMF_DT_TransportLayerAddress * data, int lvl);
 
 void __si_amf_memfree_TransportLayerAddress( SI_AMF_DT_TransportLayerAddress * data);
@@ -8464,6 +8470,8 @@ void __si_amf_memfree_TransportLayerAddress( SI_AMF_DT_TransportLayerAddress * d
 int __si_amf_Encode_TransportLayerAddress( SI_AMF_DT_TransportLayerAddress * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_GTP_TEID( SI_AMF_DT_GTP_TEID ** data);
+
+void __si_amf_init_GTP_TEID2( SI_AMF_DT_GTP_TEID ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_GTP_TEID( char * key, SI_AMF_DT_GTP_TEID * data, int lvl);
 
@@ -8557,6 +8565,8 @@ int __si_amf_Encode_AllowedNSSAI( SI_AMF_DT_AllowedNSSAI * data, uint8_t * buffe
 
 void __si_amf_init_SST( SI_AMF_DT_SST ** data);
 
+void __si_amf_init_SST2( SI_AMF_DT_SST ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_SST( char * key, SI_AMF_DT_SST * data, int lvl);
 
 void __si_amf_memfree_SST( SI_AMF_DT_SST * data);
@@ -8564,6 +8574,8 @@ void __si_amf_memfree_SST( SI_AMF_DT_SST * data);
 int __si_amf_Encode_SST( SI_AMF_DT_SST * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_SD( SI_AMF_DT_SD ** data);
+
+void __si_amf_init_SD2( SI_AMF_DT_SD ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_SD( char * key, SI_AMF_DT_SD * data, int lvl);
 
@@ -8606,6 +8618,8 @@ int __si_amf_Encode_AllowedTACs( SI_AMF_DT_AllowedTACs * data, uint8_t * buffer,
 
 void __si_amf_init_AMFName( SI_AMF_DT_AMFName ** data);
 
+void __si_amf_init_AMFName2( SI_AMF_DT_AMFName ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_AMFName( char * key, SI_AMF_DT_AMFName * data, int lvl);
 
 void __si_amf_memfree_AMFName( SI_AMF_DT_AMFName * data);
@@ -8614,6 +8628,8 @@ int __si_amf_Encode_AMFName( SI_AMF_DT_AMFName * data, uint8_t * buffer, int * l
 
 void __si_amf_init_PLMNIdentity( SI_AMF_DT_PLMNIdentity ** data);
 
+void __si_amf_init_PLMNIdentity2( SI_AMF_DT_PLMNIdentity ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_PLMNIdentity( char * key, SI_AMF_DT_PLMNIdentity * data, int lvl);
 
 void __si_amf_memfree_PLMNIdentity( SI_AMF_DT_PLMNIdentity * data);
@@ -8621,6 +8637,8 @@ void __si_amf_memfree_PLMNIdentity( SI_AMF_DT_PLMNIdentity * data);
 int __si_amf_Encode_PLMNIdentity( SI_AMF_DT_PLMNIdentity * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_GNB_IDBS( SI_AMF_DT_GNB_IDBS ** data);
+
+void __si_amf_init_GNB_IDBS2( SI_AMF_DT_GNB_IDBS ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_GNB_IDBS( char * key, SI_AMF_DT_GNB_IDBS * data, int lvl);
 
@@ -8646,6 +8664,8 @@ int __si_amf_Encode_GlobalGNB_ID( SI_AMF_DT_GlobalGNB_ID * data, uint8_t * buffe
 
 void __si_amf_init_NgENB_IDmacroNgENB_ID( SI_AMF_DT_NgENB_IDmacroNgENB_ID ** data);
 
+void __si_amf_init_NgENB_IDmacroNgENB_ID2( SI_AMF_DT_NgENB_IDmacroNgENB_ID ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_NgENB_IDmacroNgENB_ID( char * key, SI_AMF_DT_NgENB_IDmacroNgENB_ID * data, int lvl);
 
 void __si_amf_memfree_NgENB_IDmacroNgENB_ID( SI_AMF_DT_NgENB_IDmacroNgENB_ID * data);
@@ -8654,6 +8674,8 @@ int __si_amf_Encode_NgENB_IDmacroNgENB_ID( SI_AMF_DT_NgENB_IDmacroNgENB_ID * dat
 
 void __si_amf_init_NgENB_IDshortMacroNgENB_ID( SI_AMF_DT_NgENB_IDshortMacroNgENB_ID ** data);
 
+void __si_amf_init_NgENB_IDshortMacroNgENB_ID2( SI_AMF_DT_NgENB_IDshortMacroNgENB_ID ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_NgENB_IDshortMacroNgENB_ID( char * key, SI_AMF_DT_NgENB_IDshortMacroNgENB_ID * data, int lvl);
 
 void __si_amf_memfree_NgENB_IDshortMacroNgENB_ID( SI_AMF_DT_NgENB_IDshortMacroNgENB_ID * data);
@@ -8661,6 +8683,8 @@ void __si_amf_memfree_NgENB_IDshortMacroNgENB_ID( SI_AMF_DT_NgENB_IDshortMacroNg
 int __si_amf_Encode_NgENB_IDshortMacroNgENB_ID( SI_AMF_DT_NgENB_IDshortMacroNgENB_ID * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_NgENB_IDlongMacroNgENB_ID( SI_AMF_DT_NgENB_IDlongMacroNgENB_ID ** data);
+
+void __si_amf_init_NgENB_IDlongMacroNgENB_ID2( SI_AMF_DT_NgENB_IDlongMacroNgENB_ID ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_NgENB_IDlongMacroNgENB_ID( char * key, SI_AMF_DT_NgENB_IDlongMacroNgENB_ID * data, int lvl);
 
@@ -8685,6 +8709,8 @@ void __si_amf_memfree_GlobalNgENB_ID( SI_AMF_DT_GlobalNgENB_ID * data);
 int __si_amf_Encode_GlobalNgENB_ID( SI_AMF_DT_GlobalNgENB_ID * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_N3IWF_IDBS( SI_AMF_DT_N3IWF_IDBS ** data);
+
+void __si_amf_init_N3IWF_IDBS2( SI_AMF_DT_N3IWF_IDBS ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_N3IWF_IDBS( char * key, SI_AMF_DT_N3IWF_IDBS * data, int lvl);
 
@@ -8717,6 +8743,8 @@ void __si_amf_memfree_GlobalRANNodeID( SI_AMF_DT_GlobalRANNodeID * data);
 int __si_amf_Encode_GlobalRANNodeID( SI_AMF_DT_GlobalRANNodeID * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_TAC( SI_AMF_DT_TAC ** data);
+
+void __si_amf_init_TAC2( SI_AMF_DT_TAC ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_TAC( char * key, SI_AMF_DT_TAC * data, int lvl);
 
@@ -8751,6 +8779,8 @@ int __si_amf_Encode_AMFPagingTarget_ExtIEs( SI_AMF_DT_AMFPagingTarget_ExtIEs * d
 
 void __si_amf_init_AMFPointer( SI_AMF_DT_AMFPointer ** data);
 
+void __si_amf_init_AMFPointer2( SI_AMF_DT_AMFPointer ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_AMFPointer( char * key, SI_AMF_DT_AMFPointer * data, int lvl);
 
 void __si_amf_memfree_AMFPointer( SI_AMF_DT_AMFPointer * data);
@@ -8759,6 +8789,8 @@ int __si_amf_Encode_AMFPointer( SI_AMF_DT_AMFPointer * data, uint8_t * buffer, i
 
 void __si_amf_init_AMFRegionID( SI_AMF_DT_AMFRegionID ** data);
 
+void __si_amf_init_AMFRegionID2( SI_AMF_DT_AMFRegionID ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_AMFRegionID( char * key, SI_AMF_DT_AMFRegionID * data, int lvl);
 
 void __si_amf_memfree_AMFRegionID( SI_AMF_DT_AMFRegionID * data);
@@ -8766,6 +8798,8 @@ void __si_amf_memfree_AMFRegionID( SI_AMF_DT_AMFRegionID * data);
 int __si_amf_Encode_AMFRegionID( SI_AMF_DT_AMFRegionID * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_AMFSetID( SI_AMF_DT_AMFSetID ** data);
+
+void __si_amf_init_AMFSetID2( SI_AMF_DT_AMFSetID ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_AMFSetID( char * key, SI_AMF_DT_AMFSetID * data, int lvl);
 
@@ -8936,6 +8970,8 @@ int __si_amf_Encode_AreaOfInterest_ExtIEs( SI_AMF_DT_AreaOfInterest_ExtIEs * dat
 
 void __si_amf_init_NRCellIdentity( SI_AMF_DT_NRCellIdentity ** data);
 
+void __si_amf_init_NRCellIdentity2( SI_AMF_DT_NRCellIdentity ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_NRCellIdentity( char * key, SI_AMF_DT_NRCellIdentity * data, int lvl);
 
 void __si_amf_memfree_NRCellIdentity( SI_AMF_DT_NRCellIdentity * data);
@@ -8951,6 +8987,8 @@ void __si_amf_memfree_NR_CGI( SI_AMF_DT_NR_CGI * data);
 int __si_amf_Encode_NR_CGI( SI_AMF_DT_NR_CGI * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_EUTRACellIdentity( SI_AMF_DT_EUTRACellIdentity ** data);
+
+void __si_amf_init_EUTRACellIdentity2( SI_AMF_DT_EUTRACellIdentity ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_EUTRACellIdentity( char * key, SI_AMF_DT_EUTRACellIdentity * data, int lvl);
 
@@ -9691,6 +9729,8 @@ int __si_amf_Encode_CNTypeRestrictionsForServing( uint8_t eCNTypeRestrictionsFor
 
 void __si_amf_init_CommonNetworkInstance( SI_AMF_DT_CommonNetworkInstance ** data);
 
+void __si_amf_init_CommonNetworkInstance2( SI_AMF_DT_CommonNetworkInstance ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_CommonNetworkInstance( char * key, SI_AMF_DT_CommonNetworkInstance * data, int lvl);
 
 void __si_amf_memfree_CommonNetworkInstance( SI_AMF_DT_CommonNetworkInstance * data);
@@ -9811,6 +9851,8 @@ int __si_amf_Encode_ConfidentialityProtectionResult( uint8_t eConfidentialityPro
 
 void __si_amf_init_UEIdentityIndexValueIL( SI_AMF_DT_UEIdentityIndexValueIL ** data);
 
+void __si_amf_init_UEIdentityIndexValueIL2( SI_AMF_DT_UEIdentityIndexValueIL ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_UEIdentityIndexValueIL( char * key, SI_AMF_DT_UEIdentityIndexValueIL * data, int lvl);
 
 void __si_amf_memfree_UEIdentityIndexValueIL( SI_AMF_DT_UEIdentityIndexValueIL * data);
@@ -9830,6 +9872,8 @@ void __si_amf_debug_PagingDRX( char * key, uint8_t ePagingDRX, int lvl);
 int __si_amf_Encode_PagingDRX( uint8_t ePagingDRX, int isExt, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PeriodicRegistrationUpdateTimer( SI_AMF_DT_PeriodicRegistrationUpdateTimer ** data);
+
+void __si_amf_init_PeriodicRegistrationUpdateTimer2( SI_AMF_DT_PeriodicRegistrationUpdateTimer ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_PeriodicRegistrationUpdateTimer( char * key, SI_AMF_DT_PeriodicRegistrationUpdateTimer * data, int lvl);
 
@@ -9917,6 +9961,8 @@ void __si_amf_memfree_COUNTValueForPDCP_SN18_ExtIEs( SI_AMF_DT_COUNTValueForPDCP
 int __si_amf_Encode_COUNTValueForPDCP_SN18_ExtIEs( SI_AMF_DT_COUNTValueForPDCP_SN18_ExtIEs * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PortNumber( SI_AMF_DT_PortNumber ** data);
+
+void __si_amf_init_PortNumber2( SI_AMF_DT_PortNumber ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PortNumber( char * key, SI_AMF_DT_PortNumber * data, int lvl);
 
@@ -10009,6 +10055,8 @@ int __si_amf_Encode_CriticalityDiagnostics_IE_Item_ExtIEs( SI_AMF_DT_Criticality
 
 void __si_amf_init_DataCodingScheme( SI_AMF_DT_DataCodingScheme ** data);
 
+void __si_amf_init_DataCodingScheme2( SI_AMF_DT_DataCodingScheme ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_DataCodingScheme( char * key, SI_AMF_DT_DataCodingScheme * data, int lvl);
 
 void __si_amf_memfree_DataCodingScheme( SI_AMF_DT_DataCodingScheme * data);
@@ -10078,6 +10126,8 @@ int __si_amf_Encode_DRBsSubjectToStatusTransferList( SI_AMF_DT_DRBsSubjectToStat
 
 void __si_amf_init_DRBStatusUL12ReceiveStatusOfUL_PDCP_SDUs( SI_AMF_DT_DRBStatusUL12ReceiveStatusOfUL_PDCP_SDUs ** data);
 
+void __si_amf_init_DRBStatusUL12ReceiveStatusOfUL_PDCP_SDUs2( SI_AMF_DT_DRBStatusUL12ReceiveStatusOfUL_PDCP_SDUs ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_DRBStatusUL12ReceiveStatusOfUL_PDCP_SDUs( char * key, SI_AMF_DT_DRBStatusUL12ReceiveStatusOfUL_PDCP_SDUs * data, int lvl);
 
 void __si_amf_memfree_DRBStatusUL12ReceiveStatusOfUL_PDCP_SDUs( SI_AMF_DT_DRBStatusUL12ReceiveStatusOfUL_PDCP_SDUs * data);
@@ -10093,6 +10143,8 @@ void __si_amf_memfree_DRBStatusUL12( SI_AMF_DT_DRBStatusUL12 * data);
 int __si_amf_Encode_DRBStatusUL12( SI_AMF_DT_DRBStatusUL12 * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_DRBStatusUL18ReceiveStatusOfUL_PDCP_SDUs( SI_AMF_DT_DRBStatusUL18ReceiveStatusOfUL_PDCP_SDUs ** data);
+
+void __si_amf_init_DRBStatusUL18ReceiveStatusOfUL_PDCP_SDUs2( SI_AMF_DT_DRBStatusUL18ReceiveStatusOfUL_PDCP_SDUs ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_DRBStatusUL18ReceiveStatusOfUL_PDCP_SDUs( char * key, SI_AMF_DT_DRBStatusUL18ReceiveStatusOfUL_PDCP_SDUs * data, int lvl);
 
@@ -10283,6 +10335,8 @@ int __si_amf_Encode_Dynamic5QIDescriptor_ExtIEs( SI_AMF_DT_Dynamic5QIDescriptor_
 
 void __si_amf_init_EmergencyAreaID( SI_AMF_DT_EmergencyAreaID ** data);
 
+void __si_amf_init_EmergencyAreaID2( SI_AMF_DT_EmergencyAreaID ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_EmergencyAreaID( char * key, SI_AMF_DT_EmergencyAreaID * data, int lvl);
 
 void __si_amf_memfree_EmergencyAreaID( SI_AMF_DT_EmergencyAreaID * data);
@@ -10400,6 +10454,8 @@ int __si_amf_Encode_EmergencyFallbackIndicator_ExtIEs( SI_AMF_DT_EmergencyFallba
 
 void __si_amf_init_EN_DCSONConfigurationTransfer( SI_AMF_DT_EN_DCSONConfigurationTransfer ** data);
 
+void __si_amf_init_EN_DCSONConfigurationTransfer2( SI_AMF_DT_EN_DCSONConfigurationTransfer ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_EN_DCSONConfigurationTransfer( char * key, SI_AMF_DT_EN_DCSONConfigurationTransfer * data, int lvl);
 
 void __si_amf_memfree_EN_DCSONConfigurationTransfer( SI_AMF_DT_EN_DCSONConfigurationTransfer * data);
@@ -10424,6 +10480,8 @@ void __si_amf_memfree_EquivalentPLMNs( SI_AMF_DT_EquivalentPLMNs * data);
 int __si_amf_Encode_EquivalentPLMNs( SI_AMF_DT_EquivalentPLMNs * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_EPS_TAC( SI_AMF_DT_EPS_TAC ** data);
+
+void __si_amf_init_EPS_TAC2( SI_AMF_DT_EPS_TAC ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_EPS_TAC( char * key, SI_AMF_DT_EPS_TAC * data, int lvl);
 
@@ -10496,6 +10554,8 @@ int __si_amf_Encode_EUTRA_CGIListForWarning( SI_AMF_DT_EUTRA_CGIListForWarning *
 
 void __si_amf_init_EUTRAencryptionAlgorithms( SI_AMF_DT_EUTRAencryptionAlgorithms ** data);
 
+void __si_amf_init_EUTRAencryptionAlgorithms2( SI_AMF_DT_EUTRAencryptionAlgorithms ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_EUTRAencryptionAlgorithms( char * key, SI_AMF_DT_EUTRAencryptionAlgorithms * data, int lvl);
 
 void __si_amf_memfree_EUTRAencryptionAlgorithms( SI_AMF_DT_EUTRAencryptionAlgorithms * data);
@@ -10503,6 +10563,8 @@ void __si_amf_memfree_EUTRAencryptionAlgorithms( SI_AMF_DT_EUTRAencryptionAlgori
 int __si_amf_Encode_EUTRAencryptionAlgorithms( SI_AMF_DT_EUTRAencryptionAlgorithms * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_EUTRAintegrityProtectionAlgorithms( SI_AMF_DT_EUTRAintegrityProtectionAlgorithms ** data);
+
+void __si_amf_init_EUTRAintegrityProtectionAlgorithms2( SI_AMF_DT_EUTRAintegrityProtectionAlgorithms ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_EUTRAintegrityProtectionAlgorithms( char * key, SI_AMF_DT_EUTRAintegrityProtectionAlgorithms * data, int lvl);
 
@@ -10554,6 +10616,8 @@ void __si_amf_memfree_ExpectedUEMovingTrajectoryItem_ExtIEs( SI_AMF_DT_ExpectedU
 int __si_amf_Encode_ExpectedUEMovingTrajectoryItem_ExtIEs( SI_AMF_DT_ExpectedUEMovingTrajectoryItem_ExtIEs * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_FiveG_TMSI( SI_AMF_DT_FiveG_TMSI ** data);
+
+void __si_amf_init_FiveG_TMSI2( SI_AMF_DT_FiveG_TMSI ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_FiveG_TMSI( char * key, SI_AMF_DT_FiveG_TMSI * data, int lvl);
 
@@ -10891,6 +10955,8 @@ int __si_amf_Encode_IntegrityProtectionIndication( uint8_t eIntegrityProtectionI
 
 void __si_amf_init_InterfacesToTrace( SI_AMF_DT_InterfacesToTrace ** data);
 
+void __si_amf_init_InterfacesToTrace2( SI_AMF_DT_InterfacesToTrace ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_InterfacesToTrace( char * key, SI_AMF_DT_InterfacesToTrace * data, int lvl);
 
 void __si_amf_memfree_InterfacesToTrace( SI_AMF_DT_InterfacesToTrace * data);
@@ -10915,6 +10981,8 @@ int __si_amf_Encode_LastVisitedNGRANCellInformation( SI_AMF_DT_LastVisitedNGRANC
 
 void __si_amf_init_LastVisitedEUTRANCellInformation( SI_AMF_DT_LastVisitedEUTRANCellInformation ** data);
 
+void __si_amf_init_LastVisitedEUTRANCellInformation2( SI_AMF_DT_LastVisitedEUTRANCellInformation ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_LastVisitedEUTRANCellInformation( char * key, SI_AMF_DT_LastVisitedEUTRANCellInformation * data, int lvl);
 
 void __si_amf_memfree_LastVisitedEUTRANCellInformation( SI_AMF_DT_LastVisitedEUTRANCellInformation * data);
@@ -10923,6 +10991,8 @@ int __si_amf_Encode_LastVisitedEUTRANCellInformation( SI_AMF_DT_LastVisitedEUTRA
 
 void __si_amf_init_LastVisitedUTRANCellInformation( SI_AMF_DT_LastVisitedUTRANCellInformation ** data);
 
+void __si_amf_init_LastVisitedUTRANCellInformation2( SI_AMF_DT_LastVisitedUTRANCellInformation ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_LastVisitedUTRANCellInformation( char * key, SI_AMF_DT_LastVisitedUTRANCellInformation * data, int lvl);
 
 void __si_amf_memfree_LastVisitedUTRANCellInformation( SI_AMF_DT_LastVisitedUTRANCellInformation * data);
@@ -10930,6 +11000,8 @@ void __si_amf_memfree_LastVisitedUTRANCellInformation( SI_AMF_DT_LastVisitedUTRA
 int __si_amf_Encode_LastVisitedUTRANCellInformation( SI_AMF_DT_LastVisitedUTRANCellInformation * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_LastVisitedGERANCellInformation( SI_AMF_DT_LastVisitedGERANCellInformation ** data);
+
+void __si_amf_init_LastVisitedGERANCellInformation2( SI_AMF_DT_LastVisitedGERANCellInformation ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_LastVisitedGERANCellInformation( char * key, SI_AMF_DT_LastVisitedGERANCellInformation * data, int lvl);
 
@@ -11007,6 +11079,8 @@ int __si_amf_Encode_LocationReportingRequestType_ExtIEs( SI_AMF_DT_LocationRepor
 
 void __si_amf_init_MaskedIMEISV( SI_AMF_DT_MaskedIMEISV ** data);
 
+void __si_amf_init_MaskedIMEISV2( SI_AMF_DT_MaskedIMEISV ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_MaskedIMEISV( char * key, SI_AMF_DT_MaskedIMEISV * data, int lvl);
 
 void __si_amf_memfree_MaskedIMEISV( SI_AMF_DT_MaskedIMEISV * data);
@@ -11014,6 +11088,8 @@ void __si_amf_memfree_MaskedIMEISV( SI_AMF_DT_MaskedIMEISV * data);
 int __si_amf_Encode_MaskedIMEISV( SI_AMF_DT_MaskedIMEISV * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_MessageIdentifier( SI_AMF_DT_MessageIdentifier ** data);
+
+void __si_amf_init_MessageIdentifier2( SI_AMF_DT_MessageIdentifier ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_MessageIdentifier( char * key, SI_AMF_DT_MessageIdentifier * data, int lvl);
 
@@ -11069,6 +11145,8 @@ int __si_amf_Encode_N3IWF_ID_ExtIEs( SI_AMF_DT_N3IWF_ID_ExtIEs * data, uint8_t *
 
 void __si_amf_init_NAS_PDU( SI_AMF_DT_NAS_PDU ** data);
 
+void __si_amf_init_NAS_PDU2( SI_AMF_DT_NAS_PDU ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_NAS_PDU( char * key, SI_AMF_DT_NAS_PDU * data, int lvl);
 
 void __si_amf_memfree_NAS_PDU( SI_AMF_DT_NAS_PDU * data);
@@ -11076,6 +11154,8 @@ void __si_amf_memfree_NAS_PDU( SI_AMF_DT_NAS_PDU * data);
 int __si_amf_Encode_NAS_PDU( SI_AMF_DT_NAS_PDU * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_NASSecurityParametersFromNGRAN( SI_AMF_DT_NASSecurityParametersFromNGRAN ** data);
+
+void __si_amf_init_NASSecurityParametersFromNGRAN2( SI_AMF_DT_NASSecurityParametersFromNGRAN ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_NASSecurityParametersFromNGRAN( char * key, SI_AMF_DT_NASSecurityParametersFromNGRAN * data, int lvl);
 
@@ -11140,6 +11220,8 @@ int __si_amf_Encode_NGRAN_TNLAssociationToRemoveItem_ExtIEs( SI_AMF_DT_NGRAN_TNL
 
 void __si_amf_init_NGRANTraceID( SI_AMF_DT_NGRANTraceID ** data);
 
+void __si_amf_init_NGRANTraceID2( SI_AMF_DT_NGRANTraceID ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_NGRANTraceID( char * key, SI_AMF_DT_NGRANTraceID * data, int lvl);
 
 void __si_amf_memfree_NGRANTraceID( SI_AMF_DT_NGRANTraceID * data);
@@ -11194,6 +11276,8 @@ int __si_amf_Encode_NR_CGIListForWarning( SI_AMF_DT_NR_CGIListForWarning * data,
 
 void __si_amf_init_NRencryptionAlgorithms( SI_AMF_DT_NRencryptionAlgorithms ** data);
 
+void __si_amf_init_NRencryptionAlgorithms2( SI_AMF_DT_NRencryptionAlgorithms ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_NRencryptionAlgorithms( char * key, SI_AMF_DT_NRencryptionAlgorithms * data, int lvl);
 
 void __si_amf_memfree_NRencryptionAlgorithms( SI_AMF_DT_NRencryptionAlgorithms * data);
@@ -11202,6 +11286,8 @@ int __si_amf_Encode_NRencryptionAlgorithms( SI_AMF_DT_NRencryptionAlgorithms * d
 
 void __si_amf_init_NRintegrityProtectionAlgorithms( SI_AMF_DT_NRintegrityProtectionAlgorithms ** data);
 
+void __si_amf_init_NRintegrityProtectionAlgorithms2( SI_AMF_DT_NRintegrityProtectionAlgorithms ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_NRintegrityProtectionAlgorithms( char * key, SI_AMF_DT_NRintegrityProtectionAlgorithms * data, int lvl);
 
 void __si_amf_memfree_NRintegrityProtectionAlgorithms( SI_AMF_DT_NRintegrityProtectionAlgorithms * data);
@@ -11209,6 +11295,8 @@ void __si_amf_memfree_NRintegrityProtectionAlgorithms( SI_AMF_DT_NRintegrityProt
 int __si_amf_Encode_NRintegrityProtectionAlgorithms( SI_AMF_DT_NRintegrityProtectionAlgorithms * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_NRPPa_PDU( SI_AMF_DT_NRPPa_PDU ** data);
+
+void __si_amf_init_NRPPa_PDU2( SI_AMF_DT_NRPPa_PDU ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_NRPPa_PDU( char * key, SI_AMF_DT_NRPPa_PDU * data, int lvl);
 
@@ -11435,6 +11523,8 @@ int __si_amf_Encode_PDUSessionResourceAdmittedList( SI_AMF_DT_PDUSessionResource
 
 void __si_amf_init_HandoverRequestAcknowledgeTransferOctStr( SI_AMF_DT_HandoverRequestAcknowledgeTransferOctStr ** data);
 
+void __si_amf_init_HandoverRequestAcknowledgeTransferOctStr2( SI_AMF_DT_HandoverRequestAcknowledgeTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_HandoverRequestAcknowledgeTransferOctStr( char * key, SI_AMF_DT_HandoverRequestAcknowledgeTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_HandoverRequestAcknowledgeTransferOctStr( SI_AMF_DT_HandoverRequestAcknowledgeTransferOctStr * data);
@@ -11467,6 +11557,8 @@ void __si_amf_memfree_PDUSessionResourceFailedToModifyListModCfm( SI_AMF_DT_PDUS
 int __si_amf_Encode_PDUSessionResourceFailedToModifyListModCfm( SI_AMF_DT_PDUSessionResourceFailedToModifyListModCfm * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PDUSessionResourceModifyIndicationUnsuccessfulTransferOctStr( SI_AMF_DT_PDUSessionResourceModifyIndicationUnsuccessfulTransferOctStr ** data);
+
+void __si_amf_init_PDUSessionResourceModifyIndicationUnsuccessfulTransferOctStr2( SI_AMF_DT_PDUSessionResourceModifyIndicationUnsuccessfulTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PDUSessionResourceModifyIndicationUnsuccessfulTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceModifyIndicationUnsuccessfulTransferOctStr * data, int lvl);
 
@@ -11501,6 +11593,8 @@ int __si_amf_Encode_PDUSessionResourceFailedToModifyListModRes( SI_AMF_DT_PDUSes
 
 void __si_amf_init_PDUSessionResourceModifyUnsuccessfulTransferOctStr( SI_AMF_DT_PDUSessionResourceModifyUnsuccessfulTransferOctStr ** data);
 
+void __si_amf_init_PDUSessionResourceModifyUnsuccessfulTransferOctStr2( SI_AMF_DT_PDUSessionResourceModifyUnsuccessfulTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_PDUSessionResourceModifyUnsuccessfulTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceModifyUnsuccessfulTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_PDUSessionResourceModifyUnsuccessfulTransferOctStr( SI_AMF_DT_PDUSessionResourceModifyUnsuccessfulTransferOctStr * data);
@@ -11533,6 +11627,8 @@ void __si_amf_memfree_PDUSessionResourceFailedToSetupListCxtFail( SI_AMF_DT_PDUS
 int __si_amf_Encode_PDUSessionResourceFailedToSetupListCxtFail( SI_AMF_DT_PDUSessionResourceFailedToSetupListCxtFail * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PDUSessionResourceSetupUnsuccessfulTransferOctStr( SI_AMF_DT_PDUSessionResourceSetupUnsuccessfulTransferOctStr ** data);
+
+void __si_amf_init_PDUSessionResourceSetupUnsuccessfulTransferOctStr2( SI_AMF_DT_PDUSessionResourceSetupUnsuccessfulTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PDUSessionResourceSetupUnsuccessfulTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceSetupUnsuccessfulTransferOctStr * data, int lvl);
 
@@ -11592,6 +11688,8 @@ int __si_amf_Encode_PDUSessionResourceFailedToSetupListHOAck( SI_AMF_DT_PDUSessi
 
 void __si_amf_init_HandoverResourceAllocationUnsuccessfulTransferOctStr( SI_AMF_DT_HandoverResourceAllocationUnsuccessfulTransferOctStr ** data);
 
+void __si_amf_init_HandoverResourceAllocationUnsuccessfulTransferOctStr2( SI_AMF_DT_HandoverResourceAllocationUnsuccessfulTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_HandoverResourceAllocationUnsuccessfulTransferOctStr( char * key, SI_AMF_DT_HandoverResourceAllocationUnsuccessfulTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_HandoverResourceAllocationUnsuccessfulTransferOctStr( SI_AMF_DT_HandoverResourceAllocationUnsuccessfulTransferOctStr * data);
@@ -11624,6 +11722,8 @@ void __si_amf_memfree_PDUSessionResourceFailedToSetupListPSReq( SI_AMF_DT_PDUSes
 int __si_amf_Encode_PDUSessionResourceFailedToSetupListPSReq( SI_AMF_DT_PDUSessionResourceFailedToSetupListPSReq * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PathSwitchRequestSetupFailedTransferOctStr( SI_AMF_DT_PathSwitchRequestSetupFailedTransferOctStr ** data);
+
+void __si_amf_init_PathSwitchRequestSetupFailedTransferOctStr2( SI_AMF_DT_PathSwitchRequestSetupFailedTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PathSwitchRequestSetupFailedTransferOctStr( char * key, SI_AMF_DT_PathSwitchRequestSetupFailedTransferOctStr * data, int lvl);
 
@@ -11682,6 +11782,8 @@ void __si_amf_memfree_PDUSessionResourceHandoverList( SI_AMF_DT_PDUSessionResour
 int __si_amf_Encode_PDUSessionResourceHandoverList( SI_AMF_DT_PDUSessionResourceHandoverList * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_HandoverCommandTransferOctStr( SI_AMF_DT_HandoverCommandTransferOctStr ** data);
+
+void __si_amf_init_HandoverCommandTransferOctStr2( SI_AMF_DT_HandoverCommandTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_HandoverCommandTransferOctStr( char * key, SI_AMF_DT_HandoverCommandTransferOctStr * data, int lvl);
 
@@ -11757,6 +11859,8 @@ int __si_amf_Encode_PDUSessionResourceItemCxtRelCpl( SI_AMF_DT_PDUSessionResourc
 
 void __si_amf_init_PDUSessionResourceReleaseResponseTransferOctStr( SI_AMF_DT_PDUSessionResourceReleaseResponseTransferOctStr ** data);
 
+void __si_amf_init_PDUSessionResourceReleaseResponseTransferOctStr2( SI_AMF_DT_PDUSessionResourceReleaseResponseTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_PDUSessionResourceReleaseResponseTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceReleaseResponseTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_PDUSessionResourceReleaseResponseTransferOctStr( SI_AMF_DT_PDUSessionResourceReleaseResponseTransferOctStr * data);
@@ -11806,6 +11910,8 @@ void __si_amf_memfree_PDUSessionResourceListHORqd( SI_AMF_DT_PDUSessionResourceL
 int __si_amf_Encode_PDUSessionResourceListHORqd( SI_AMF_DT_PDUSessionResourceListHORqd * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_HandoverRequiredTransferOctStr( SI_AMF_DT_HandoverRequiredTransferOctStr ** data);
+
+void __si_amf_init_HandoverRequiredTransferOctStr2( SI_AMF_DT_HandoverRequiredTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_HandoverRequiredTransferOctStr( char * key, SI_AMF_DT_HandoverRequiredTransferOctStr * data, int lvl);
 
@@ -12001,6 +12107,8 @@ int __si_amf_Encode_PDUSessionResourceModifyListModCfm( SI_AMF_DT_PDUSessionReso
 
 void __si_amf_init_PDUSessionResourceModifyConfirmTransferOctStr( SI_AMF_DT_PDUSessionResourceModifyConfirmTransferOctStr ** data);
 
+void __si_amf_init_PDUSessionResourceModifyConfirmTransferOctStr2( SI_AMF_DT_PDUSessionResourceModifyConfirmTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_PDUSessionResourceModifyConfirmTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceModifyConfirmTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_PDUSessionResourceModifyConfirmTransferOctStr( SI_AMF_DT_PDUSessionResourceModifyConfirmTransferOctStr * data);
@@ -12033,6 +12141,8 @@ void __si_amf_memfree_PDUSessionResourceModifyListModInd( SI_AMF_DT_PDUSessionRe
 int __si_amf_Encode_PDUSessionResourceModifyListModInd( SI_AMF_DT_PDUSessionResourceModifyListModInd * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PDUSessionResourceModifyIndicationTransferOctStr( SI_AMF_DT_PDUSessionResourceModifyIndicationTransferOctStr ** data);
+
+void __si_amf_init_PDUSessionResourceModifyIndicationTransferOctStr2( SI_AMF_DT_PDUSessionResourceModifyIndicationTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PDUSessionResourceModifyIndicationTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceModifyIndicationTransferOctStr * data, int lvl);
 
@@ -12067,6 +12177,8 @@ int __si_amf_Encode_PDUSessionResourceModifyListModReq( SI_AMF_DT_PDUSessionReso
 
 void __si_amf_init_PDUSessionResourceModifyRequestTransferOctStr( SI_AMF_DT_PDUSessionResourceModifyRequestTransferOctStr ** data);
 
+void __si_amf_init_PDUSessionResourceModifyRequestTransferOctStr2( SI_AMF_DT_PDUSessionResourceModifyRequestTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_PDUSessionResourceModifyRequestTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceModifyRequestTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_PDUSessionResourceModifyRequestTransferOctStr( SI_AMF_DT_PDUSessionResourceModifyRequestTransferOctStr * data);
@@ -12099,6 +12211,8 @@ void __si_amf_memfree_PDUSessionResourceModifyListModRes( SI_AMF_DT_PDUSessionRe
 int __si_amf_Encode_PDUSessionResourceModifyListModRes( SI_AMF_DT_PDUSessionResourceModifyListModRes * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PDUSessionResourceModifyResponseTransferOctStr( SI_AMF_DT_PDUSessionResourceModifyResponseTransferOctStr ** data);
+
+void __si_amf_init_PDUSessionResourceModifyResponseTransferOctStr2( SI_AMF_DT_PDUSessionResourceModifyResponseTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PDUSessionResourceModifyResponseTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceModifyResponseTransferOctStr * data, int lvl);
 
@@ -12149,6 +12263,8 @@ void __si_amf_memfree_PDUSessionResourceNotifyList( SI_AMF_DT_PDUSessionResource
 int __si_amf_Encode_PDUSessionResourceNotifyList( SI_AMF_DT_PDUSessionResourceNotifyList * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PDUSessionResourceNotifyTransferOctStr( SI_AMF_DT_PDUSessionResourceNotifyTransferOctStr ** data);
+
+void __si_amf_init_PDUSessionResourceNotifyTransferOctStr2( SI_AMF_DT_PDUSessionResourceNotifyTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PDUSessionResourceNotifyTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceNotifyTransferOctStr * data, int lvl);
 
@@ -12242,6 +12358,8 @@ int __si_amf_Encode_PDUSessionResourceReleasedListNot( SI_AMF_DT_PDUSessionResou
 
 void __si_amf_init_PDUSessionResourceNotifyReleasedTransferOctStr( SI_AMF_DT_PDUSessionResourceNotifyReleasedTransferOctStr ** data);
 
+void __si_amf_init_PDUSessionResourceNotifyReleasedTransferOctStr2( SI_AMF_DT_PDUSessionResourceNotifyReleasedTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_PDUSessionResourceNotifyReleasedTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceNotifyReleasedTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_PDUSessionResourceNotifyReleasedTransferOctStr( SI_AMF_DT_PDUSessionResourceNotifyReleasedTransferOctStr * data);
@@ -12274,6 +12392,8 @@ void __si_amf_memfree_PDUSessionResourceReleasedListPSAck( SI_AMF_DT_PDUSessionR
 int __si_amf_Encode_PDUSessionResourceReleasedListPSAck( SI_AMF_DT_PDUSessionResourceReleasedListPSAck * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PathSwitchRequestUnsuccessfulTransferOctStr( SI_AMF_DT_PathSwitchRequestUnsuccessfulTransferOctStr ** data);
+
+void __si_amf_init_PathSwitchRequestUnsuccessfulTransferOctStr2( SI_AMF_DT_PathSwitchRequestUnsuccessfulTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PathSwitchRequestUnsuccessfulTransferOctStr( char * key, SI_AMF_DT_PathSwitchRequestUnsuccessfulTransferOctStr * data, int lvl);
 
@@ -12375,6 +12495,8 @@ int __si_amf_Encode_PDUSessionResourceSecondaryRATUsageList( SI_AMF_DT_PDUSessio
 
 void __si_amf_init_SecondaryRATDataUsageReportTransferOctStr( SI_AMF_DT_SecondaryRATDataUsageReportTransferOctStr ** data);
 
+void __si_amf_init_SecondaryRATDataUsageReportTransferOctStr2( SI_AMF_DT_SecondaryRATDataUsageReportTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_SecondaryRATDataUsageReportTransferOctStr( char * key, SI_AMF_DT_SecondaryRATDataUsageReportTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_SecondaryRATDataUsageReportTransferOctStr( SI_AMF_DT_SecondaryRATDataUsageReportTransferOctStr * data);
@@ -12408,6 +12530,8 @@ int __si_amf_Encode_PDUSessionResourceSetupListCxtReq( SI_AMF_DT_PDUSessionResou
 
 void __si_amf_init_PDUSessionResourceSetupRequestTransferOctStr( SI_AMF_DT_PDUSessionResourceSetupRequestTransferOctStr ** data);
 
+void __si_amf_init_PDUSessionResourceSetupRequestTransferOctStr2( SI_AMF_DT_PDUSessionResourceSetupRequestTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_PDUSessionResourceSetupRequestTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceSetupRequestTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_PDUSessionResourceSetupRequestTransferOctStr( SI_AMF_DT_PDUSessionResourceSetupRequestTransferOctStr * data);
@@ -12440,6 +12564,8 @@ void __si_amf_memfree_PDUSessionResourceSetupListCxtRes( SI_AMF_DT_PDUSessionRes
 int __si_amf_Encode_PDUSessionResourceSetupListCxtRes( SI_AMF_DT_PDUSessionResourceSetupListCxtRes * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PDUSessionResourceSetupResponseTransferOctStr( SI_AMF_DT_PDUSessionResourceSetupResponseTransferOctStr ** data);
+
+void __si_amf_init_PDUSessionResourceSetupResponseTransferOctStr2( SI_AMF_DT_PDUSessionResourceSetupResponseTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PDUSessionResourceSetupResponseTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceSetupResponseTransferOctStr * data, int lvl);
 
@@ -12591,6 +12717,8 @@ int __si_amf_Encode_PDUSessionResourceSwitchedList( SI_AMF_DT_PDUSessionResource
 
 void __si_amf_init_PathSwitchRequestAcknowledgeTransferOctStr( SI_AMF_DT_PathSwitchRequestAcknowledgeTransferOctStr ** data);
 
+void __si_amf_init_PathSwitchRequestAcknowledgeTransferOctStr2( SI_AMF_DT_PathSwitchRequestAcknowledgeTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_PathSwitchRequestAcknowledgeTransferOctStr( char * key, SI_AMF_DT_PathSwitchRequestAcknowledgeTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_PathSwitchRequestAcknowledgeTransferOctStr( SI_AMF_DT_PathSwitchRequestAcknowledgeTransferOctStr * data);
@@ -12623,6 +12751,8 @@ void __si_amf_memfree_PDUSessionResourceToBeSwitchedDLList( SI_AMF_DT_PDUSession
 int __si_amf_Encode_PDUSessionResourceToBeSwitchedDLList( SI_AMF_DT_PDUSessionResourceToBeSwitchedDLList * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PathSwitchRequestTransferOctStr( SI_AMF_DT_PathSwitchRequestTransferOctStr ** data);
+
+void __si_amf_init_PathSwitchRequestTransferOctStr2( SI_AMF_DT_PathSwitchRequestTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PathSwitchRequestTransferOctStr( char * key, SI_AMF_DT_PathSwitchRequestTransferOctStr * data, int lvl);
 
@@ -12657,6 +12787,8 @@ int __si_amf_Encode_PDUSessionResourceToReleaseListHOCmd( SI_AMF_DT_PDUSessionRe
 
 void __si_amf_init_HandoverPreparationUnsuccessfulTransferOctStr( SI_AMF_DT_HandoverPreparationUnsuccessfulTransferOctStr ** data);
 
+void __si_amf_init_HandoverPreparationUnsuccessfulTransferOctStr2( SI_AMF_DT_HandoverPreparationUnsuccessfulTransferOctStr ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_HandoverPreparationUnsuccessfulTransferOctStr( char * key, SI_AMF_DT_HandoverPreparationUnsuccessfulTransferOctStr * data, int lvl);
 
 void __si_amf_memfree_HandoverPreparationUnsuccessfulTransferOctStr( SI_AMF_DT_HandoverPreparationUnsuccessfulTransferOctStr * data);
@@ -12689,6 +12821,8 @@ void __si_amf_memfree_PDUSessionResourceToReleaseListRelCmd( SI_AMF_DT_PDUSessio
 int __si_amf_Encode_PDUSessionResourceToReleaseListRelCmd( SI_AMF_DT_PDUSessionResourceToReleaseListRelCmd * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_PDUSessionResourceReleaseCommandTransferOctStr( SI_AMF_DT_PDUSessionResourceReleaseCommandTransferOctStr ** data);
+
+void __si_amf_init_PDUSessionResourceReleaseCommandTransferOctStr2( SI_AMF_DT_PDUSessionResourceReleaseCommandTransferOctStr ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_PDUSessionResourceReleaseCommandTransferOctStr( char * key, SI_AMF_DT_PDUSessionResourceReleaseCommandTransferOctStr * data, int lvl);
 
@@ -13062,6 +13196,8 @@ int __si_amf_Encode_QoSFlowsUsageReport_Item_ExtIEs( SI_AMF_DT_QoSFlowsUsageRepo
 
 void __si_amf_init_RANNodeName( SI_AMF_DT_RANNodeName ** data);
 
+void __si_amf_init_RANNodeName2( SI_AMF_DT_RANNodeName ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_RANNodeName( char * key, SI_AMF_DT_RANNodeName * data, int lvl);
 
 void __si_amf_memfree_RANNodeName( SI_AMF_DT_RANNodeName * data);
@@ -13094,6 +13230,8 @@ void __si_amf_debug_RAN_UE_NGAP_ID( char * key, unsigned long long int data, int
 int __si_amf_Encode_RAN_UE_NGAP_ID( unsigned long long int data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_RATRestrictionInformation( SI_AMF_DT_RATRestrictionInformation ** data);
+
+void __si_amf_init_RATRestrictionInformation2( SI_AMF_DT_RATRestrictionInformation ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_RATRestrictionInformation( char * key, SI_AMF_DT_RATRestrictionInformation * data, int lvl);
 
@@ -13217,6 +13355,8 @@ int __si_amf_Encode_ResetType_ExtIEs( SI_AMF_DT_ResetType_ExtIEs * data, uint8_t
 
 void __si_amf_init_RoutingID( SI_AMF_DT_RoutingID ** data);
 
+void __si_amf_init_RoutingID2( SI_AMF_DT_RoutingID ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_RoutingID( char * key, SI_AMF_DT_RoutingID * data, int lvl);
 
 void __si_amf_memfree_RoutingID( SI_AMF_DT_RoutingID * data);
@@ -13224,6 +13364,8 @@ void __si_amf_memfree_RoutingID( SI_AMF_DT_RoutingID * data);
 int __si_amf_Encode_RoutingID( SI_AMF_DT_RoutingID * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_RRCContainer( SI_AMF_DT_RRCContainer ** data);
+
+void __si_amf_init_RRCContainer2( SI_AMF_DT_RRCContainer ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_RRCContainer( char * key, SI_AMF_DT_RRCContainer * data, int lvl);
 
@@ -13279,6 +13421,8 @@ int __si_amf_Encode_SecondaryRATDataUsageReportTransfer_ExtIEs( SI_AMF_DT_Second
 
 void __si_amf_init_SecurityKey( SI_AMF_DT_SecurityKey ** data);
 
+void __si_amf_init_SecurityKey2( SI_AMF_DT_SecurityKey ** data, u_char * cstr, uint32_t len, int bitslen);
+
 void __si_amf_debug_SecurityKey( char * key, SI_AMF_DT_SecurityKey * data, int lvl);
 
 void __si_amf_memfree_SecurityKey( SI_AMF_DT_SecurityKey * data);
@@ -13321,6 +13465,8 @@ void __si_amf_memfree_SecurityResult_ExtIEs( SI_AMF_DT_SecurityResult_ExtIEs * d
 int __si_amf_Encode_SecurityResult_ExtIEs( SI_AMF_DT_SecurityResult_ExtIEs * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_SerialNumber( SI_AMF_DT_SerialNumber ** data);
+
+void __si_amf_init_SerialNumber2( SI_AMF_DT_SerialNumber ** data, u_char * cstr, uint32_t len, int bitslen);
 
 void __si_amf_debug_SerialNumber( char * key, SI_AMF_DT_SerialNumber * data, int lvl);
 
@@ -13544,6 +13690,8 @@ int __si_amf_Encode_SourceRANNodeID_ExtIEs( SI_AMF_DT_SourceRANNodeID_ExtIEs * d
 
 void __si_amf_init_SourceToTarget_TransparentContainer( SI_AMF_DT_SourceToTarget_TransparentContainer ** data);
 
+void __si_amf_init_SourceToTarget_TransparentContainer2( SI_AMF_DT_SourceToTarget_TransparentContainer ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_SourceToTarget_TransparentContainer( char * key, SI_AMF_DT_SourceToTarget_TransparentContainer * data, int lvl);
 
 void __si_amf_memfree_SourceToTarget_TransparentContainer( SI_AMF_DT_SourceToTarget_TransparentContainer * data);
@@ -13551,6 +13699,8 @@ void __si_amf_memfree_SourceToTarget_TransparentContainer( SI_AMF_DT_SourceToTar
 int __si_amf_Encode_SourceToTarget_TransparentContainer( SI_AMF_DT_SourceToTarget_TransparentContainer * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_ConfiguredNSSAI( SI_AMF_DT_ConfiguredNSSAI ** data);
+
+void __si_amf_init_ConfiguredNSSAI2( SI_AMF_DT_ConfiguredNSSAI ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_ConfiguredNSSAI( char * key, SI_AMF_DT_ConfiguredNSSAI * data, int lvl);
 
@@ -13560,6 +13710,8 @@ int __si_amf_Encode_ConfiguredNSSAI( SI_AMF_DT_ConfiguredNSSAI * data, uint8_t *
 
 void __si_amf_init_RejectedNSSAIinPLMN( SI_AMF_DT_RejectedNSSAIinPLMN ** data);
 
+void __si_amf_init_RejectedNSSAIinPLMN2( SI_AMF_DT_RejectedNSSAIinPLMN ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_RejectedNSSAIinPLMN( char * key, SI_AMF_DT_RejectedNSSAIinPLMN * data, int lvl);
 
 void __si_amf_memfree_RejectedNSSAIinPLMN( SI_AMF_DT_RejectedNSSAIinPLMN * data);
@@ -13567,6 +13719,8 @@ void __si_amf_memfree_RejectedNSSAIinPLMN( SI_AMF_DT_RejectedNSSAIinPLMN * data)
 int __si_amf_Encode_RejectedNSSAIinPLMN( SI_AMF_DT_RejectedNSSAIinPLMN * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_RejectedNSSAIinTA( SI_AMF_DT_RejectedNSSAIinTA ** data);
+
+void __si_amf_init_RejectedNSSAIinTA2( SI_AMF_DT_RejectedNSSAIinTA ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_RejectedNSSAIinTA( char * key, SI_AMF_DT_RejectedNSSAIinTA * data, int lvl);
 
@@ -13813,6 +13967,8 @@ int __si_amf_Encode_TargetRANNodeID_ExtIEs( SI_AMF_DT_TargetRANNodeID_ExtIEs * d
 
 void __si_amf_init_TargetToSource_TransparentContainer( SI_AMF_DT_TargetToSource_TransparentContainer ** data);
 
+void __si_amf_init_TargetToSource_TransparentContainer2( SI_AMF_DT_TargetToSource_TransparentContainer ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_TargetToSource_TransparentContainer( char * key, SI_AMF_DT_TargetToSource_TransparentContainer * data, int lvl);
 
 void __si_amf_memfree_TargetToSource_TransparentContainer( SI_AMF_DT_TargetToSource_TransparentContainer * data);
@@ -13824,6 +13980,8 @@ void __si_amf_debug_TimerApproachForGUAMIRemoval( char * key, uint8_t eTimerAppr
 int __si_amf_Encode_TimerApproachForGUAMIRemoval( uint8_t eTimerApproachForGUAMIRemoval, int isExt, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_TimeStamp( SI_AMF_DT_TimeStamp ** data);
+
+void __si_amf_init_TimeStamp2( SI_AMF_DT_TimeStamp ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_TimeStamp( char * key, SI_AMF_DT_TimeStamp * data, int lvl);
 
@@ -14010,6 +14168,8 @@ int __si_amf_Encode_UEPresenceInAreaOfInterestItem_ExtIEs( SI_AMF_DT_UEPresenceI
 
 void __si_amf_init_UERadioCapability( SI_AMF_DT_UERadioCapability ** data);
 
+void __si_amf_init_UERadioCapability2( SI_AMF_DT_UERadioCapability ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_UERadioCapability( char * key, SI_AMF_DT_UERadioCapability * data, int lvl);
 
 void __si_amf_memfree_UERadioCapability( SI_AMF_DT_UERadioCapability * data);
@@ -14018,6 +14178,8 @@ int __si_amf_Encode_UERadioCapability( SI_AMF_DT_UERadioCapability * data, uint8
 
 void __si_amf_init_UERadioCapabilityForPagingOfNR( SI_AMF_DT_UERadioCapabilityForPagingOfNR ** data);
 
+void __si_amf_init_UERadioCapabilityForPagingOfNR2( SI_AMF_DT_UERadioCapabilityForPagingOfNR ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_UERadioCapabilityForPagingOfNR( char * key, SI_AMF_DT_UERadioCapabilityForPagingOfNR * data, int lvl);
 
 void __si_amf_memfree_UERadioCapabilityForPagingOfNR( SI_AMF_DT_UERadioCapabilityForPagingOfNR * data);
@@ -14025,6 +14187,8 @@ void __si_amf_memfree_UERadioCapabilityForPagingOfNR( SI_AMF_DT_UERadioCapabilit
 int __si_amf_Encode_UERadioCapabilityForPagingOfNR( SI_AMF_DT_UERadioCapabilityForPagingOfNR * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_UERadioCapabilityForPagingOfEUTRA( SI_AMF_DT_UERadioCapabilityForPagingOfEUTRA ** data);
+
+void __si_amf_init_UERadioCapabilityForPagingOfEUTRA2( SI_AMF_DT_UERadioCapabilityForPagingOfEUTRA ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_UERadioCapabilityForPagingOfEUTRA( char * key, SI_AMF_DT_UERadioCapabilityForPagingOfEUTRA * data, int lvl);
 
@@ -14234,6 +14398,8 @@ int __si_amf_Encode_UserPlaneSecurityInformation_ExtIEs( SI_AMF_DT_UserPlaneSecu
 
 void __si_amf_init_VolumeTimedReport_ItemTimeStamp( SI_AMF_DT_VolumeTimedReport_ItemTimeStamp ** data);
 
+void __si_amf_init_VolumeTimedReport_ItemTimeStamp2( SI_AMF_DT_VolumeTimedReport_ItemTimeStamp ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_VolumeTimedReport_ItemTimeStamp( char * key, SI_AMF_DT_VolumeTimedReport_ItemTimeStamp * data, int lvl);
 
 void __si_amf_memfree_VolumeTimedReport_ItemTimeStamp( SI_AMF_DT_VolumeTimedReport_ItemTimeStamp * data);
@@ -14263,6 +14429,8 @@ int __si_amf_Encode_VolumeTimedReport_Item_ExtIEs( SI_AMF_DT_VolumeTimedReport_I
 
 void __si_amf_init_WarningAreaCoordinates( SI_AMF_DT_WarningAreaCoordinates ** data);
 
+void __si_amf_init_WarningAreaCoordinates2( SI_AMF_DT_WarningAreaCoordinates ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_WarningAreaCoordinates( char * key, SI_AMF_DT_WarningAreaCoordinates * data, int lvl);
 
 void __si_amf_memfree_WarningAreaCoordinates( SI_AMF_DT_WarningAreaCoordinates * data);
@@ -14288,6 +14456,8 @@ int __si_amf_Encode_WarningAreaList_ExtIEs( SI_AMF_DT_WarningAreaList_ExtIEs * d
 
 void __si_amf_init_WarningMessageContents( SI_AMF_DT_WarningMessageContents ** data);
 
+void __si_amf_init_WarningMessageContents2( SI_AMF_DT_WarningMessageContents ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_WarningMessageContents( char * key, SI_AMF_DT_WarningMessageContents * data, int lvl);
 
 void __si_amf_memfree_WarningMessageContents( SI_AMF_DT_WarningMessageContents * data);
@@ -14296,6 +14466,8 @@ int __si_amf_Encode_WarningMessageContents( SI_AMF_DT_WarningMessageContents * d
 
 void __si_amf_init_WarningSecurityInfo( SI_AMF_DT_WarningSecurityInfo ** data);
 
+void __si_amf_init_WarningSecurityInfo2( SI_AMF_DT_WarningSecurityInfo ** data, u_char * cstr, uint32_t len);
+
 void __si_amf_debug_WarningSecurityInfo( char * key, SI_AMF_DT_WarningSecurityInfo * data, int lvl);
 
 void __si_amf_memfree_WarningSecurityInfo( SI_AMF_DT_WarningSecurityInfo * data);
@@ -14303,6 +14475,8 @@ void __si_amf_memfree_WarningSecurityInfo( SI_AMF_DT_WarningSecurityInfo * data)
 int __si_amf_Encode_WarningSecurityInfo( SI_AMF_DT_WarningSecurityInfo * data, uint8_t * buffer, int * len, int lvl, SI_ASN_CodingContext * codingContext);
 
 void __si_amf_init_WarningType( SI_AMF_DT_WarningType ** data);
+
+void __si_amf_init_WarningType2( SI_AMF_DT_WarningType ** data, u_char * cstr, uint32_t len);
 
 void __si_amf_debug_WarningType( char * key, SI_AMF_DT_WarningType * data, int lvl);
 
@@ -14358,7 +14532,7 @@ int __si_amf_Decode_QosFlowListWithDataForwarding( SI_AMF_DT_QosFlowListWithData
 
 int __si_amf_Decode_AdditionalDLUPTNLInformationForHOItem( SI_AMF_DT_AdditionalDLUPTNLInformationForHOItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AdditionalDLUPTNLInformationForHOItem_ExtIEs( SI_AMF_DT_AdditionalDLUPTNLInformationForHOItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 //TODO: DataType -><- Got NULL
@@ -14373,7 +14547,7 @@ int __si_amf_Decode_Pre_emptionVulnerability( uint8_t * ePre_emptionVulnerabilit
 
 int __si_amf_Decode_AllocationAndRetentionPriority( SI_AMF_DT_AllocationAndRetentionPriority ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AllocationAndRetentionPriority_ExtIEs( SI_AMF_DT_AllocationAndRetentionPriority_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AllowedNSSAI( SI_AMF_DT_AllowedNSSAI ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14386,7 +14560,7 @@ int __si_amf_Decode_S_NSSAI( SI_AMF_DT_S_NSSAI ** data, int * isSet, int lvl, SI
 
 int __si_amf_Decode_AllowedNSSAI_Item( SI_AMF_DT_AllowedNSSAI_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AllowedNSSAI_Item_ExtIEs( SI_AMF_DT_AllowedNSSAI_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AllowedTACs( SI_AMF_DT_AllowedTACs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14425,7 +14599,7 @@ int __si_amf_Decode_TAI( SI_AMF_DT_TAI ** data, int * isSet, int lvl, SI_ASN_Cod
 
 int __si_amf_Decode_AMFPagingTarget( SI_AMF_DT_AMFPagingTarget ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_AMFPagingTarget_ExtIEs( SI_AMF_DT_AMFPagingTarget_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AMFPointer( SI_AMF_DT_AMFPointer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14440,7 +14614,7 @@ int __si_amf_Decode_CPTransportLayerInformation( SI_AMF_DT_CPTransportLayerInfor
 
 int __si_amf_Decode_AMF_TNLAssociationSetupItem( SI_AMF_DT_AMF_TNLAssociationSetupItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AMF_TNLAssociationSetupItem_ExtIEs( SI_AMF_DT_AMF_TNLAssociationSetupItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AMF_TNLAssociationToAddList( SI_AMF_DT_AMF_TNLAssociationToAddList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14451,21 +14625,21 @@ int __si_amf_Decode_TNLAddressWeightFactor( unsigned long long int * data, int *
 
 int __si_amf_Decode_AMF_TNLAssociationToAddItem( SI_AMF_DT_AMF_TNLAssociationToAddItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AMF_TNLAssociationToAddItem_ExtIEs( SI_AMF_DT_AMF_TNLAssociationToAddItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AMF_TNLAssociationToRemoveList( SI_AMF_DT_AMF_TNLAssociationToRemoveList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AMF_TNLAssociationToRemoveItem( SI_AMF_DT_AMF_TNLAssociationToRemoveItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AMF_TNLAssociationToRemoveItem_ExtIEs( SI_AMF_DT_AMF_TNLAssociationToRemoveItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AMF_TNLAssociationToUpdateList( SI_AMF_DT_AMF_TNLAssociationToUpdateList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AMF_TNLAssociationToUpdateItem( SI_AMF_DT_AMF_TNLAssociationToUpdateItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AMF_TNLAssociationToUpdateItem_ExtIEs( SI_AMF_DT_AMF_TNLAssociationToUpdateItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AMF_UE_NGAP_ID( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14478,7 +14652,7 @@ int __si_amf_Decode_AreaOfInterestRANNodeList( SI_AMF_DT_AreaOfInterestRANNodeLi
 
 int __si_amf_Decode_AreaOfInterest( SI_AMF_DT_AreaOfInterest ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AreaOfInterest_ExtIEs( SI_AMF_DT_AreaOfInterest_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_NRCellIdentity( SI_AMF_DT_NRCellIdentity ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14493,7 +14667,7 @@ int __si_amf_Decode_NGRAN_CGI( SI_AMF_DT_NGRAN_CGI ** data, int * isSet, int lvl
 
 int __si_amf_Decode_AreaOfInterestCellItem( SI_AMF_DT_AreaOfInterestCellItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AreaOfInterestCellItem_ExtIEs( SI_AMF_DT_AreaOfInterestCellItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AreaOfInterestList( SI_AMF_DT_AreaOfInterestList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14502,17 +14676,17 @@ int __si_amf_Decode_LocationReportingReferenceID( unsigned long long int * data,
 
 int __si_amf_Decode_AreaOfInterestItem( SI_AMF_DT_AreaOfInterestItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AreaOfInterestItem_ExtIEs( SI_AMF_DT_AreaOfInterestItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AreaOfInterestRANNodeItem( SI_AMF_DT_AreaOfInterestRANNodeItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AreaOfInterestRANNodeItem_ExtIEs( SI_AMF_DT_AreaOfInterestRANNodeItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AreaOfInterestTAIItem( SI_AMF_DT_AreaOfInterestTAIItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AreaOfInterestTAIItem_ExtIEs( SI_AMF_DT_AreaOfInterestTAIItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_RecommendedCellList( SI_AMF_DT_RecommendedCellList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14531,10 +14705,10 @@ int __si_amf_Decode_PagingAttemptInformation( SI_AMF_DT_PagingAttemptInformation
 
 int __si_amf_Decode_AssistanceDataForPaging( SI_AMF_DT_AssistanceDataForPaging ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AssistanceDataForPaging_ExtIEs( SI_AMF_DT_AssistanceDataForPaging_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AssistanceDataForRecommendedCells_ExtIEs( SI_AMF_DT_AssistanceDataForRecommendedCells_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AssociatedQosFlowList( SI_AMF_DT_AssociatedQosFlowList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14545,7 +14719,7 @@ int __si_amf_Decode_QosFlowIdentifier( unsigned long long int * data, int * isSe
 
 int __si_amf_Decode_AssociatedQosFlowItem( SI_AMF_DT_AssociatedQosFlowItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_AssociatedQosFlowItem_ExtIEs( SI_AMF_DT_AssociatedQosFlowItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_AveragingWindow( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14566,7 +14740,7 @@ int __si_amf_Decode_EmergencyAreaIDCancelledNR( SI_AMF_DT_EmergencyAreaIDCancell
 
 int __si_amf_Decode_BroadcastCancelledAreaList( SI_AMF_DT_BroadcastCancelledAreaList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_BroadcastCancelledAreaList_ExtIEs( SI_AMF_DT_BroadcastCancelledAreaList_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CellIDBroadcastEUTRA( SI_AMF_DT_CellIDBroadcastEUTRA ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14583,7 +14757,7 @@ int __si_amf_Decode_EmergencyAreaIDBroadcastNR( SI_AMF_DT_EmergencyAreaIDBroadca
 
 int __si_amf_Decode_BroadcastCompletedAreaList( SI_AMF_DT_BroadcastCompletedAreaList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_BroadcastCompletedAreaList_ExtIEs( SI_AMF_DT_BroadcastCompletedAreaList_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_BroadcastPLMNList( SI_AMF_DT_BroadcastPLMNList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14592,7 +14766,7 @@ int __si_amf_Decode_SliceSupportList( SI_AMF_DT_SliceSupportList ** data, int * 
 
 int __si_amf_Decode_BroadcastPLMNItem( SI_AMF_DT_BroadcastPLMNItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_BroadcastPLMNItem_ExtIEs( SI_AMF_DT_BroadcastPLMNItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CancelAllWarningMessages( uint8_t * eCancelAllWarningMessages,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14603,28 +14777,28 @@ int __si_amf_Decode_NumberOfBroadcasts( unsigned long long int * data, int * isS
 
 int __si_amf_Decode_CancelledCellsInEAI_EUTRA_Item( SI_AMF_DT_CancelledCellsInEAI_EUTRA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CancelledCellsInEAI_EUTRA_Item_ExtIEs( SI_AMF_DT_CancelledCellsInEAI_EUTRA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CancelledCellsInEAI_NR( SI_AMF_DT_CancelledCellsInEAI_NR ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CancelledCellsInEAI_NR_Item( SI_AMF_DT_CancelledCellsInEAI_NR_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CancelledCellsInEAI_NR_Item_ExtIEs( SI_AMF_DT_CancelledCellsInEAI_NR_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CancelledCellsInTAI_EUTRA( SI_AMF_DT_CancelledCellsInTAI_EUTRA ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CancelledCellsInTAI_EUTRA_Item( SI_AMF_DT_CancelledCellsInTAI_EUTRA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CancelledCellsInTAI_EUTRA_Item_ExtIEs( SI_AMF_DT_CancelledCellsInTAI_EUTRA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CancelledCellsInTAI_NR( SI_AMF_DT_CancelledCellsInTAI_NR ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CancelledCellsInTAI_NR_Item( SI_AMF_DT_CancelledCellsInTAI_NR_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CancelledCellsInTAI_NR_Item_ExtIEs( SI_AMF_DT_CancelledCellsInTAI_NR_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CauseRadioNetwork( uint8_t * eCauseRadioNetwork,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14639,27 +14813,27 @@ int __si_amf_Decode_CauseMisc( uint8_t * eCauseMisc,  int * isSet, int lvl, SI_A
 
 int __si_amf_Decode_Cause( SI_AMF_DT_Cause ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_Cause_ExtIEs( SI_AMF_DT_Cause_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CellIDBroadcastEUTRA_Item( SI_AMF_DT_CellIDBroadcastEUTRA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CellIDBroadcastEUTRA_Item_ExtIEs( SI_AMF_DT_CellIDBroadcastEUTRA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CellIDBroadcastNR_Item( SI_AMF_DT_CellIDBroadcastNR_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CellIDBroadcastNR_Item_ExtIEs( SI_AMF_DT_CellIDBroadcastNR_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CellIDCancelledEUTRA_Item( SI_AMF_DT_CellIDCancelledEUTRA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CellIDCancelledEUTRA_Item_ExtIEs( SI_AMF_DT_CellIDCancelledEUTRA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CellIDCancelledNR_Item( SI_AMF_DT_CellIDCancelledNR_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CellIDCancelledNR_Item_ExtIEs( SI_AMF_DT_CellIDCancelledNR_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EUTRA_CGIList( SI_AMF_DT_EUTRA_CGIList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14668,14 +14842,14 @@ int __si_amf_Decode_NR_CGIList( SI_AMF_DT_NR_CGIList ** data, int * isSet, int l
 
 int __si_amf_Decode_CellIDListForRestart( SI_AMF_DT_CellIDListForRestart ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_CellIDListForRestart_ExtIEs( SI_AMF_DT_CellIDListForRestart_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CellSize( uint8_t * eCellSize,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CellType( SI_AMF_DT_CellType ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CellType_ExtIEs( SI_AMF_DT_CellType_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_ExpectedActivityPeriod( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14696,7 +14870,7 @@ int __si_amf_Decode_ExpectedUEBehaviour( SI_AMF_DT_ExpectedUEBehaviour ** data, 
 
 int __si_amf_Decode_CNAssistedRANTuning( SI_AMF_DT_CNAssistedRANTuning ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CNAssistedRANTuning_ExtIEs( SI_AMF_DT_CNAssistedRANTuning_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CNTypeRestrictionsForEquivalent( SI_AMF_DT_CNTypeRestrictionsForEquivalent ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14705,7 +14879,7 @@ int __si_amf_Decode_CNTypeRestrictionsForEquivalentItemCNType( uint8_t * eCNType
 
 int __si_amf_Decode_CNTypeRestrictionsForEquivalentItem( SI_AMF_DT_CNTypeRestrictionsForEquivalentItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CNTypeRestrictionsForEquivalentItem_ExtIEs( SI_AMF_DT_CNTypeRestrictionsForEquivalentItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CNTypeRestrictionsForServing( uint8_t * eCNTypeRestrictionsForServing,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14716,28 +14890,28 @@ int __si_amf_Decode_CompletedCellsInEAI_EUTRA( SI_AMF_DT_CompletedCellsInEAI_EUT
 
 int __si_amf_Decode_CompletedCellsInEAI_EUTRA_Item( SI_AMF_DT_CompletedCellsInEAI_EUTRA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CompletedCellsInEAI_EUTRA_Item_ExtIEs( SI_AMF_DT_CompletedCellsInEAI_EUTRA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CompletedCellsInEAI_NR( SI_AMF_DT_CompletedCellsInEAI_NR ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CompletedCellsInEAI_NR_Item( SI_AMF_DT_CompletedCellsInEAI_NR_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CompletedCellsInEAI_NR_Item_ExtIEs( SI_AMF_DT_CompletedCellsInEAI_NR_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CompletedCellsInTAI_EUTRA( SI_AMF_DT_CompletedCellsInTAI_EUTRA ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CompletedCellsInTAI_EUTRA_Item( SI_AMF_DT_CompletedCellsInTAI_EUTRA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CompletedCellsInTAI_EUTRA_Item_ExtIEs( SI_AMF_DT_CompletedCellsInTAI_EUTRA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CompletedCellsInTAI_NR( SI_AMF_DT_CompletedCellsInTAI_NR ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CompletedCellsInTAI_NR_Item( SI_AMF_DT_CompletedCellsInTAI_NR_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CompletedCellsInTAI_NR_Item_ExtIEs( SI_AMF_DT_CompletedCellsInTAI_NR_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_ConcurrentWarningMessageInd( uint8_t * eConcurrentWarningMessageInd,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14760,7 +14934,7 @@ int __si_amf_Decode_TAIListForInactive( SI_AMF_DT_TAIListForInactive ** data, in
 
 int __si_amf_Decode_CoreNetworkAssistanceInformationForInactive( SI_AMF_DT_CoreNetworkAssistanceInformationForInactive ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CoreNetworkAssistanceInformationForInactive_ExtIEs( SI_AMF_DT_CoreNetworkAssistanceInformationForInactive_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_COUNTValueForPDCP_SN12INT( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14769,7 +14943,7 @@ int __si_amf_Decode_COUNTValueForPDCP_SN12INT2( unsigned long long int * data, i
 
 int __si_amf_Decode_COUNTValueForPDCP_SN12( SI_AMF_DT_COUNTValueForPDCP_SN12 ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_COUNTValueForPDCP_SN12_ExtIEs( SI_AMF_DT_COUNTValueForPDCP_SN12_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_COUNTValueForPDCP_SN18INT( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14778,14 +14952,14 @@ int __si_amf_Decode_COUNTValueForPDCP_SN18INT2( unsigned long long int * data, i
 
 int __si_amf_Decode_COUNTValueForPDCP_SN18( SI_AMF_DT_COUNTValueForPDCP_SN18 ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_COUNTValueForPDCP_SN18_ExtIEs( SI_AMF_DT_COUNTValueForPDCP_SN18_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PortNumber( SI_AMF_DT_PortNumber ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EndpointIPAddressAndPort( SI_AMF_DT_EndpointIPAddressAndPort ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_CPTransportLayerInformation_ExtIEs( SI_AMF_DT_CPTransportLayerInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CriticalityDiagnosticsCriticality( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14798,7 +14972,7 @@ int __si_amf_Decode_CriticalityDiagnostics_IE_List( SI_AMF_DT_CriticalityDiagnos
 
 int __si_amf_Decode_CriticalityDiagnostics( SI_AMF_DT_CriticalityDiagnostics ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CriticalityDiagnostics_ExtIEs( SI_AMF_DT_CriticalityDiagnostics_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_CriticalityDiagnostics_IE_Item_ProtocolIE_ID( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14809,7 +14983,7 @@ int __si_amf_Decode_TypeOfError( uint8_t * eTypeOfError,  int * isSet, int lvl, 
 
 int __si_amf_Decode_CriticalityDiagnostics_IE_Item( SI_AMF_DT_CriticalityDiagnostics_IE_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_CriticalityDiagnostics_IE_Item_ExtIEs( SI_AMF_DT_CriticalityDiagnostics_IE_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_DataCodingScheme( SI_AMF_DT_DataCodingScheme ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14824,7 +14998,7 @@ int __si_amf_Decode_DRB_ID( unsigned long long int * data, int * isSet, int lvl,
 
 int __si_amf_Decode_DataForwardingResponseDRBItem( SI_AMF_DT_DataForwardingResponseDRBItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_DataForwardingResponseDRBItem_ExtIEs( SI_AMF_DT_DataForwardingResponseDRBItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_DelayCritical( uint8_t * eDelayCritical,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14855,32 +15029,32 @@ int __si_amf_Decode_DRBStatusDL( SI_AMF_DT_DRBStatusDL ** data, int * isSet, int
 
 int __si_amf_Decode_DRBsSubjectToStatusTransferItem( SI_AMF_DT_DRBsSubjectToStatusTransferItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_DRBsSubjectToStatusTransferItem_ExtIEs( SI_AMF_DT_DRBsSubjectToStatusTransferItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_DRBStatusDL_ExtIEs( SI_AMF_DT_DRBStatusDL_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_DRBStatusDL12_ExtIEs( SI_AMF_DT_DRBStatusDL12_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_DRBStatusDL18_ExtIEs( SI_AMF_DT_DRBStatusDL18_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_DRBStatusUL_ExtIEs( SI_AMF_DT_DRBStatusUL_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_DRBStatusUL12_ExtIEs( SI_AMF_DT_DRBStatusUL12_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_DRBStatusUL18_ExtIEs( SI_AMF_DT_DRBStatusUL18_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_DRBsToQosFlowsMappingList( SI_AMF_DT_DRBsToQosFlowsMappingList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_DRBsToQosFlowsMappingItem( SI_AMF_DT_DRBsToQosFlowsMappingItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_DRBsToQosFlowsMappingItem_ExtIEs( SI_AMF_DT_DRBsToQosFlowsMappingItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PriorityLevelQos( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14897,29 +15071,29 @@ int __si_amf_Decode_MaximumDataBurstVolume( unsigned long long int * data, int *
 
 int __si_amf_Decode_Dynamic5QIDescriptor( SI_AMF_DT_Dynamic5QIDescriptor ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_Dynamic5QIDescriptor_ExtIEs( SI_AMF_DT_Dynamic5QIDescriptor_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EmergencyAreaID( SI_AMF_DT_EmergencyAreaID ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EmergencyAreaIDBroadcastEUTRA_Item( SI_AMF_DT_EmergencyAreaIDBroadcastEUTRA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs( SI_AMF_DT_EmergencyAreaIDBroadcastEUTRA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EmergencyAreaIDBroadcastNR_Item( SI_AMF_DT_EmergencyAreaIDBroadcastNR_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_EmergencyAreaIDBroadcastNR_Item_ExtIEs( SI_AMF_DT_EmergencyAreaIDBroadcastNR_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EmergencyAreaIDCancelledEUTRA_Item( SI_AMF_DT_EmergencyAreaIDCancelledEUTRA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs( SI_AMF_DT_EmergencyAreaIDCancelledEUTRA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EmergencyAreaIDCancelledNR_Item( SI_AMF_DT_EmergencyAreaIDCancelledNR_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_EmergencyAreaIDCancelledNR_Item_ExtIEs( SI_AMF_DT_EmergencyAreaIDCancelledNR_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EmergencyAreaIDList( SI_AMF_DT_EmergencyAreaIDList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14932,12 +15106,12 @@ int __si_amf_Decode_EmergencyServiceTargetCN( uint8_t * eEmergencyServiceTargetC
 
 int __si_amf_Decode_EmergencyFallbackIndicator( SI_AMF_DT_EmergencyFallbackIndicator ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_EmergencyFallbackIndicator_ExtIEs( SI_AMF_DT_EmergencyFallbackIndicator_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EN_DCSONConfigurationTransfer( SI_AMF_DT_EN_DCSONConfigurationTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_EndpointIPAddressAndPort_ExtIEs( SI_AMF_DT_EndpointIPAddressAndPort_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EquivalentPLMNs( SI_AMF_DT_EquivalentPLMNs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14946,7 +15120,7 @@ int __si_amf_Decode_EPS_TAC( SI_AMF_DT_EPS_TAC ** data, int * isSet, int lvl, SI
 
 int __si_amf_Decode_EPS_TAI( SI_AMF_DT_EPS_TAI ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_EPS_TAI_ExtIEs( SI_AMF_DT_EPS_TAI_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_E_RAB_ID( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14955,10 +15129,10 @@ int __si_amf_Decode_E_RABInformationList( SI_AMF_DT_E_RABInformationList ** data
 
 int __si_amf_Decode_E_RABInformationItem( SI_AMF_DT_E_RABInformationItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_E_RABInformationItem_ExtIEs( SI_AMF_DT_E_RABInformationItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_EUTRA_CGI_ExtIEs( SI_AMF_DT_EUTRA_CGI_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_EUTRA_CGIListForWarning( SI_AMF_DT_EUTRA_CGIListForWarning ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14969,24 +15143,24 @@ int __si_amf_Decode_EUTRAintegrityProtectionAlgorithms( SI_AMF_DT_EUTRAintegrity
 
 int __si_amf_Decode_EventType( uint8_t * eEventType,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_ExpectedUEActivityBehaviour_ExtIEs( SI_AMF_DT_ExpectedUEActivityBehaviour_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_ExpectedUEBehaviour_ExtIEs( SI_AMF_DT_ExpectedUEBehaviour_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_ExpectedUEMovingTrajectoryItemTime( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_ExpectedUEMovingTrajectoryItem( SI_AMF_DT_ExpectedUEMovingTrajectoryItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_ExpectedUEMovingTrajectoryItem_ExtIEs( SI_AMF_DT_ExpectedUEMovingTrajectoryItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_FiveG_TMSI( SI_AMF_DT_FiveG_TMSI ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_FiveG_S_TMSI( SI_AMF_DT_FiveG_S_TMSI ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_FiveG_S_TMSI_ExtIEs( SI_AMF_DT_FiveG_S_TMSI_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_ForbiddenAreaInformation( SI_AMF_DT_ForbiddenAreaInformation ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -14995,7 +15169,7 @@ int __si_amf_Decode_ForbiddenTACs( SI_AMF_DT_ForbiddenTACs ** data, int * isSet,
 
 int __si_amf_Decode_ForbiddenAreaInformation_Item( SI_AMF_DT_ForbiddenAreaInformation_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_ForbiddenAreaInformation_Item_ExtIEs( SI_AMF_DT_ForbiddenAreaInformation_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_NotificationControl( uint8_t * eNotificationControl,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15004,30 +15178,30 @@ int __si_amf_Decode_PacketLossRate( unsigned long long int * data, int * isSet, 
 
 int __si_amf_Decode_GBR_QosInformation( SI_AMF_DT_GBR_QosInformation ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_GBR_QosInformation_ExtIEs( SI_AMF_DT_GBR_QosInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_GlobalGNB_ID_ExtIEs( SI_AMF_DT_GlobalGNB_ID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_GlobalN3IWF_ID_ExtIEs( SI_AMF_DT_GlobalN3IWF_ID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_GlobalNgENB_ID_ExtIEs( SI_AMF_DT_GlobalNgENB_ID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_GlobalRANNodeID_ExtIEs( SI_AMF_DT_GlobalRANNodeID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_GNB_ID_ExtIEs( SI_AMF_DT_GNB_ID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_GTPTunnel_ExtIEs( SI_AMF_DT_GTPTunnel_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_GUAMI( SI_AMF_DT_GUAMI ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_GUAMI_ExtIEs( SI_AMF_DT_GUAMI_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowToBeForwardedList( SI_AMF_DT_QosFlowToBeForwardedList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15038,14 +15212,14 @@ int __si_amf_Decode_QosFlowPerTNLInformationList( SI_AMF_DT_QosFlowPerTNLInforma
 
 int __si_amf_Decode_UPTransportLayerInformationList( SI_AMF_DT_UPTransportLayerInformationList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_HandoverCommandTransfer_ExtIEs( SI_AMF_DT_HandoverCommandTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_HandoverFlag( uint8_t * eHandoverFlag,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_HandoverPreparationUnsuccessfulTransfer( SI_AMF_DT_HandoverPreparationUnsuccessfulTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_HandoverPreparationUnsuccessfulTransfer_ExtIEs( SI_AMF_DT_HandoverPreparationUnsuccessfulTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_IntegrityProtectionResult( uint8_t * eIntegrityProtectionResult,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15056,17 +15230,17 @@ int __si_amf_Decode_QosFlowListWithCause( SI_AMF_DT_QosFlowListWithCause ** data
 
 int __si_amf_Decode_HandoverRequestAcknowledgeTransfer( SI_AMF_DT_HandoverRequestAcknowledgeTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_HandoverRequestAcknowledgeTransfer_ExtIEs( SI_AMF_DT_HandoverRequestAcknowledgeTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_HandoverRequiredTransfer( SI_AMF_DT_HandoverRequiredTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_HandoverRequiredTransfer_ExtIEs( SI_AMF_DT_HandoverRequiredTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_HandoverResourceAllocationUnsuccessfulTransfer( SI_AMF_DT_HandoverResourceAllocationUnsuccessfulTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs( SI_AMF_DT_HandoverResourceAllocationUnsuccessfulTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_HandoverType( uint8_t * eHandoverType,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15081,7 +15255,7 @@ int __si_amf_Decode_RecommendedRANNodesForPaging( SI_AMF_DT_RecommendedRANNodesF
 
 int __si_amf_Decode_InfoOnRecommendedCellsAndRANNodesForPaging( SI_AMF_DT_InfoOnRecommendedCellsAndRANNodesForPaging ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs( SI_AMF_DT_InfoOnRecommendedCellsAndRANNodesForPaging_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_IntegrityProtectionIndication( uint8_t * eIntegrityProtectionIndication,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15102,15 +15276,15 @@ int __si_amf_Decode_LastVisitedGERANCellInformation( SI_AMF_DT_LastVisitedGERANC
 
 int __si_amf_Decode_LastVisitedCellInformation( SI_AMF_DT_LastVisitedCellInformation ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_LastVisitedCellInformation_ExtIEs( SI_AMF_DT_LastVisitedCellInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_LastVisitedCellItem( SI_AMF_DT_LastVisitedCellItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_LastVisitedCellItem_ExtIEs( SI_AMF_DT_LastVisitedCellItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_LastVisitedNGRANCellInformation_ExtIEs( SI_AMF_DT_LastVisitedNGRANCellInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_LocationReportingAdditionalInfo( uint8_t * eLocationReportingAdditionalInfo,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15119,7 +15293,7 @@ int __si_amf_Decode_ReportArea( uint8_t * eReportArea,  int * isSet, int lvl, SI
 
 int __si_amf_Decode_LocationReportingRequestType( SI_AMF_DT_LocationReportingRequestType ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_LocationReportingRequestType_ExtIEs( SI_AMF_DT_LocationReportingRequestType_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_MaskedIMEISV( SI_AMF_DT_MaskedIMEISV ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15134,10 +15308,10 @@ int __si_amf_Decode_ServiceAreaInformation( SI_AMF_DT_ServiceAreaInformation ** 
 
 int __si_amf_Decode_MobilityRestrictionList( SI_AMF_DT_MobilityRestrictionList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_MobilityRestrictionList_ExtIEs( SI_AMF_DT_MobilityRestrictionList_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_N3IWF_ID_ExtIEs( SI_AMF_DT_N3IWF_ID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_NAS_PDU( SI_AMF_DT_NAS_PDU ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15150,31 +15324,31 @@ int __si_amf_Decode_NewSecurityContextInd( uint8_t * eNewSecurityContextInd,  in
 
 int __si_amf_Decode_NextHopChainingCount( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_NgENB_ID_ExtIEs( SI_AMF_DT_NgENB_ID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_NGRAN_CGI_ExtIEs( SI_AMF_DT_NGRAN_CGI_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_NGRAN_TNLAssociationToRemoveList( SI_AMF_DT_NGRAN_TNLAssociationToRemoveList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_NGRAN_TNLAssociationToRemoveItem( SI_AMF_DT_NGRAN_TNLAssociationToRemoveItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_NGRAN_TNLAssociationToRemoveItem_ExtIEs( SI_AMF_DT_NGRAN_TNLAssociationToRemoveItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_NGRANTraceID( SI_AMF_DT_NGRANTraceID ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_NonDynamic5QIDescriptor( SI_AMF_DT_NonDynamic5QIDescriptor ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_NonDynamic5QIDescriptor_ExtIEs( SI_AMF_DT_NonDynamic5QIDescriptor_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_NotAllowedTACs( SI_AMF_DT_NotAllowedTACs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_NotificationCause( uint8_t * eNotificationCause,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_NR_CGI_ExtIEs( SI_AMF_DT_NR_CGI_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_NR_CGIListForWarning( SI_AMF_DT_NR_CGIListForWarning ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15191,7 +15365,7 @@ int __si_amf_Decode_OverloadAction( uint8_t * eOverloadAction,  int * isSet, int
 
 int __si_amf_Decode_OverloadResponse( SI_AMF_DT_OverloadResponse ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_OverloadResponse_ExtIEs( SI_AMF_DT_OverloadResponse_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_OverloadStartNSSAIList( SI_AMF_DT_OverloadStartNSSAIList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15202,13 +15376,13 @@ int __si_amf_Decode_TrafficLoadReductionIndication( unsigned long long int * dat
 
 int __si_amf_Decode_OverloadStartNSSAIItem( SI_AMF_DT_OverloadStartNSSAIItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_OverloadStartNSSAIItem_ExtIEs( SI_AMF_DT_OverloadStartNSSAIItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PacketErrorRate_ExtIEs( SI_AMF_DT_PacketErrorRate_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PagingAttemptInformation_ExtIEs( SI_AMF_DT_PagingAttemptInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PagingOrigin( uint8_t * ePagingOrigin,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15221,12 +15395,12 @@ int __si_amf_Decode_PathSwitchRequestAcknowledgeTransfer( SI_AMF_DT_PathSwitchRe
 
 int __si_amf_Decode_UPTransportLayerInformationPairList( SI_AMF_DT_UPTransportLayerInformationPairList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PathSwitchRequestAcknowledgeTransfer_ExtIEs( SI_AMF_DT_PathSwitchRequestAcknowledgeTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PathSwitchRequestSetupFailedTransfer( SI_AMF_DT_PathSwitchRequestSetupFailedTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PathSwitchRequestSetupFailedTransfer_ExtIEs( SI_AMF_DT_PathSwitchRequestSetupFailedTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UserPlaneSecurityInformation( SI_AMF_DT_UserPlaneSecurityInformation ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15235,17 +15409,17 @@ int __si_amf_Decode_QosFlowAcceptedList( SI_AMF_DT_QosFlowAcceptedList ** data, 
 
 int __si_amf_Decode_PathSwitchRequestTransfer( SI_AMF_DT_PathSwitchRequestTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PathSwitchRequestTransfer_ExtIEs( SI_AMF_DT_PathSwitchRequestTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PathSwitchRequestUnsuccessfulTransfer( SI_AMF_DT_PathSwitchRequestUnsuccessfulTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PathSwitchRequestUnsuccessfulTransfer_ExtIEs( SI_AMF_DT_PathSwitchRequestUnsuccessfulTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionAggregateMaximumBitRate( SI_AMF_DT_PDUSessionAggregateMaximumBitRate ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionAggregateMaximumBitRate_ExtIEs( SI_AMF_DT_PDUSessionAggregateMaximumBitRate_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionID( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15256,7 +15430,7 @@ int __si_amf_Decode_HandoverRequestAcknowledgeTransferOctStr( SI_AMF_DT_Handover
 
 int __si_amf_Decode_PDUSessionResourceAdmittedItem( SI_AMF_DT_PDUSessionResourceAdmittedItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceAdmittedItem_ExtIEs( SI_AMF_DT_PDUSessionResourceAdmittedItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceFailedToModifyListModCfm( SI_AMF_DT_PDUSessionResourceFailedToModifyListModCfm ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15265,7 +15439,7 @@ int __si_amf_Decode_PDUSessionResourceModifyIndicationUnsuccessfulTransferOctStr
 
 int __si_amf_Decode_PDUSessionResourceFailedToModifyItemModCfm( SI_AMF_DT_PDUSessionResourceFailedToModifyItemModCfm ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceFailedToModifyItemModCfm_ExtIEs( SI_AMF_DT_PDUSessionResourceFailedToModifyItemModCfm_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceFailedToModifyListModRes( SI_AMF_DT_PDUSessionResourceFailedToModifyListModRes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15274,7 +15448,7 @@ int __si_amf_Decode_PDUSessionResourceModifyUnsuccessfulTransferOctStr( SI_AMF_D
 
 int __si_amf_Decode_PDUSessionResourceFailedToModifyItemModRes( SI_AMF_DT_PDUSessionResourceFailedToModifyItemModRes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceFailedToModifyItemModRes_ExtIEs( SI_AMF_DT_PDUSessionResourceFailedToModifyItemModRes_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceFailedToSetupListCxtFail( SI_AMF_DT_PDUSessionResourceFailedToSetupListCxtFail ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15283,14 +15457,14 @@ int __si_amf_Decode_PDUSessionResourceSetupUnsuccessfulTransferOctStr( SI_AMF_DT
 
 int __si_amf_Decode_PDUSessionResourceFailedToSetupItemCxtFail( SI_AMF_DT_PDUSessionResourceFailedToSetupItemCxtFail ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceFailedToSetupItemCxtFail_ExtIEs( SI_AMF_DT_PDUSessionResourceFailedToSetupItemCxtFail_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceFailedToSetupListCxtRes( SI_AMF_DT_PDUSessionResourceFailedToSetupListCxtRes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceFailedToSetupItemCxtRes( SI_AMF_DT_PDUSessionResourceFailedToSetupItemCxtRes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceFailedToSetupItemCxtRes_ExtIEs( SI_AMF_DT_PDUSessionResourceFailedToSetupItemCxtRes_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceFailedToSetupListHOAck( SI_AMF_DT_PDUSessionResourceFailedToSetupListHOAck ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15299,7 +15473,7 @@ int __si_amf_Decode_HandoverResourceAllocationUnsuccessfulTransferOctStr( SI_AMF
 
 int __si_amf_Decode_PDUSessionResourceFailedToSetupItemHOAck( SI_AMF_DT_PDUSessionResourceFailedToSetupItemHOAck ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceFailedToSetupItemHOAck_ExtIEs( SI_AMF_DT_PDUSessionResourceFailedToSetupItemHOAck_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceFailedToSetupListPSReq( SI_AMF_DT_PDUSessionResourceFailedToSetupListPSReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15308,14 +15482,14 @@ int __si_amf_Decode_PathSwitchRequestSetupFailedTransferOctStr( SI_AMF_DT_PathSw
 
 int __si_amf_Decode_PDUSessionResourceFailedToSetupItemPSReq( SI_AMF_DT_PDUSessionResourceFailedToSetupItemPSReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceFailedToSetupItemPSReq_ExtIEs( SI_AMF_DT_PDUSessionResourceFailedToSetupItemPSReq_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceFailedToSetupListSURes( SI_AMF_DT_PDUSessionResourceFailedToSetupListSURes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceFailedToSetupItemSURes( SI_AMF_DT_PDUSessionResourceFailedToSetupItemSURes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceFailedToSetupItemSURes_ExtIEs( SI_AMF_DT_PDUSessionResourceFailedToSetupItemSURes_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceHandoverList( SI_AMF_DT_PDUSessionResourceHandoverList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15324,7 +15498,7 @@ int __si_amf_Decode_HandoverCommandTransferOctStr( SI_AMF_DT_HandoverCommandTran
 
 int __si_amf_Decode_PDUSessionResourceHandoverItem( SI_AMF_DT_PDUSessionResourceHandoverItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceHandoverItem_ExtIEs( SI_AMF_DT_PDUSessionResourceHandoverItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceInformationList( SI_AMF_DT_PDUSessionResourceInformationList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15333,7 +15507,7 @@ int __si_amf_Decode_QosFlowInformationList( SI_AMF_DT_QosFlowInformationList ** 
 
 int __si_amf_Decode_PDUSessionResourceInformationItem( SI_AMF_DT_PDUSessionResourceInformationItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceInformationItem_ExtIEs( SI_AMF_DT_PDUSessionResourceInformationItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceListCxtRelCpl( SI_AMF_DT_PDUSessionResourceListCxtRelCpl ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15342,14 +15516,14 @@ int __si_amf_Decode_PDUSessionResourceItemCxtRelCpl( SI_AMF_DT_PDUSessionResourc
 
 int __si_amf_Decode_PDUSessionResourceReleaseResponseTransferOctStr( SI_AMF_DT_PDUSessionResourceReleaseResponseTransferOctStr ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceItemCxtRelCpl_ExtIEs( SI_AMF_DT_PDUSessionResourceItemCxtRelCpl_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceListCxtRelReq( SI_AMF_DT_PDUSessionResourceListCxtRelReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceItemCxtRelReq( SI_AMF_DT_PDUSessionResourceItemCxtRelReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceItemCxtRelReq_ExtIEs( SI_AMF_DT_PDUSessionResourceItemCxtRelReq_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceListHORqd( SI_AMF_DT_PDUSessionResourceListHORqd ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15358,19 +15532,19 @@ int __si_amf_Decode_HandoverRequiredTransferOctStr( SI_AMF_DT_HandoverRequiredTr
 
 int __si_amf_Decode_PDUSessionResourceItemHORqd( SI_AMF_DT_PDUSessionResourceItemHORqd ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceItemHORqd_ExtIEs( SI_AMF_DT_PDUSessionResourceItemHORqd_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowModifyConfirmList( SI_AMF_DT_QosFlowModifyConfirmList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceModifyConfirmTransfer( SI_AMF_DT_PDUSessionResourceModifyConfirmTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceModifyConfirmTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceModifyConfirmTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceModifyIndicationUnsuccessfulTransfer( SI_AMF_DT_PDUSessionResourceModifyIndicationUnsuccessfulTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceModifyIndicationUnsuccessfulTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceModifyIndicationUnsuccessfulTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceModifyRequestTransfer( SI_AMF_DT_PDUSessionResourceModifyRequestTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15379,14 +15553,14 @@ int __si_amf_Decode_UL_NGU_UP_TNLModifyList( SI_AMF_DT_UL_NGU_UP_TNLModifyList *
 
 int __si_amf_Decode_QosFlowAddOrModifyRequestList( SI_AMF_DT_QosFlowAddOrModifyRequestList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceModifyRequestTransferIEs( SI_AMF_DT_PDUSessionResourceModifyRequestTransferIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowAddOrModifyResponseList( SI_AMF_DT_QosFlowAddOrModifyResponseList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceModifyResponseTransfer( SI_AMF_DT_PDUSessionResourceModifyResponseTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceModifyResponseTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceModifyResponseTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowPerTNLInformation( SI_AMF_DT_QosFlowPerTNLInformation ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15403,7 +15577,7 @@ int __si_amf_Decode_QoSFlowsUsageReportList( SI_AMF_DT_QoSFlowsUsageReportList *
 
 int __si_amf_Decode_SecondaryRATUsageInformation( SI_AMF_DT_SecondaryRATUsageInformation ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceModifyIndicationTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceModifyIndicationTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceModifyListModCfm( SI_AMF_DT_PDUSessionResourceModifyListModCfm ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15412,7 +15586,7 @@ int __si_amf_Decode_PDUSessionResourceModifyConfirmTransferOctStr( SI_AMF_DT_PDU
 
 int __si_amf_Decode_PDUSessionResourceModifyItemModCfm( SI_AMF_DT_PDUSessionResourceModifyItemModCfm ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceModifyItemModCfm_ExtIEs( SI_AMF_DT_PDUSessionResourceModifyItemModCfm_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceModifyListModInd( SI_AMF_DT_PDUSessionResourceModifyListModInd ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15421,7 +15595,7 @@ int __si_amf_Decode_PDUSessionResourceModifyIndicationTransferOctStr( SI_AMF_DT_
 
 int __si_amf_Decode_PDUSessionResourceModifyItemModInd( SI_AMF_DT_PDUSessionResourceModifyItemModInd ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceModifyItemModInd_ExtIEs( SI_AMF_DT_PDUSessionResourceModifyItemModInd_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceModifyListModReq( SI_AMF_DT_PDUSessionResourceModifyListModReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15430,7 +15604,7 @@ int __si_amf_Decode_PDUSessionResourceModifyRequestTransferOctStr( SI_AMF_DT_PDU
 
 int __si_amf_Decode_PDUSessionResourceModifyItemModReq( SI_AMF_DT_PDUSessionResourceModifyItemModReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceModifyItemModReq_ExtIEs( SI_AMF_DT_PDUSessionResourceModifyItemModReq_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceModifyListModRes( SI_AMF_DT_PDUSessionResourceModifyListModRes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15439,12 +15613,12 @@ int __si_amf_Decode_PDUSessionResourceModifyResponseTransferOctStr( SI_AMF_DT_PD
 
 int __si_amf_Decode_PDUSessionResourceModifyItemModRes( SI_AMF_DT_PDUSessionResourceModifyItemModRes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceModifyItemModRes_ExtIEs( SI_AMF_DT_PDUSessionResourceModifyItemModRes_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceModifyUnsuccessfulTransfer( SI_AMF_DT_PDUSessionResourceModifyUnsuccessfulTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceModifyUnsuccessfulTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceModifyUnsuccessfulTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceNotifyList( SI_AMF_DT_PDUSessionResourceNotifyList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15453,24 +15627,24 @@ int __si_amf_Decode_PDUSessionResourceNotifyTransferOctStr( SI_AMF_DT_PDUSession
 
 int __si_amf_Decode_PDUSessionResourceNotifyItem( SI_AMF_DT_PDUSessionResourceNotifyItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceNotifyItem_ExtIEs( SI_AMF_DT_PDUSessionResourceNotifyItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceNotifyReleasedTransfer( SI_AMF_DT_PDUSessionResourceNotifyReleasedTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceNotifyReleasedTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceNotifyReleasedTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowNotifyList( SI_AMF_DT_QosFlowNotifyList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceNotifyTransfer( SI_AMF_DT_PDUSessionResourceNotifyTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceNotifyTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceNotifyTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceReleaseCommandTransfer( SI_AMF_DT_PDUSessionResourceReleaseCommandTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceReleaseCommandTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceReleaseCommandTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceReleasedListNot( SI_AMF_DT_PDUSessionResourceReleasedListNot ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15479,7 +15653,7 @@ int __si_amf_Decode_PDUSessionResourceNotifyReleasedTransferOctStr( SI_AMF_DT_PD
 
 int __si_amf_Decode_PDUSessionResourceReleasedItemNot( SI_AMF_DT_PDUSessionResourceReleasedItemNot ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceReleasedItemNot_ExtIEs( SI_AMF_DT_PDUSessionResourceReleasedItemNot_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceReleasedListPSAck( SI_AMF_DT_PDUSessionResourceReleasedListPSAck ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15488,26 +15662,26 @@ int __si_amf_Decode_PathSwitchRequestUnsuccessfulTransferOctStr( SI_AMF_DT_PathS
 
 int __si_amf_Decode_PDUSessionResourceReleasedItemPSAck( SI_AMF_DT_PDUSessionResourceReleasedItemPSAck ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceReleasedItemPSAck_ExtIEs( SI_AMF_DT_PDUSessionResourceReleasedItemPSAck_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceReleasedListPSFail( SI_AMF_DT_PDUSessionResourceReleasedListPSFail ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceReleasedItemPSFail( SI_AMF_DT_PDUSessionResourceReleasedItemPSFail ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceReleasedItemPSFail_ExtIEs( SI_AMF_DT_PDUSessionResourceReleasedItemPSFail_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceReleasedListRelRes( SI_AMF_DT_PDUSessionResourceReleasedListRelRes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceReleasedItemRelRes( SI_AMF_DT_PDUSessionResourceReleasedItemRelRes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceReleasedItemRelRes_ExtIEs( SI_AMF_DT_PDUSessionResourceReleasedItemRelRes_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceReleaseResponseTransfer( SI_AMF_DT_PDUSessionResourceReleaseResponseTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceReleaseResponseTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceReleaseResponseTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSecondaryRATUsageList( SI_AMF_DT_PDUSessionResourceSecondaryRATUsageList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15516,7 +15690,7 @@ int __si_amf_Decode_SecondaryRATDataUsageReportTransferOctStr( SI_AMF_DT_Seconda
 
 int __si_amf_Decode_PDUSessionResourceSecondaryRATUsageItem( SI_AMF_DT_PDUSessionResourceSecondaryRATUsageItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceSecondaryRATUsageItem_ExtIEs( SI_AMF_DT_PDUSessionResourceSecondaryRATUsageItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupListCxtReq( SI_AMF_DT_PDUSessionResourceSetupListCxtReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15525,7 +15699,7 @@ int __si_amf_Decode_PDUSessionResourceSetupRequestTransferOctStr( SI_AMF_DT_PDUS
 
 int __si_amf_Decode_PDUSessionResourceSetupItemCxtReq( SI_AMF_DT_PDUSessionResourceSetupItemCxtReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceSetupItemCxtReq_ExtIEs( SI_AMF_DT_PDUSessionResourceSetupItemCxtReq_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupListCxtRes( SI_AMF_DT_PDUSessionResourceSetupListCxtRes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15534,40 +15708,40 @@ int __si_amf_Decode_PDUSessionResourceSetupResponseTransferOctStr( SI_AMF_DT_PDU
 
 int __si_amf_Decode_PDUSessionResourceSetupItemCxtRes( SI_AMF_DT_PDUSessionResourceSetupItemCxtRes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceSetupItemCxtRes_ExtIEs( SI_AMF_DT_PDUSessionResourceSetupItemCxtRes_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupListHOReq( SI_AMF_DT_PDUSessionResourceSetupListHOReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupItemHOReq( SI_AMF_DT_PDUSessionResourceSetupItemHOReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceSetupItemHOReq_ExtIEs( SI_AMF_DT_PDUSessionResourceSetupItemHOReq_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupListSUReq( SI_AMF_DT_PDUSessionResourceSetupListSUReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupItemSUReq( SI_AMF_DT_PDUSessionResourceSetupItemSUReq ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceSetupItemSUReq_ExtIEs( SI_AMF_DT_PDUSessionResourceSetupItemSUReq_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupListSURes( SI_AMF_DT_PDUSessionResourceSetupListSURes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupItemSURes( SI_AMF_DT_PDUSessionResourceSetupItemSURes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceSetupItemSURes_ExtIEs( SI_AMF_DT_PDUSessionResourceSetupItemSURes_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupRequestTransfer( SI_AMF_DT_PDUSessionResourceSetupRequestTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupResponseTransfer( SI_AMF_DT_PDUSessionResourceSetupResponseTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceSetupResponseTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceSetupResponseTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSetupUnsuccessfulTransfer( SI_AMF_DT_PDUSessionResourceSetupUnsuccessfulTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs( SI_AMF_DT_PDUSessionResourceSetupUnsuccessfulTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceSwitchedList( SI_AMF_DT_PDUSessionResourceSwitchedList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15576,7 +15750,7 @@ int __si_amf_Decode_PathSwitchRequestAcknowledgeTransferOctStr( SI_AMF_DT_PathSw
 
 int __si_amf_Decode_PDUSessionResourceSwitchedItem( SI_AMF_DT_PDUSessionResourceSwitchedItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceSwitchedItem_ExtIEs( SI_AMF_DT_PDUSessionResourceSwitchedItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceToBeSwitchedDLList( SI_AMF_DT_PDUSessionResourceToBeSwitchedDLList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15585,7 +15759,7 @@ int __si_amf_Decode_PathSwitchRequestTransferOctStr( SI_AMF_DT_PathSwitchRequest
 
 int __si_amf_Decode_PDUSessionResourceToBeSwitchedDLItem( SI_AMF_DT_PDUSessionResourceToBeSwitchedDLItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceToBeSwitchedDLItem_ExtIEs( SI_AMF_DT_PDUSessionResourceToBeSwitchedDLItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceToReleaseListHOCmd( SI_AMF_DT_PDUSessionResourceToReleaseListHOCmd ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15594,7 +15768,7 @@ int __si_amf_Decode_HandoverPreparationUnsuccessfulTransferOctStr( SI_AMF_DT_Han
 
 int __si_amf_Decode_PDUSessionResourceToReleaseItemHOCmd( SI_AMF_DT_PDUSessionResourceToReleaseItemHOCmd ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceToReleaseItemHOCmd_ExtIEs( SI_AMF_DT_PDUSessionResourceToReleaseItemHOCmd_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionResourceToReleaseListRelCmd( SI_AMF_DT_PDUSessionResourceToReleaseListRelCmd ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15603,34 +15777,34 @@ int __si_amf_Decode_PDUSessionResourceReleaseCommandTransferOctStr( SI_AMF_DT_PD
 
 int __si_amf_Decode_PDUSessionResourceToReleaseItemRelCmd( SI_AMF_DT_PDUSessionResourceToReleaseItemRelCmd ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionResourceToReleaseItemRelCmd_ExtIEs( SI_AMF_DT_PDUSessionResourceToReleaseItemRelCmd_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PDUSessionType( uint8_t * ePDUSessionType,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PDUSessionUsageReport_ExtIEs( SI_AMF_DT_PDUSessionUsageReport_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PLMNSupportList( SI_AMF_DT_PLMNSupportList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PLMNSupportItem( SI_AMF_DT_PLMNSupportItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_PLMNSupportItem_ExtIEs( SI_AMF_DT_PLMNSupportItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_PWSFailedCellIDList( SI_AMF_DT_PWSFailedCellIDList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_PWSFailedCellIDList_ExtIEs( SI_AMF_DT_PWSFailedCellIDList_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosCharacteristics( SI_AMF_DT_QosCharacteristics ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_QosCharacteristics_ExtIEs( SI_AMF_DT_QosCharacteristics_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowAcceptedItem( SI_AMF_DT_QosFlowAcceptedItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowAcceptedItem_ExtIEs( SI_AMF_DT_QosFlowAcceptedItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_ReflectiveQosAttribute( uint8_t * eReflectiveQosAttribute,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15639,76 +15813,76 @@ int __si_amf_Decode_QosFlowLevelQosParameters( SI_AMF_DT_QosFlowLevelQosParamete
 
 int __si_amf_Decode_QosFlowAddOrModifyRequestItem( SI_AMF_DT_QosFlowAddOrModifyRequestItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowAddOrModifyRequestItem_ExtIEs( SI_AMF_DT_QosFlowAddOrModifyRequestItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowAddOrModifyResponseItem( SI_AMF_DT_QosFlowAddOrModifyResponseItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowAddOrModifyResponseItem_ExtIEs( SI_AMF_DT_QosFlowAddOrModifyResponseItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowInformationItem( SI_AMF_DT_QosFlowInformationItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_ULForwarding( uint8_t * eULForwarding,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowInformationItem_ExtIEs( SI_AMF_DT_QosFlowInformationItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowLevelQosParameters_ExtIEs( SI_AMF_DT_QosFlowLevelQosParameters_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowWithCauseItem( SI_AMF_DT_QosFlowWithCauseItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowWithCauseItem_ExtIEs( SI_AMF_DT_QosFlowWithCauseItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowModifyConfirmItem( SI_AMF_DT_QosFlowModifyConfirmItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowModifyConfirmItem_ExtIEs( SI_AMF_DT_QosFlowModifyConfirmItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowNotifyItem( SI_AMF_DT_QosFlowNotifyItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowNotifyItem_ExtIEs( SI_AMF_DT_QosFlowNotifyItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowPerTNLInformation_ExtIEs( SI_AMF_DT_QosFlowPerTNLInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowPerTNLInformationItem( SI_AMF_DT_QosFlowPerTNLInformationItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowPerTNLInformationItem_ExtIEs( SI_AMF_DT_QosFlowPerTNLInformationItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowSetupRequestList( SI_AMF_DT_QosFlowSetupRequestList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowSetupRequestItem( SI_AMF_DT_QosFlowSetupRequestItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowSetupRequestItem_ExtIEs( SI_AMF_DT_QosFlowSetupRequestItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowItemWithDataForwarding( SI_AMF_DT_QosFlowItemWithDataForwarding ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowItemWithDataForwarding_ExtIEs( SI_AMF_DT_QosFlowItemWithDataForwarding_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowSetupResponseListSURes( SI_AMF_DT_QosFlowSetupResponseListSURes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowSetupResponseItemSURes( SI_AMF_DT_QosFlowSetupResponseItemSURes ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowSetupResponseItemSURes_ExtIEs( SI_AMF_DT_QosFlowSetupResponseItemSURes_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QosFlowToBeForwardedItem( SI_AMF_DT_QosFlowToBeForwardedItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QosFlowToBeForwardedItem_ExtIEs( SI_AMF_DT_QosFlowToBeForwardedItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QoSFlowsUsageReport_ItemRatType( uint8_t * eQoSFlowsUsageReport_ItemRatType,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_QoSFlowsUsageReport_Item( SI_AMF_DT_QoSFlowsUsageReport_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_QoSFlowsUsageReport_Item_ExtIEs( SI_AMF_DT_QoSFlowsUsageReport_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_RANNodeName( SI_AMF_DT_RANNodeName ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15717,7 +15891,7 @@ int __si_amf_Decode_RANPagingPriority( unsigned long long int * data, int * isSe
 
 int __si_amf_Decode_RANStatusTransfer_TransparentContainer( SI_AMF_DT_RANStatusTransfer_TransparentContainer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_RANStatusTransfer_TransparentContainer_ExtIEs( SI_AMF_DT_RANStatusTransfer_TransparentContainer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_RAN_UE_NGAP_ID( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15726,25 +15900,25 @@ int __si_amf_Decode_RATRestrictionInformation( SI_AMF_DT_RATRestrictionInformati
 
 int __si_amf_Decode_RATRestrictions_Item( SI_AMF_DT_RATRestrictions_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_RATRestrictions_Item_ExtIEs( SI_AMF_DT_RATRestrictions_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_RecommendedCellsForPaging_ExtIEs( SI_AMF_DT_RecommendedCellsForPaging_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_RecommendedCellItemTime( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_RecommendedCellItem( SI_AMF_DT_RecommendedCellItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_RecommendedCellItem_ExtIEs( SI_AMF_DT_RecommendedCellItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_RecommendedRANNodesForPaging_ExtIEs( SI_AMF_DT_RecommendedRANNodesForPaging_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_RecommendedRANNodeItem( SI_AMF_DT_RecommendedRANNodeItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_RecommendedRANNodeItem_ExtIEs( SI_AMF_DT_RecommendedRANNodeItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_ReferenceID( unsigned long long int * data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15759,7 +15933,7 @@ int __si_amf_Decode_UE_associatedLogicalNG_connectionList( SI_AMF_DT_UE_associat
 
 int __si_amf_Decode_ResetType( SI_AMF_DT_ResetType ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_ResetType_ExtIEs( SI_AMF_DT_ResetType_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_RoutingID( SI_AMF_DT_RoutingID ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15774,25 +15948,25 @@ int __si_amf_Decode_RRCState( uint8_t * eRRCState,  int * isSet, int lvl, SI_ASN
 
 int __si_amf_Decode_SCTP_TLAs( SI_AMF_DT_SCTP_TLAs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SecondaryRATUsageInformation_ExtIEs( SI_AMF_DT_SecondaryRATUsageInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_SecondaryRATDataUsageReportTransfer( SI_AMF_DT_SecondaryRATDataUsageReportTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SecondaryRATDataUsageReportTransfer_ExtIEs( SI_AMF_DT_SecondaryRATDataUsageReportTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_SecurityKey( SI_AMF_DT_SecurityKey ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_SecurityContext( SI_AMF_DT_SecurityContext ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SecurityContext_ExtIEs( SI_AMF_DT_SecurityContext_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SecurityIndication_ExtIEs( SI_AMF_DT_SecurityIndication_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SecurityResult_ExtIEs( SI_AMF_DT_SecurityResult_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_SerialNumber( SI_AMF_DT_SerialNumber ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15801,25 +15975,25 @@ int __si_amf_Decode_ServedGUAMIList( SI_AMF_DT_ServedGUAMIList ** data, int * is
 
 int __si_amf_Decode_ServedGUAMIItem( SI_AMF_DT_ServedGUAMIItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_ServedGUAMIItem_ExtIEs( SI_AMF_DT_ServedGUAMIItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_ServiceAreaInformation_Item( SI_AMF_DT_ServiceAreaInformation_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_ServiceAreaInformation_Item_ExtIEs( SI_AMF_DT_ServiceAreaInformation_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_SliceOverloadItem( SI_AMF_DT_SliceOverloadItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SliceOverloadItem_ExtIEs( SI_AMF_DT_SliceOverloadItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_SliceSupportItem( SI_AMF_DT_SliceSupportItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SliceSupportItem_ExtIEs( SI_AMF_DT_SliceSupportItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_S_NSSAI_ExtIEs( SI_AMF_DT_S_NSSAI_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TargetRANNodeID( SI_AMF_DT_TargetRANNodeID ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15840,23 +16014,23 @@ int __si_amf_Decode_SONInformation( SI_AMF_DT_SONInformation ** data, int * isSe
 
 int __si_amf_Decode_SONConfigurationTransfer( SI_AMF_DT_SONConfigurationTransfer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SONConfigurationTransfer_ExtIEs( SI_AMF_DT_SONConfigurationTransfer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_SONInformation_ExtIEs( SI_AMF_DT_SONInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SONInformationReply_ExtIEs( SI_AMF_DT_SONInformationReply_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UEHistoryInformation( SI_AMF_DT_UEHistoryInformation ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer( SI_AMF_DT_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs( SI_AMF_DT_SourceNGRANNode_ToTargetNGRANNode_TransparentContainer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SourceRANNodeID_ExtIEs( SI_AMF_DT_SourceRANNodeID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_SourceToTarget_TransparentContainer( SI_AMF_DT_SourceToTarget_TransparentContainer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15869,49 +16043,49 @@ int __si_amf_Decode_RejectedNSSAIinTA( SI_AMF_DT_RejectedNSSAIinTA ** data, int 
 
 int __si_amf_Decode_SourceToTarget_AMFInformationReroute( SI_AMF_DT_SourceToTarget_AMFInformationReroute ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SourceToTarget_AMFInformationReroute_ExtIEs( SI_AMF_DT_SourceToTarget_AMFInformationReroute_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_SupportedTAList( SI_AMF_DT_SupportedTAList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_SupportedTAItem( SI_AMF_DT_SupportedTAItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_SupportedTAItem_ExtIEs( SI_AMF_DT_SupportedTAItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TAI_ExtIEs( SI_AMF_DT_TAI_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TAIBroadcastEUTRA_Item( SI_AMF_DT_TAIBroadcastEUTRA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TAIBroadcastEUTRA_Item_ExtIEs( SI_AMF_DT_TAIBroadcastEUTRA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TAIBroadcastNR_Item( SI_AMF_DT_TAIBroadcastNR_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TAIBroadcastNR_Item_ExtIEs( SI_AMF_DT_TAIBroadcastNR_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TAICancelledEUTRA_Item( SI_AMF_DT_TAICancelledEUTRA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TAICancelledEUTRA_Item_ExtIEs( SI_AMF_DT_TAICancelledEUTRA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TAICancelledNR_Item( SI_AMF_DT_TAICancelledNR_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TAICancelledNR_Item_ExtIEs( SI_AMF_DT_TAICancelledNR_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TAIListForInactiveItem( SI_AMF_DT_TAIListForInactiveItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TAIListForInactiveItem_ExtIEs( SI_AMF_DT_TAIListForInactiveItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TAIListForPaging( SI_AMF_DT_TAIListForPaging ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TAIListForPagingItem( SI_AMF_DT_TAIListForPagingItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TAIListForPagingItem_ExtIEs( SI_AMF_DT_TAIListForPagingItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TAIListForRestart( SI_AMF_DT_TAIListForRestart ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15920,20 +16094,20 @@ int __si_amf_Decode_TAIListForWarning( SI_AMF_DT_TAIListForWarning ** data, int 
 
 int __si_amf_Decode_TargeteNB_ID( SI_AMF_DT_TargeteNB_ID ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TargeteNB_ID_ExtIEs( SI_AMF_DT_TargeteNB_ID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TargetID( SI_AMF_DT_TargetID ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_TargetID_ExtIEs( SI_AMF_DT_TargetID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer( SI_AMF_DT_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs( SI_AMF_DT_TargetNGRANNode_ToSourceNGRANNode_TransparentContainer_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TargetRANNodeID_ExtIEs( SI_AMF_DT_TargetRANNodeID_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TargetToSource_TransparentContainer( SI_AMF_DT_TargetToSource_TransparentContainer ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15948,44 +16122,44 @@ int __si_amf_Decode_TNLAssociationList( SI_AMF_DT_TNLAssociationList ** data, in
 
 int __si_amf_Decode_TNLAssociationItem( SI_AMF_DT_TNLAssociationItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TNLAssociationItem_ExtIEs( SI_AMF_DT_TNLAssociationItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TraceDepth( uint8_t * eTraceDepth,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_TraceActivation( SI_AMF_DT_TraceActivation ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_TraceActivation_ExtIEs( SI_AMF_DT_TraceActivation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UEAggregateMaximumBitRate( SI_AMF_DT_UEAggregateMaximumBitRate ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UEAggregateMaximumBitRate_ExtIEs( SI_AMF_DT_UEAggregateMaximumBitRate_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UE_associatedLogicalNG_connectionItem( SI_AMF_DT_UE_associatedLogicalNG_connectionItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UE_associatedLogicalNG_connectionItem_ExtIEs( SI_AMF_DT_UE_associatedLogicalNG_connectionItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UEContextRequest( uint8_t * eUEContextRequest,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_UEIdentityIndexValue_ExtIEs( SI_AMF_DT_UEIdentityIndexValue_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UE_NGAP_ID_pair( SI_AMF_DT_UE_NGAP_ID_pair ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UE_NGAP_IDs( SI_AMF_DT_UE_NGAP_IDs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_UE_NGAP_IDs_ExtIEs( SI_AMF_DT_UE_NGAP_IDs_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UE_NGAP_ID_pair_ExtIEs( SI_AMF_DT_UE_NGAP_ID_pair_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UEPagingIdentity( SI_AMF_DT_UEPagingIdentity ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_UEPagingIdentity_ExtIEs( SI_AMF_DT_UEPagingIdentity_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UEPresence( uint8_t * eUEPresence,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -15994,7 +16168,7 @@ int __si_amf_Decode_UEPresenceInAreaOfInterestList( SI_AMF_DT_UEPresenceInAreaOf
 
 int __si_amf_Decode_UEPresenceInAreaOfInterestItem( SI_AMF_DT_UEPresenceInAreaOfInterestItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UEPresenceInAreaOfInterestItem_ExtIEs( SI_AMF_DT_UEPresenceInAreaOfInterestItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UERadioCapability( SI_AMF_DT_UERadioCapability ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -16005,39 +16179,39 @@ int __si_amf_Decode_UERadioCapabilityForPagingOfEUTRA( SI_AMF_DT_UERadioCapabili
 
 int __si_amf_Decode_UERadioCapabilityForPaging( SI_AMF_DT_UERadioCapabilityForPaging ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UERadioCapabilityForPaging_ExtIEs( SI_AMF_DT_UERadioCapabilityForPaging_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UERetentionInformation( uint8_t * eUERetentionInformation,  int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UESecurityCapabilities( SI_AMF_DT_UESecurityCapabilities ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UESecurityCapabilities_ExtIEs( SI_AMF_DT_UESecurityCapabilities_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UL_NGU_UP_TNLModifyItem( SI_AMF_DT_UL_NGU_UP_TNLModifyItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UL_NGU_UP_TNLModifyItem_ExtIEs( SI_AMF_DT_UL_NGU_UP_TNLModifyItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UnavailableGUAMIList( SI_AMF_DT_UnavailableGUAMIList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UnavailableGUAMIItem( SI_AMF_DT_UnavailableGUAMIItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UnavailableGUAMIItem_ExtIEs( SI_AMF_DT_UnavailableGUAMIItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_UPTransportLayerInformation_ExtIEs( SI_AMF_DT_UPTransportLayerInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UPTransportLayerInformationItem( SI_AMF_DT_UPTransportLayerInformationItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UPTransportLayerInformationItem_ExtIEs( SI_AMF_DT_UPTransportLayerInformationItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UPTransportLayerInformationPairItem( SI_AMF_DT_UPTransportLayerInformationPairItem ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UPTransportLayerInformationPairItem_ExtIEs( SI_AMF_DT_UPTransportLayerInformationPairItem_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_UserLocationInformationEUTRA( SI_AMF_DT_UserLocationInformationEUTRA ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -16048,19 +16222,19 @@ int __si_amf_Decode_UserLocationInformationN3IWF( SI_AMF_DT_UserLocationInformat
 
 int __si_amf_Decode_UserLocationInformation( SI_AMF_DT_UserLocationInformation ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_UserLocationInformation_ExtIEs( SI_AMF_DT_UserLocationInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UserLocationInformationEUTRA_ExtIEs( SI_AMF_DT_UserLocationInformationEUTRA_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UserLocationInformationN3IWF_ExtIEs( SI_AMF_DT_UserLocationInformationN3IWF_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UserLocationInformationNR_ExtIEs( SI_AMF_DT_UserLocationInformationNR_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_UserPlaneSecurityInformation_ExtIEs( SI_AMF_DT_UserPlaneSecurityInformation_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_VolumeTimedReport_ItemTimeStamp( SI_AMF_DT_VolumeTimedReport_ItemTimeStamp ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -16069,14 +16243,14 @@ int __si_amf_Decode_VolumeTimedReport_ItemUsageCount( unsigned long long int * d
 
 int __si_amf_Decode_VolumeTimedReport_Item( SI_AMF_DT_VolumeTimedReport_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_VolumeTimedReport_Item_ExtIEs( SI_AMF_DT_VolumeTimedReport_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_WarningAreaCoordinates( SI_AMF_DT_WarningAreaCoordinates ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_WarningAreaList( SI_AMF_DT_WarningAreaList ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=2  DT=3 Container L:2555
+// DHS-ADT=2  DT=3 Container L:2619
 int __si_amf_Decode_WarningAreaList_ExtIEs( SI_AMF_DT_WarningAreaList_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_Decode_WarningMessageContents( SI_AMF_DT_WarningMessageContents ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
@@ -16089,10 +16263,10 @@ int __si_amf_Decode_XnGTP_TLAs( SI_AMF_DT_XnGTP_TLAs ** data, int * isSet, int l
 
 int __si_amf_Decode_XnExtTLA_Item( SI_AMF_DT_XnExtTLA_Item ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_XnExtTLA_Item_ExtIEs( SI_AMF_DT_XnExtTLA_Item_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
-// DHS-ADT=1  DT=3 Container L:2555
+// DHS-ADT=1  DT=3 Container L:2619
 int __si_amf_Decode_XnTNLConfigurationInfo_ExtIEs( SI_AMF_DT_XnTNLConfigurationInfo_ExtIEs ** data, int * isSet, int lvl, SI_ASN_CodingContext * codingContext);
 
 // PDU-Message Dependencies List = 82
@@ -16179,34 +16353,38 @@ int __si_amf_Decode_XnTNLConfigurationInfo_ExtIEs( SI_AMF_DT_XnTNLConfigurationI
 // 81 - PrivateMessage
 // 82 - SecondaryRATDataUsageReport
 // ------------------------------------------------------------ 
-//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceSetup  L:8021
+//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceSetup  L:8448
 
 typedef struct __si_amf_dt_PDUSessionResourceSetupRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-RANPagingPriority, PRESENCE = optional L:8055
+	// ID = id-RANPagingPriority, PRESENCE = optional L:8487
 	unsigned long long int rANPagingPriority;
 	int rANPagingPriority_isset;
 
-	// ID = id-NAS-PDU, PRESENCE = optional L:8055
+	// ID = id-NAS-PDU, PRESENCE = optional L:8487
 	SI_AMF_DT_NAS_PDU * nASPDU;
 	int nASPDU_isset;
 
-	// ID = id-PDUSessionResourceSetupListSUReq, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceSetupListSUReq, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceSetupListSUReq * pDUSessionResourceSetupListSUReq;
 	int pDUSessionResourceSetupListSUReq_isset;
 
-	// ID = id-UEAggregateMaximumBitRate, PRESENCE = optional L:8055
+	// ID = id-UEAggregateMaximumBitRate, PRESENCE = optional L:8487
 	SI_AMF_DT_UEAggregateMaximumBitRate * uEAggregateMaximumBitRate;
 	int uEAggregateMaximumBitRate_isset;
 
@@ -16214,30 +16392,34 @@ typedef struct __si_amf_dt_PDUSessionResourceSetupRequest
 } SI_AMF_DT_PDU_PDUSessionResourceSetupRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceSetup  L:8021
+//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceSetup  L:8448
 
 typedef struct __si_amf_dt_PDUSessionResourceSetupResponse
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceSetupListSURes, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceSetupListSURes, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceSetupListSURes * pDUSessionResourceSetupListSURes;
 	int pDUSessionResourceSetupListSURes_isset;
 
-	// ID = id-PDUSessionResourceFailedToSetupListSURes, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceFailedToSetupListSURes, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceFailedToSetupListSURes * pDUSessionResourceFailedToSetupListSURes;
 	int pDUSessionResourceFailedToSetupListSURes_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16245,30 +16427,34 @@ typedef struct __si_amf_dt_PDUSessionResourceSetupResponse
 } SI_AMF_DT_PDU_PDUSessionResourceSetupResponse;
 
 
-//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceRelease  L:8021
+//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceRelease  L:8448
 
 typedef struct __si_amf_dt_PDUSessionResourceReleaseCommand
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-RANPagingPriority, PRESENCE = optional L:8055
+	// ID = id-RANPagingPriority, PRESENCE = optional L:8487
 	unsigned long long int rANPagingPriority;
 	int rANPagingPriority_isset;
 
-	// ID = id-NAS-PDU, PRESENCE = optional L:8055
+	// ID = id-NAS-PDU, PRESENCE = optional L:8487
 	SI_AMF_DT_NAS_PDU * nASPDU;
 	int nASPDU_isset;
 
-	// ID = id-PDUSessionResourceToReleaseListRelCmd, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceToReleaseListRelCmd, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceToReleaseListRelCmd * pDUSessionResourceToReleaseListRelCmd;
 	int pDUSessionResourceToReleaseListRelCmd_isset;
 
@@ -16276,30 +16462,34 @@ typedef struct __si_amf_dt_PDUSessionResourceReleaseCommand
 } SI_AMF_DT_PDU_PDUSessionResourceReleaseCommand;
 
 
-//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceRelease  L:8021
+//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceRelease  L:8448
 
 typedef struct __si_amf_dt_PDUSessionResourceReleaseResponse
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceReleasedListRelRes, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceReleasedListRelRes, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceReleasedListRelRes * pDUSessionResourceReleasedListRelRes;
 	int pDUSessionResourceReleasedListRelRes_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = optional L:8055
+	// ID = id-UserLocationInformation, PRESENCE = optional L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16307,26 +16497,30 @@ typedef struct __si_amf_dt_PDUSessionResourceReleaseResponse
 } SI_AMF_DT_PDU_PDUSessionResourceReleaseResponse;
 
 
-//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceModify  L:8021
+//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceModify  L:8448
 
 typedef struct __si_amf_dt_PDUSessionResourceModifyRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-RANPagingPriority, PRESENCE = optional L:8055
+	// ID = id-RANPagingPriority, PRESENCE = optional L:8487
 	unsigned long long int rANPagingPriority;
 	int rANPagingPriority_isset;
 
-	// ID = id-PDUSessionResourceModifyListModReq, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceModifyListModReq, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceModifyListModReq * pDUSessionResourceModifyListModReq;
 	int pDUSessionResourceModifyListModReq_isset;
 
@@ -16334,34 +16528,38 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyRequest
 } SI_AMF_DT_PDU_PDUSessionResourceModifyRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceModify  L:8021
+//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceModify  L:8448
 
 typedef struct __si_amf_dt_PDUSessionResourceModifyResponse
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceModifyListModRes, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceModifyListModRes, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceModifyListModRes * pDUSessionResourceModifyListModRes;
 	int pDUSessionResourceModifyListModRes_isset;
 
-	// ID = id-PDUSessionResourceFailedToModifyListModRes, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceFailedToModifyListModRes, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceFailedToModifyListModRes * pDUSessionResourceFailedToModifyListModRes;
 	int pDUSessionResourceFailedToModifyListModRes_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = optional L:8055
+	// ID = id-UserLocationInformation, PRESENCE = optional L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16369,30 +16567,34 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyResponse
 } SI_AMF_DT_PDU_PDUSessionResourceModifyResponse;
 
 
-//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceNotify  L:8021
+//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceNotify  L:8448
 
 typedef struct __si_amf_dt_PDUSessionResourceNotify
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceNotifyList, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceNotifyList, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceNotifyList * pDUSessionResourceNotifyList;
 	int pDUSessionResourceNotifyList_isset;
 
-	// ID = id-PDUSessionResourceReleasedListNot, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceReleasedListNot, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceReleasedListNot * pDUSessionResourceReleasedListNot;
 	int pDUSessionResourceReleasedListNot_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = optional L:8055
+	// ID = id-UserLocationInformation, PRESENCE = optional L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
@@ -16400,22 +16602,26 @@ typedef struct __si_amf_dt_PDUSessionResourceNotify
 } SI_AMF_DT_PDU_PDUSessionResourceNotify;
 
 
-//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceModifyIndication  L:8021
+//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceModifyIndication  L:8448
 
 typedef struct __si_amf_dt_PDUSessionResourceModifyIndication
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceModifyListModInd, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceModifyListModInd, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceModifyListModInd * pDUSessionResourceModifyListModInd;
 	int pDUSessionResourceModifyListModInd_isset;
 
@@ -16423,30 +16629,34 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyIndication
 } SI_AMF_DT_PDU_PDUSessionResourceModifyIndication;
 
 
-//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceModifyIndication  L:8021
+//ELEMENTARY-PROCEDURE = [2] pDUSessionResourceModifyIndication  L:8448
 
 typedef struct __si_amf_dt_PDUSessionResourceModifyConfirm
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceModifyListModCfm, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceModifyListModCfm, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceModifyListModCfm * pDUSessionResourceModifyListModCfm;
 	int pDUSessionResourceModifyListModCfm_isset;
 
-	// ID = id-PDUSessionResourceFailedToModifyListModCfm, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceFailedToModifyListModCfm, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceFailedToModifyListModCfm * pDUSessionResourceFailedToModifyListModCfm;
 	int pDUSessionResourceFailedToModifyListModCfm_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16455,95 +16665,99 @@ typedef struct __si_amf_dt_PDUSessionResourceModifyConfirm
 
 
 // GOT-NULL RedirectionVoiceFallback
-//ELEMENTARY-PROCEDURE = [2] initialContextSetup  L:8021
+//ELEMENTARY-PROCEDURE = [2] initialContextSetup  L:8448
 
 typedef struct __si_amf_dt_InitialContextSetupRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-OldAMF, PRESENCE = optional L:8055
+	// ID = id-OldAMF, PRESENCE = optional L:8487
 	SI_AMF_DT_AMFName * oldAMF;
 	int oldAMF_isset;
 
-	// ID = id-UEAggregateMaximumBitRate, PRESENCE = conditional L:8055
+	// ID = id-UEAggregateMaximumBitRate, PRESENCE = conditional L:8487
 	SI_AMF_DT_UEAggregateMaximumBitRate * uEAggregateMaximumBitRate;
 	int uEAggregateMaximumBitRate_isset;
 
-	// ID = id-CoreNetworkAssistanceInformationForInactive, PRESENCE = optional L:8055
+	// ID = id-CoreNetworkAssistanceInformationForInactive, PRESENCE = optional L:8487
 	SI_AMF_DT_CoreNetworkAssistanceInformationForInactive * coreNetworkAssistanceInformationForInactive;
 	int coreNetworkAssistanceInformationForInactive_isset;
 
-	// ID = id-GUAMI, PRESENCE = mandatory L:8055
+	// ID = id-GUAMI, PRESENCE = mandatory L:8487
 	SI_AMF_DT_GUAMI * gUAMI;
 	int gUAMI_isset;
 
-	// ID = id-PDUSessionResourceSetupListCxtReq, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceSetupListCxtReq, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceSetupListCxtReq * pDUSessionResourceSetupListCxtReq;
 	int pDUSessionResourceSetupListCxtReq_isset;
 
-	// ID = id-AllowedNSSAI, PRESENCE = mandatory L:8055
+	// ID = id-AllowedNSSAI, PRESENCE = mandatory L:8487
 	SI_AMF_DT_AllowedNSSAI * allowedNSSAI;
 	int allowedNSSAI_isset;
 
-	// ID = id-UESecurityCapabilities, PRESENCE = mandatory L:8055
+	// ID = id-UESecurityCapabilities, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UESecurityCapabilities * uESecurityCapabilities;
 	int uESecurityCapabilities_isset;
 
-	// ID = id-SecurityKey, PRESENCE = mandatory L:8055
+	// ID = id-SecurityKey, PRESENCE = mandatory L:8487
 	SI_AMF_DT_SecurityKey * securityKey;
 	int securityKey_isset;
 
-	// ID = id-TraceActivation, PRESENCE = optional L:8055
+	// ID = id-TraceActivation, PRESENCE = optional L:8487
 	SI_AMF_DT_TraceActivation * traceActivation;
 	int traceActivation_isset;
 
-	// ID = id-MobilityRestrictionList, PRESENCE = optional L:8055
+	// ID = id-MobilityRestrictionList, PRESENCE = optional L:8487
 	SI_AMF_DT_MobilityRestrictionList * mobilityRestrictionList;
 	int mobilityRestrictionList_isset;
 
-	// ID = id-UERadioCapability, PRESENCE = optional L:8055
+	// ID = id-UERadioCapability, PRESENCE = optional L:8487
 	SI_AMF_DT_UERadioCapability * uERadioCapability;
 	int uERadioCapability_isset;
 
-	// ID = id-IndexToRFSP, PRESENCE = optional L:8055
+	// ID = id-IndexToRFSP, PRESENCE = optional L:8487
 	unsigned long long int indexToRFSP;
 	int indexToRFSP_isset;
 
-	// ID = id-MaskedIMEISV, PRESENCE = optional L:8055
+	// ID = id-MaskedIMEISV, PRESENCE = optional L:8487
 	SI_AMF_DT_MaskedIMEISV * maskedIMEISV;
 	int maskedIMEISV_isset;
 
-	// ID = id-NAS-PDU, PRESENCE = optional L:8055
+	// ID = id-NAS-PDU, PRESENCE = optional L:8487
 	SI_AMF_DT_NAS_PDU * nASPDU;
 	int nASPDU_isset;
 
-	// ID = id-EmergencyFallbackIndicator, PRESENCE = optional L:8055
+	// ID = id-EmergencyFallbackIndicator, PRESENCE = optional L:8487
 	SI_AMF_DT_EmergencyFallbackIndicator * emergencyFallbackIndicator;
 	int emergencyFallbackIndicator_isset;
 
-	// ID = id-RRCInactiveTransitionReportRequest, PRESENCE = optional L:8055
+	// ID = id-RRCInactiveTransitionReportRequest, PRESENCE = optional L:8487
 	uint8_t rRCInactiveTransitionReportRequest;
 	int rRCInactiveTransitionReportRequest_isset;
 
-	// ID = id-UERadioCapabilityForPaging, PRESENCE = optional L:8055
+	// ID = id-UERadioCapabilityForPaging, PRESENCE = optional L:8487
 	SI_AMF_DT_UERadioCapabilityForPaging * uERadioCapabilityForPaging;
 	int uERadioCapabilityForPaging_isset;
 
 	//id-RedirectionVoiceFallback:RedirectionVoiceFallback
-	// ID = id-LocationReportingRequestType, PRESENCE = optional L:8055
+	// ID = id-LocationReportingRequestType, PRESENCE = optional L:8487
 	SI_AMF_DT_LocationReportingRequestType * locationReportingRequestType;
 	int locationReportingRequestType_isset;
 
-	// ID = id-CNAssistedRANTuning, PRESENCE = optional L:8055
+	// ID = id-CNAssistedRANTuning, PRESENCE = optional L:8487
 	SI_AMF_DT_CNAssistedRANTuning * cNAssistedRANTuning;
 	int cNAssistedRANTuning_isset;
 
@@ -16551,30 +16765,34 @@ typedef struct __si_amf_dt_InitialContextSetupRequest
 } SI_AMF_DT_PDU_InitialContextSetupRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] initialContextSetup  L:8021
+//ELEMENTARY-PROCEDURE = [2] initialContextSetup  L:8448
 
 typedef struct __si_amf_dt_InitialContextSetupResponse
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceSetupListCxtRes, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceSetupListCxtRes, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceSetupListCxtRes * pDUSessionResourceSetupListCxtRes;
 	int pDUSessionResourceSetupListCxtRes_isset;
 
-	// ID = id-PDUSessionResourceFailedToSetupListCxtRes, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceFailedToSetupListCxtRes, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceFailedToSetupListCxtRes * pDUSessionResourceFailedToSetupListCxtRes;
 	int pDUSessionResourceFailedToSetupListCxtRes_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16582,30 +16800,34 @@ typedef struct __si_amf_dt_InitialContextSetupResponse
 } SI_AMF_DT_PDU_InitialContextSetupResponse;
 
 
-//ELEMENTARY-PROCEDURE = [2] initialContextSetup  L:8021
+//ELEMENTARY-PROCEDURE = [2] initialContextSetup  L:8448
 
 typedef struct __si_amf_dt_InitialContextSetupFailure
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceFailedToSetupListCxtFail, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceFailedToSetupListCxtFail, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceFailedToSetupListCxtFail * pDUSessionResourceFailedToSetupListCxtFail;
 	int pDUSessionResourceFailedToSetupListCxtFail_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16613,26 +16835,30 @@ typedef struct __si_amf_dt_InitialContextSetupFailure
 } SI_AMF_DT_PDU_InitialContextSetupFailure;
 
 
-//ELEMENTARY-PROCEDURE = [2] uEContextReleaseRequest  L:8021
+//ELEMENTARY-PROCEDURE = [2] uEContextReleaseRequest  L:8448
 
 typedef struct __si_amf_dt_UEContextReleaseRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceListCxtRelReq, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceListCxtRelReq, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceListCxtRelReq * pDUSessionResourceListCxtRelReq;
 	int pDUSessionResourceListCxtRelReq_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
@@ -16640,18 +16866,22 @@ typedef struct __si_amf_dt_UEContextReleaseRequest
 } SI_AMF_DT_PDU_UEContextReleaseRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] uEContextRelease  L:8021
+//ELEMENTARY-PROCEDURE = [2] uEContextRelease  L:8448
 
 typedef struct __si_amf_dt_UEContextReleaseCommand
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-UE-NGAP-IDs, PRESENCE = mandatory L:8055
+	// ID = id-UE-NGAP-IDs, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UE_NGAP_IDs * uENGAPIDs;
 	int uENGAPIDs_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
@@ -16659,34 +16889,38 @@ typedef struct __si_amf_dt_UEContextReleaseCommand
 } SI_AMF_DT_PDU_UEContextReleaseCommand;
 
 
-//ELEMENTARY-PROCEDURE = [2] uEContextRelease  L:8021
+//ELEMENTARY-PROCEDURE = [2] uEContextRelease  L:8448
 
 typedef struct __si_amf_dt_UEContextReleaseComplete
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = optional L:8055
+	// ID = id-UserLocationInformation, PRESENCE = optional L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
-	// ID = id-InfoOnRecommendedCellsAndRANNodesForPaging, PRESENCE = optional L:8055
+	// ID = id-InfoOnRecommendedCellsAndRANNodesForPaging, PRESENCE = optional L:8487
 	SI_AMF_DT_InfoOnRecommendedCellsAndRANNodesForPaging * infoOnRecommendedCellsAndRANNodesForPaging;
 	int infoOnRecommendedCellsAndRANNodesForPaging_isset;
 
-	// ID = id-PDUSessionResourceListCxtRelCpl, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceListCxtRelCpl, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceListCxtRelCpl * pDUSessionResourceListCxtRelCpl;
 	int pDUSessionResourceListCxtRelCpl_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16694,62 +16928,66 @@ typedef struct __si_amf_dt_UEContextReleaseComplete
 } SI_AMF_DT_PDU_UEContextReleaseComplete;
 
 
-//ELEMENTARY-PROCEDURE = [2] uEContextModification  L:8021
+//ELEMENTARY-PROCEDURE = [2] uEContextModification  L:8448
 
 typedef struct __si_amf_dt_UEContextModificationRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-RANPagingPriority, PRESENCE = optional L:8055
+	// ID = id-RANPagingPriority, PRESENCE = optional L:8487
 	unsigned long long int rANPagingPriority;
 	int rANPagingPriority_isset;
 
-	// ID = id-SecurityKey, PRESENCE = optional L:8055
+	// ID = id-SecurityKey, PRESENCE = optional L:8487
 	SI_AMF_DT_SecurityKey * securityKey;
 	int securityKey_isset;
 
-	// ID = id-IndexToRFSP, PRESENCE = optional L:8055
+	// ID = id-IndexToRFSP, PRESENCE = optional L:8487
 	unsigned long long int indexToRFSP;
 	int indexToRFSP_isset;
 
-	// ID = id-UEAggregateMaximumBitRate, PRESENCE = optional L:8055
+	// ID = id-UEAggregateMaximumBitRate, PRESENCE = optional L:8487
 	SI_AMF_DT_UEAggregateMaximumBitRate * uEAggregateMaximumBitRate;
 	int uEAggregateMaximumBitRate_isset;
 
-	// ID = id-UESecurityCapabilities, PRESENCE = optional L:8055
+	// ID = id-UESecurityCapabilities, PRESENCE = optional L:8487
 	SI_AMF_DT_UESecurityCapabilities * uESecurityCapabilities;
 	int uESecurityCapabilities_isset;
 
-	// ID = id-CoreNetworkAssistanceInformationForInactive, PRESENCE = optional L:8055
+	// ID = id-CoreNetworkAssistanceInformationForInactive, PRESENCE = optional L:8487
 	SI_AMF_DT_CoreNetworkAssistanceInformationForInactive * coreNetworkAssistanceInformationForInactive;
 	int coreNetworkAssistanceInformationForInactive_isset;
 
-	// ID = id-EmergencyFallbackIndicator, PRESENCE = optional L:8055
+	// ID = id-EmergencyFallbackIndicator, PRESENCE = optional L:8487
 	SI_AMF_DT_EmergencyFallbackIndicator * emergencyFallbackIndicator;
 	int emergencyFallbackIndicator_isset;
 
-	// ID = id-NewAMF-UE-NGAP-ID, PRESENCE = optional L:8055
+	// ID = id-NewAMF-UE-NGAP-ID, PRESENCE = optional L:8487
 	unsigned long long int newAMFUENGAPID;
 	int newAMFUENGAPID_isset;
 
-	// ID = id-RRCInactiveTransitionReportRequest, PRESENCE = optional L:8055
+	// ID = id-RRCInactiveTransitionReportRequest, PRESENCE = optional L:8487
 	uint8_t rRCInactiveTransitionReportRequest;
 	int rRCInactiveTransitionReportRequest_isset;
 
-	// ID = id-NewGUAMI, PRESENCE = optional L:8055
+	// ID = id-NewGUAMI, PRESENCE = optional L:8487
 	SI_AMF_DT_GUAMI * newGUAMI;
 	int newGUAMI_isset;
 
-	// ID = id-CNAssistedRANTuning, PRESENCE = optional L:8055
+	// ID = id-CNAssistedRANTuning, PRESENCE = optional L:8487
 	SI_AMF_DT_CNAssistedRANTuning * cNAssistedRANTuning;
 	int cNAssistedRANTuning_isset;
 
@@ -16757,30 +16995,34 @@ typedef struct __si_amf_dt_UEContextModificationRequest
 } SI_AMF_DT_PDU_UEContextModificationRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] uEContextModification  L:8021
+//ELEMENTARY-PROCEDURE = [2] uEContextModification  L:8448
 
 typedef struct __si_amf_dt_UEContextModificationResponse
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-RRCState, PRESENCE = optional L:8055
+	// ID = id-RRCState, PRESENCE = optional L:8487
 	uint8_t rRCState;
 	int rRCState_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = optional L:8055
+	// ID = id-UserLocationInformation, PRESENCE = optional L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16788,26 +17030,30 @@ typedef struct __si_amf_dt_UEContextModificationResponse
 } SI_AMF_DT_PDU_UEContextModificationResponse;
 
 
-//ELEMENTARY-PROCEDURE = [2] uEContextModification  L:8021
+//ELEMENTARY-PROCEDURE = [2] uEContextModification  L:8448
 
 typedef struct __si_amf_dt_UEContextModificationFailure
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16815,26 +17061,30 @@ typedef struct __si_amf_dt_UEContextModificationFailure
 } SI_AMF_DT_PDU_UEContextModificationFailure;
 
 
-//ELEMENTARY-PROCEDURE = [2] rRCInactiveTransitionReport  L:8021
+//ELEMENTARY-PROCEDURE = [2] rRCInactiveTransitionReport  L:8448
 
 typedef struct __si_amf_dt_RRCInactiveTransitionReport
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-RRCState, PRESENCE = mandatory L:8055
+	// ID = id-RRCState, PRESENCE = mandatory L:8487
 	uint8_t rRCState;
 	int rRCState_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8055
+	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
@@ -16842,42 +17092,46 @@ typedef struct __si_amf_dt_RRCInactiveTransitionReport
 } SI_AMF_DT_PDU_RRCInactiveTransitionReport;
 
 
-//ELEMENTARY-PROCEDURE = [2] handoverPreparation  L:8021
+//ELEMENTARY-PROCEDURE = [2] handoverPreparation  L:8448
 
 typedef struct __si_amf_dt_HandoverRequired
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-HandoverType, PRESENCE = mandatory L:8055
+	// ID = id-HandoverType, PRESENCE = mandatory L:8487
 	uint8_t handoverType;
 	int handoverType_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-TargetID, PRESENCE = mandatory L:8055
+	// ID = id-TargetID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_TargetID * targetID;
 	int targetID_isset;
 
-	// ID = id-DirectForwardingPathAvailability, PRESENCE = optional L:8055
+	// ID = id-DirectForwardingPathAvailability, PRESENCE = optional L:8487
 	uint8_t directForwardingPathAvailability;
 	int directForwardingPathAvailability_isset;
 
-	// ID = id-PDUSessionResourceListHORqd, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceListHORqd, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceListHORqd * pDUSessionResourceListHORqd;
 	int pDUSessionResourceListHORqd_isset;
 
-	// ID = id-SourceToTarget-TransparentContainer, PRESENCE = mandatory L:8055
+	// ID = id-SourceToTarget-TransparentContainer, PRESENCE = mandatory L:8487
 	SI_AMF_DT_SourceToTarget_TransparentContainer * sourceToTargetTransparentContainer;
 	int sourceToTargetTransparentContainer_isset;
 
@@ -16885,42 +17139,46 @@ typedef struct __si_amf_dt_HandoverRequired
 } SI_AMF_DT_PDU_HandoverRequired;
 
 
-//ELEMENTARY-PROCEDURE = [2] handoverPreparation  L:8021
+//ELEMENTARY-PROCEDURE = [2] handoverPreparation  L:8448
 
 typedef struct __si_amf_dt_HandoverCommand
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-HandoverType, PRESENCE = mandatory L:8055
+	// ID = id-HandoverType, PRESENCE = mandatory L:8487
 	uint8_t handoverType;
 	int handoverType_isset;
 
-	// ID = id-NASSecurityParametersFromNGRAN, PRESENCE = conditional L:8055
+	// ID = id-NASSecurityParametersFromNGRAN, PRESENCE = conditional L:8487
 	SI_AMF_DT_NASSecurityParametersFromNGRAN * nASSecurityParametersFromNGRAN;
 	int nASSecurityParametersFromNGRAN_isset;
 
-	// ID = id-PDUSessionResourceHandoverList, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceHandoverList, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceHandoverList * pDUSessionResourceHandoverList;
 	int pDUSessionResourceHandoverList_isset;
 
-	// ID = id-PDUSessionResourceToReleaseListHOCmd, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceToReleaseListHOCmd, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceToReleaseListHOCmd * pDUSessionResourceToReleaseListHOCmd;
 	int pDUSessionResourceToReleaseListHOCmd_isset;
 
-	// ID = id-TargetToSource-TransparentContainer, PRESENCE = mandatory L:8055
+	// ID = id-TargetToSource-TransparentContainer, PRESENCE = mandatory L:8487
 	SI_AMF_DT_TargetToSource_TransparentContainer * targetToSourceTransparentContainer;
 	int targetToSourceTransparentContainer_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16928,26 +17186,30 @@ typedef struct __si_amf_dt_HandoverCommand
 } SI_AMF_DT_PDU_HandoverCommand;
 
 
-//ELEMENTARY-PROCEDURE = [2] handoverPreparation  L:8021
+//ELEMENTARY-PROCEDURE = [2] handoverPreparation  L:8448
 
 typedef struct __si_amf_dt_HandoverPreparationFailure
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -16955,87 +17217,91 @@ typedef struct __si_amf_dt_HandoverPreparationFailure
 } SI_AMF_DT_PDU_HandoverPreparationFailure;
 
 
-//ELEMENTARY-PROCEDURE = [2] handoverResourceAllocation  L:8021
+//ELEMENTARY-PROCEDURE = [2] handoverResourceAllocation  L:8448
 
 typedef struct __si_amf_dt_HandoverRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-HandoverType, PRESENCE = mandatory L:8055
+	// ID = id-HandoverType, PRESENCE = mandatory L:8487
 	uint8_t handoverType;
 	int handoverType_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-UEAggregateMaximumBitRate, PRESENCE = mandatory L:8055
+	// ID = id-UEAggregateMaximumBitRate, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UEAggregateMaximumBitRate * uEAggregateMaximumBitRate;
 	int uEAggregateMaximumBitRate_isset;
 
-	// ID = id-CoreNetworkAssistanceInformationForInactive, PRESENCE = optional L:8055
+	// ID = id-CoreNetworkAssistanceInformationForInactive, PRESENCE = optional L:8487
 	SI_AMF_DT_CoreNetworkAssistanceInformationForInactive * coreNetworkAssistanceInformationForInactive;
 	int coreNetworkAssistanceInformationForInactive_isset;
 
-	// ID = id-UESecurityCapabilities, PRESENCE = mandatory L:8055
+	// ID = id-UESecurityCapabilities, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UESecurityCapabilities * uESecurityCapabilities;
 	int uESecurityCapabilities_isset;
 
-	// ID = id-SecurityContext, PRESENCE = mandatory L:8055
+	// ID = id-SecurityContext, PRESENCE = mandatory L:8487
 	SI_AMF_DT_SecurityContext * securityContext;
 	int securityContext_isset;
 
-	// ID = id-NewSecurityContextInd, PRESENCE = optional L:8055
+	// ID = id-NewSecurityContextInd, PRESENCE = optional L:8487
 	uint8_t newSecurityContextInd;
 	int newSecurityContextInd_isset;
 
-	// ID = id-NASC, PRESENCE = optional L:8055
+	// ID = id-NASC, PRESENCE = optional L:8487
 	SI_AMF_DT_NAS_PDU * nASC;
 	int nASC_isset;
 
-	// ID = id-PDUSessionResourceSetupListHOReq, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceSetupListHOReq, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceSetupListHOReq * pDUSessionResourceSetupListHOReq;
 	int pDUSessionResourceSetupListHOReq_isset;
 
-	// ID = id-AllowedNSSAI, PRESENCE = mandatory L:8055
+	// ID = id-AllowedNSSAI, PRESENCE = mandatory L:8487
 	SI_AMF_DT_AllowedNSSAI * allowedNSSAI;
 	int allowedNSSAI_isset;
 
-	// ID = id-TraceActivation, PRESENCE = optional L:8055
+	// ID = id-TraceActivation, PRESENCE = optional L:8487
 	SI_AMF_DT_TraceActivation * traceActivation;
 	int traceActivation_isset;
 
-	// ID = id-MaskedIMEISV, PRESENCE = optional L:8055
+	// ID = id-MaskedIMEISV, PRESENCE = optional L:8487
 	SI_AMF_DT_MaskedIMEISV * maskedIMEISV;
 	int maskedIMEISV_isset;
 
-	// ID = id-SourceToTarget-TransparentContainer, PRESENCE = mandatory L:8055
+	// ID = id-SourceToTarget-TransparentContainer, PRESENCE = mandatory L:8487
 	SI_AMF_DT_SourceToTarget_TransparentContainer * sourceToTargetTransparentContainer;
 	int sourceToTargetTransparentContainer_isset;
 
-	// ID = id-MobilityRestrictionList, PRESENCE = optional L:8055
+	// ID = id-MobilityRestrictionList, PRESENCE = optional L:8487
 	SI_AMF_DT_MobilityRestrictionList * mobilityRestrictionList;
 	int mobilityRestrictionList_isset;
 
-	// ID = id-LocationReportingRequestType, PRESENCE = optional L:8055
+	// ID = id-LocationReportingRequestType, PRESENCE = optional L:8487
 	SI_AMF_DT_LocationReportingRequestType * locationReportingRequestType;
 	int locationReportingRequestType_isset;
 
-	// ID = id-RRCInactiveTransitionReportRequest, PRESENCE = optional L:8055
+	// ID = id-RRCInactiveTransitionReportRequest, PRESENCE = optional L:8487
 	uint8_t rRCInactiveTransitionReportRequest;
 	int rRCInactiveTransitionReportRequest_isset;
 
-	// ID = id-GUAMI, PRESENCE = mandatory L:8055
+	// ID = id-GUAMI, PRESENCE = mandatory L:8487
 	SI_AMF_DT_GUAMI * gUAMI;
 	int gUAMI_isset;
 
 	//id-RedirectionVoiceFallback:RedirectionVoiceFallback
-	// ID = id-CNAssistedRANTuning, PRESENCE = optional L:8055
+	// ID = id-CNAssistedRANTuning, PRESENCE = optional L:8487
 	SI_AMF_DT_CNAssistedRANTuning * cNAssistedRANTuning;
 	int cNAssistedRANTuning_isset;
 
@@ -17043,34 +17309,38 @@ typedef struct __si_amf_dt_HandoverRequest
 } SI_AMF_DT_PDU_HandoverRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] handoverResourceAllocation  L:8021
+//ELEMENTARY-PROCEDURE = [2] handoverResourceAllocation  L:8448
 
 typedef struct __si_amf_dt_HandoverRequestAcknowledge
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceAdmittedList, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceAdmittedList, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceAdmittedList * pDUSessionResourceAdmittedList;
 	int pDUSessionResourceAdmittedList_isset;
 
-	// ID = id-PDUSessionResourceFailedToSetupListHOAck, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceFailedToSetupListHOAck, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceFailedToSetupListHOAck * pDUSessionResourceFailedToSetupListHOAck;
 	int pDUSessionResourceFailedToSetupListHOAck_isset;
 
-	// ID = id-TargetToSource-TransparentContainer, PRESENCE = mandatory L:8055
+	// ID = id-TargetToSource-TransparentContainer, PRESENCE = mandatory L:8487
 	SI_AMF_DT_TargetToSource_TransparentContainer * targetToSourceTransparentContainer;
 	int targetToSourceTransparentContainer_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17078,22 +17348,26 @@ typedef struct __si_amf_dt_HandoverRequestAcknowledge
 } SI_AMF_DT_PDU_HandoverRequestAcknowledge;
 
 
-//ELEMENTARY-PROCEDURE = [2] handoverResourceAllocation  L:8021
+//ELEMENTARY-PROCEDURE = [2] handoverResourceAllocation  L:8448
 
 typedef struct __si_amf_dt_HandoverFailure
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17101,22 +17375,26 @@ typedef struct __si_amf_dt_HandoverFailure
 } SI_AMF_DT_PDU_HandoverFailure;
 
 
-//ELEMENTARY-PROCEDURE = [2] handoverNotification  L:8021
+//ELEMENTARY-PROCEDURE = [2] handoverNotification  L:8448
 
 typedef struct __si_amf_dt_HandoverNotify
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8055
+	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
@@ -17124,34 +17402,38 @@ typedef struct __si_amf_dt_HandoverNotify
 } SI_AMF_DT_PDU_HandoverNotify;
 
 
-//ELEMENTARY-PROCEDURE = [2] pathSwitchRequest  L:8021
+//ELEMENTARY-PROCEDURE = [2] pathSwitchRequest  L:8448
 
 typedef struct __si_amf_dt_PathSwitchRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-SourceAMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-SourceAMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int sourceAMFUENGAPID;
 	int sourceAMFUENGAPID_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8055
+	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
-	// ID = id-UESecurityCapabilities, PRESENCE = mandatory L:8055
+	// ID = id-UESecurityCapabilities, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UESecurityCapabilities * uESecurityCapabilities;
 	int uESecurityCapabilities_isset;
 
-	// ID = id-PDUSessionResourceToBeSwitchedDLList, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceToBeSwitchedDLList, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceToBeSwitchedDLList * pDUSessionResourceToBeSwitchedDLList;
 	int pDUSessionResourceToBeSwitchedDLList_isset;
 
-	// ID = id-PDUSessionResourceFailedToSetupListPSReq, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceFailedToSetupListPSReq, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceFailedToSetupListPSReq * pDUSessionResourceFailedToSetupListPSReq;
 	int pDUSessionResourceFailedToSetupListPSReq_isset;
 
@@ -17159,59 +17441,63 @@ typedef struct __si_amf_dt_PathSwitchRequest
 } SI_AMF_DT_PDU_PathSwitchRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] pathSwitchRequest  L:8021
+//ELEMENTARY-PROCEDURE = [2] pathSwitchRequest  L:8448
 
 typedef struct __si_amf_dt_PathSwitchRequestAcknowledge
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-UESecurityCapabilities, PRESENCE = optional L:8055
+	// ID = id-UESecurityCapabilities, PRESENCE = optional L:8487
 	SI_AMF_DT_UESecurityCapabilities * uESecurityCapabilities;
 	int uESecurityCapabilities_isset;
 
-	// ID = id-SecurityContext, PRESENCE = mandatory L:8055
+	// ID = id-SecurityContext, PRESENCE = mandatory L:8487
 	SI_AMF_DT_SecurityContext * securityContext;
 	int securityContext_isset;
 
-	// ID = id-NewSecurityContextInd, PRESENCE = optional L:8055
+	// ID = id-NewSecurityContextInd, PRESENCE = optional L:8487
 	uint8_t newSecurityContextInd;
 	int newSecurityContextInd_isset;
 
-	// ID = id-PDUSessionResourceSwitchedList, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceSwitchedList, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceSwitchedList * pDUSessionResourceSwitchedList;
 	int pDUSessionResourceSwitchedList_isset;
 
-	// ID = id-PDUSessionResourceReleasedListPSAck, PRESENCE = optional L:8055
+	// ID = id-PDUSessionResourceReleasedListPSAck, PRESENCE = optional L:8487
 	SI_AMF_DT_PDUSessionResourceReleasedListPSAck * pDUSessionResourceReleasedListPSAck;
 	int pDUSessionResourceReleasedListPSAck_isset;
 
-	// ID = id-AllowedNSSAI, PRESENCE = mandatory L:8055
+	// ID = id-AllowedNSSAI, PRESENCE = mandatory L:8487
 	SI_AMF_DT_AllowedNSSAI * allowedNSSAI;
 	int allowedNSSAI_isset;
 
-	// ID = id-CoreNetworkAssistanceInformationForInactive, PRESENCE = optional L:8055
+	// ID = id-CoreNetworkAssistanceInformationForInactive, PRESENCE = optional L:8487
 	SI_AMF_DT_CoreNetworkAssistanceInformationForInactive * coreNetworkAssistanceInformationForInactive;
 	int coreNetworkAssistanceInformationForInactive_isset;
 
-	// ID = id-RRCInactiveTransitionReportRequest, PRESENCE = optional L:8055
+	// ID = id-RRCInactiveTransitionReportRequest, PRESENCE = optional L:8487
 	uint8_t rRCInactiveTransitionReportRequest;
 	int rRCInactiveTransitionReportRequest_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
 	//id-RedirectionVoiceFallback:RedirectionVoiceFallback
-	// ID = id-CNAssistedRANTuning, PRESENCE = optional L:8055
+	// ID = id-CNAssistedRANTuning, PRESENCE = optional L:8487
 	SI_AMF_DT_CNAssistedRANTuning * cNAssistedRANTuning;
 	int cNAssistedRANTuning_isset;
 
@@ -17219,26 +17505,30 @@ typedef struct __si_amf_dt_PathSwitchRequestAcknowledge
 } SI_AMF_DT_PDU_PathSwitchRequestAcknowledge;
 
 
-//ELEMENTARY-PROCEDURE = [2] pathSwitchRequest  L:8021
+//ELEMENTARY-PROCEDURE = [2] pathSwitchRequest  L:8448
 
 typedef struct __si_amf_dt_PathSwitchRequestFailure
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceReleasedListPSFail, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceReleasedListPSFail, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceReleasedListPSFail * pDUSessionResourceReleasedListPSFail;
 	int pDUSessionResourceReleasedListPSFail_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17246,22 +17536,26 @@ typedef struct __si_amf_dt_PathSwitchRequestFailure
 } SI_AMF_DT_PDU_PathSwitchRequestFailure;
 
 
-//ELEMENTARY-PROCEDURE = [2] handoverCancel  L:8021
+//ELEMENTARY-PROCEDURE = [2] handoverCancel  L:8448
 
 typedef struct __si_amf_dt_HandoverCancel
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
@@ -17269,22 +17563,26 @@ typedef struct __si_amf_dt_HandoverCancel
 } SI_AMF_DT_PDU_HandoverCancel;
 
 
-//ELEMENTARY-PROCEDURE = [2] handoverCancel  L:8021
+//ELEMENTARY-PROCEDURE = [2] handoverCancel  L:8448
 
 typedef struct __si_amf_dt_HandoverCancelAcknowledge
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17292,22 +17590,26 @@ typedef struct __si_amf_dt_HandoverCancelAcknowledge
 } SI_AMF_DT_PDU_HandoverCancelAcknowledge;
 
 
-//ELEMENTARY-PROCEDURE = [2] uplinkRANStatusTransfer  L:8021
+//ELEMENTARY-PROCEDURE = [2] uplinkRANStatusTransfer  L:8448
 
 typedef struct __si_amf_dt_UplinkRANStatusTransfer
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-RANStatusTransfer-TransparentContainer, PRESENCE = mandatory L:8055
+	// ID = id-RANStatusTransfer-TransparentContainer, PRESENCE = mandatory L:8487
 	SI_AMF_DT_RANStatusTransfer_TransparentContainer * rANStatusTransferTransparentContainer;
 	int rANStatusTransferTransparentContainer_isset;
 
@@ -17315,22 +17617,26 @@ typedef struct __si_amf_dt_UplinkRANStatusTransfer
 } SI_AMF_DT_PDU_UplinkRANStatusTransfer;
 
 
-//ELEMENTARY-PROCEDURE = [2] downlinkRANStatusTransfer  L:8021
+//ELEMENTARY-PROCEDURE = [2] downlinkRANStatusTransfer  L:8448
 
 typedef struct __si_amf_dt_DownlinkRANStatusTransfer
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-RANStatusTransfer-TransparentContainer, PRESENCE = mandatory L:8055
+	// ID = id-RANStatusTransfer-TransparentContainer, PRESENCE = mandatory L:8487
 	SI_AMF_DT_RANStatusTransfer_TransparentContainer * rANStatusTransferTransparentContainer;
 	int rANStatusTransferTransparentContainer_isset;
 
@@ -17338,38 +17644,42 @@ typedef struct __si_amf_dt_DownlinkRANStatusTransfer
 } SI_AMF_DT_PDU_DownlinkRANStatusTransfer;
 
 
-//ELEMENTARY-PROCEDURE = [2] paging  L:8021
+//ELEMENTARY-PROCEDURE = [2] paging  L:8448
 
 typedef struct __si_amf_dt_Paging
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-UEPagingIdentity, PRESENCE = mandatory L:8055
+	// ID = id-UEPagingIdentity, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UEPagingIdentity * uEPagingIdentity;
 	int uEPagingIdentity_isset;
 
-	// ID = id-PagingDRX, PRESENCE = optional L:8055
+	// ID = id-PagingDRX, PRESENCE = optional L:8487
 	uint8_t pagingDRX;
 	int pagingDRX_isset;
 
-	// ID = id-TAIListForPaging, PRESENCE = mandatory L:8055
+	// ID = id-TAIListForPaging, PRESENCE = mandatory L:8487
 	SI_AMF_DT_TAIListForPaging * tAIListForPaging;
 	int tAIListForPaging_isset;
 
-	// ID = id-PagingPriority, PRESENCE = optional L:8055
+	// ID = id-PagingPriority, PRESENCE = optional L:8487
 	uint8_t pagingPriority;
 	int pagingPriority_isset;
 
-	// ID = id-UERadioCapabilityForPaging, PRESENCE = optional L:8055
+	// ID = id-UERadioCapabilityForPaging, PRESENCE = optional L:8487
 	SI_AMF_DT_UERadioCapabilityForPaging * uERadioCapabilityForPaging;
 	int uERadioCapabilityForPaging_isset;
 
-	// ID = id-PagingOrigin, PRESENCE = optional L:8055
+	// ID = id-PagingOrigin, PRESENCE = optional L:8487
 	uint8_t pagingOrigin;
 	int pagingOrigin_isset;
 
-	// ID = id-AssistanceDataForPaging, PRESENCE = optional L:8055
+	// ID = id-AssistanceDataForPaging, PRESENCE = optional L:8487
 	SI_AMF_DT_AssistanceDataForPaging * assistanceDataForPaging;
 	int assistanceDataForPaging_isset;
 
@@ -17377,46 +17687,50 @@ typedef struct __si_amf_dt_Paging
 } SI_AMF_DT_PDU_Paging;
 
 
-//ELEMENTARY-PROCEDURE = [2] initialUEMessage  L:8021
+//ELEMENTARY-PROCEDURE = [2] initialUEMessage  L:8448
 
 typedef struct __si_amf_dt_InitialUEMessage
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-NAS-PDU, PRESENCE = mandatory L:8055
+	// ID = id-NAS-PDU, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NAS_PDU * nASPDU;
 	int nASPDU_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8055
+	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
-	// ID = id-RRCEstablishmentCause, PRESENCE = mandatory L:8055
+	// ID = id-RRCEstablishmentCause, PRESENCE = mandatory L:8487
 	uint8_t rRCEstablishmentCause;
 	int rRCEstablishmentCause_isset;
 
-	// ID = id-FiveG-S-TMSI, PRESENCE = optional L:8055
+	// ID = id-FiveG-S-TMSI, PRESENCE = optional L:8487
 	SI_AMF_DT_FiveG_S_TMSI * fiveGSTMSI;
 	int fiveGSTMSI_isset;
 
-	// ID = id-AMFSetID, PRESENCE = optional L:8055
+	// ID = id-AMFSetID, PRESENCE = optional L:8487
 	SI_AMF_DT_AMFSetID * aMFSetID;
 	int aMFSetID_isset;
 
-	// ID = id-UEContextRequest, PRESENCE = optional L:8055
+	// ID = id-UEContextRequest, PRESENCE = optional L:8487
 	uint8_t uEContextRequest;
 	int uEContextRequest_isset;
 
-	// ID = id-AllowedNSSAI, PRESENCE = optional L:8055
+	// ID = id-AllowedNSSAI, PRESENCE = optional L:8487
 	SI_AMF_DT_AllowedNSSAI * allowedNSSAI;
 	int allowedNSSAI_isset;
 
-	// ID = id-SourceToTarget-AMFInformationReroute, PRESENCE = optional L:8055
+	// ID = id-SourceToTarget-AMFInformationReroute, PRESENCE = optional L:8487
 	SI_AMF_DT_SourceToTarget_AMFInformationReroute * sourceToTargetAMFInformationReroute;
 	int sourceToTargetAMFInformationReroute_isset;
 
@@ -17424,46 +17738,50 @@ typedef struct __si_amf_dt_InitialUEMessage
 } SI_AMF_DT_PDU_InitialUEMessage;
 
 
-//ELEMENTARY-PROCEDURE = [2] downlinkNASTransport  L:8021
+//ELEMENTARY-PROCEDURE = [2] downlinkNASTransport  L:8448
 
 typedef struct __si_amf_dt_DownlinkNASTransport
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-OldAMF, PRESENCE = optional L:8055
+	// ID = id-OldAMF, PRESENCE = optional L:8487
 	SI_AMF_DT_AMFName * oldAMF;
 	int oldAMF_isset;
 
-	// ID = id-RANPagingPriority, PRESENCE = optional L:8055
+	// ID = id-RANPagingPriority, PRESENCE = optional L:8487
 	unsigned long long int rANPagingPriority;
 	int rANPagingPriority_isset;
 
-	// ID = id-NAS-PDU, PRESENCE = mandatory L:8055
+	// ID = id-NAS-PDU, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NAS_PDU * nASPDU;
 	int nASPDU_isset;
 
-	// ID = id-MobilityRestrictionList, PRESENCE = optional L:8055
+	// ID = id-MobilityRestrictionList, PRESENCE = optional L:8487
 	SI_AMF_DT_MobilityRestrictionList * mobilityRestrictionList;
 	int mobilityRestrictionList_isset;
 
-	// ID = id-IndexToRFSP, PRESENCE = optional L:8055
+	// ID = id-IndexToRFSP, PRESENCE = optional L:8487
 	unsigned long long int indexToRFSP;
 	int indexToRFSP_isset;
 
-	// ID = id-UEAggregateMaximumBitRate, PRESENCE = optional L:8055
+	// ID = id-UEAggregateMaximumBitRate, PRESENCE = optional L:8487
 	SI_AMF_DT_UEAggregateMaximumBitRate * uEAggregateMaximumBitRate;
 	int uEAggregateMaximumBitRate_isset;
 
-	// ID = id-AllowedNSSAI, PRESENCE = optional L:8055
+	// ID = id-AllowedNSSAI, PRESENCE = optional L:8487
 	SI_AMF_DT_AllowedNSSAI * allowedNSSAI;
 	int allowedNSSAI_isset;
 
@@ -17471,26 +17789,30 @@ typedef struct __si_amf_dt_DownlinkNASTransport
 } SI_AMF_DT_PDU_DownlinkNASTransport;
 
 
-//ELEMENTARY-PROCEDURE = [2] uplinkNASTransport  L:8021
+//ELEMENTARY-PROCEDURE = [2] uplinkNASTransport  L:8448
 
 typedef struct __si_amf_dt_UplinkNASTransport
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-NAS-PDU, PRESENCE = mandatory L:8055
+	// ID = id-NAS-PDU, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NAS_PDU * nASPDU;
 	int nASPDU_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8055
+	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
@@ -17498,26 +17820,30 @@ typedef struct __si_amf_dt_UplinkNASTransport
 } SI_AMF_DT_PDU_UplinkNASTransport;
 
 
-//ELEMENTARY-PROCEDURE = [2] nASNonDeliveryIndication  L:8021
+//ELEMENTARY-PROCEDURE = [2] nASNonDeliveryIndication  L:8448
 
 typedef struct __si_amf_dt_NASNonDeliveryIndication
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-NAS-PDU, PRESENCE = mandatory L:8055
+	// ID = id-NAS-PDU, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NAS_PDU * nASPDU;
 	int nASPDU_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
@@ -17526,31 +17852,35 @@ typedef struct __si_amf_dt_NASNonDeliveryIndication
 
 
 // GOT-NULL OCTET-STRING
-//ELEMENTARY-PROCEDURE = [2] rerouteNASRequest  L:8021
+//ELEMENTARY-PROCEDURE = [2] rerouteNASRequest  L:8448
 
 typedef struct __si_amf_dt_RerouteNASRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = optional L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = optional L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
 	//id-NGAP-Message:OCTET-STRING
-	// ID = id-AMFSetID, PRESENCE = mandatory L:8055
+	// ID = id-AMFSetID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_AMFSetID * aMFSetID;
 	int aMFSetID_isset;
 
-	// ID = id-AllowedNSSAI, PRESENCE = optional L:8055
+	// ID = id-AllowedNSSAI, PRESENCE = optional L:8487
 	SI_AMF_DT_AllowedNSSAI * allowedNSSAI;
 	int allowedNSSAI_isset;
 
-	// ID = id-SourceToTarget-AMFInformationReroute, PRESENCE = optional L:8055
+	// ID = id-SourceToTarget-AMFInformationReroute, PRESENCE = optional L:8487
 	SI_AMF_DT_SourceToTarget_AMFInformationReroute * sourceToTargetAMFInformationReroute;
 	int sourceToTargetAMFInformationReroute_isset;
 
@@ -17558,30 +17888,34 @@ typedef struct __si_amf_dt_RerouteNASRequest
 } SI_AMF_DT_PDU_RerouteNASRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] nGSetup  L:8021
+//ELEMENTARY-PROCEDURE = [2] nGSetup  L:8448
 
 typedef struct __si_amf_dt_NGSetupRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-GlobalRANNodeID, PRESENCE = mandatory L:8055
+	// ID = id-GlobalRANNodeID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_GlobalRANNodeID * globalRANNodeID;
 	int globalRANNodeID_isset;
 
-	// ID = id-RANNodeName, PRESENCE = optional L:8055
+	// ID = id-RANNodeName, PRESENCE = optional L:8487
 	SI_AMF_DT_RANNodeName * rANNodeName;
 	int rANNodeName_isset;
 
-	// ID = id-SupportedTAList, PRESENCE = mandatory L:8055
+	// ID = id-SupportedTAList, PRESENCE = mandatory L:8487
 	SI_AMF_DT_SupportedTAList * supportedTAList;
 	int supportedTAList_isset;
 
-	// ID = id-DefaultPagingDRX, PRESENCE = mandatory L:8055
+	// ID = id-DefaultPagingDRX, PRESENCE = mandatory L:8487
 	uint8_t defaultPagingDRX;
 	int defaultPagingDRX_isset;
 
-	// ID = id-UERetentionInformation, PRESENCE = optional L:8055
+	// ID = id-UERetentionInformation, PRESENCE = optional L:8487
 	uint8_t uERetentionInformation;
 	int uERetentionInformation_isset;
 
@@ -17589,34 +17923,38 @@ typedef struct __si_amf_dt_NGSetupRequest
 } SI_AMF_DT_PDU_NGSetupRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] nGSetup  L:8021
+//ELEMENTARY-PROCEDURE = [2] nGSetup  L:8448
 
 typedef struct __si_amf_dt_NGSetupResponse
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMFName, PRESENCE = mandatory L:8055
+	// ID = id-AMFName, PRESENCE = mandatory L:8487
 	SI_AMF_DT_AMFName * aMFName;
 	int aMFName_isset;
 
-	// ID = id-ServedGUAMIList, PRESENCE = mandatory L:8055
+	// ID = id-ServedGUAMIList, PRESENCE = mandatory L:8487
 	SI_AMF_DT_ServedGUAMIList * servedGUAMIList;
 	int servedGUAMIList_isset;
 
-	// ID = id-RelativeAMFCapacity, PRESENCE = mandatory L:8055
+	// ID = id-RelativeAMFCapacity, PRESENCE = mandatory L:8487
 	unsigned long long int relativeAMFCapacity;
 	int relativeAMFCapacity_isset;
 
-	// ID = id-PLMNSupportList, PRESENCE = mandatory L:8055
+	// ID = id-PLMNSupportList, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PLMNSupportList * pLMNSupportList;
 	int pLMNSupportList_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
-	// ID = id-UERetentionInformation, PRESENCE = optional L:8055
+	// ID = id-UERetentionInformation, PRESENCE = optional L:8487
 	uint8_t uERetentionInformation;
 	int uERetentionInformation_isset;
 
@@ -17624,22 +17962,26 @@ typedef struct __si_amf_dt_NGSetupResponse
 } SI_AMF_DT_PDU_NGSetupResponse;
 
 
-//ELEMENTARY-PROCEDURE = [2] nGSetup  L:8021
+//ELEMENTARY-PROCEDURE = [2] nGSetup  L:8448
 
 typedef struct __si_amf_dt_NGSetupFailure
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-TimeToWait, PRESENCE = optional L:8055
+	// ID = id-TimeToWait, PRESENCE = optional L:8487
 	uint8_t timeToWait;
 	int timeToWait_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17647,30 +17989,34 @@ typedef struct __si_amf_dt_NGSetupFailure
 } SI_AMF_DT_PDU_NGSetupFailure;
 
 
-//ELEMENTARY-PROCEDURE = [2] rANConfigurationUpdate  L:8021
+//ELEMENTARY-PROCEDURE = [2] rANConfigurationUpdate  L:8448
 
 typedef struct __si_amf_dt_RANConfigurationUpdate
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-RANNodeName, PRESENCE = optional L:8055
+	// ID = id-RANNodeName, PRESENCE = optional L:8487
 	SI_AMF_DT_RANNodeName * rANNodeName;
 	int rANNodeName_isset;
 
-	// ID = id-SupportedTAList, PRESENCE = optional L:8055
+	// ID = id-SupportedTAList, PRESENCE = optional L:8487
 	SI_AMF_DT_SupportedTAList * supportedTAList;
 	int supportedTAList_isset;
 
-	// ID = id-DefaultPagingDRX, PRESENCE = optional L:8055
+	// ID = id-DefaultPagingDRX, PRESENCE = optional L:8487
 	uint8_t defaultPagingDRX;
 	int defaultPagingDRX_isset;
 
-	// ID = id-GlobalRANNodeID, PRESENCE = optional L:8055
+	// ID = id-GlobalRANNodeID, PRESENCE = optional L:8487
 	SI_AMF_DT_GlobalRANNodeID * globalRANNodeID;
 	int globalRANNodeID_isset;
 
-	// ID = id-NGRAN-TNLAssociationToRemoveList, PRESENCE = optional L:8055
+	// ID = id-NGRAN-TNLAssociationToRemoveList, PRESENCE = optional L:8487
 	SI_AMF_DT_NGRAN_TNLAssociationToRemoveList * nGRANTNLAssociationToRemoveList;
 	int nGRANTNLAssociationToRemoveList_isset;
 
@@ -17678,14 +18024,18 @@ typedef struct __si_amf_dt_RANConfigurationUpdate
 } SI_AMF_DT_PDU_RANConfigurationUpdate;
 
 
-//ELEMENTARY-PROCEDURE = [2] rANConfigurationUpdate  L:8021
+//ELEMENTARY-PROCEDURE = [2] rANConfigurationUpdate  L:8448
 
 typedef struct __si_amf_dt_RANConfigurationUpdateAcknowledge
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17693,22 +18043,26 @@ typedef struct __si_amf_dt_RANConfigurationUpdateAcknowledge
 } SI_AMF_DT_PDU_RANConfigurationUpdateAcknowledge;
 
 
-//ELEMENTARY-PROCEDURE = [2] rANConfigurationUpdate  L:8021
+//ELEMENTARY-PROCEDURE = [2] rANConfigurationUpdate  L:8448
 
 typedef struct __si_amf_dt_RANConfigurationUpdateFailure
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-TimeToWait, PRESENCE = optional L:8055
+	// ID = id-TimeToWait, PRESENCE = optional L:8487
 	uint8_t timeToWait;
 	int timeToWait_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17716,38 +18070,42 @@ typedef struct __si_amf_dt_RANConfigurationUpdateFailure
 } SI_AMF_DT_PDU_RANConfigurationUpdateFailure;
 
 
-//ELEMENTARY-PROCEDURE = [2] aMFConfigurationUpdate  L:8021
+//ELEMENTARY-PROCEDURE = [2] aMFConfigurationUpdate  L:8448
 
 typedef struct __si_amf_dt_AMFConfigurationUpdate
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMFName, PRESENCE = optional L:8055
+	// ID = id-AMFName, PRESENCE = optional L:8487
 	SI_AMF_DT_AMFName * aMFName;
 	int aMFName_isset;
 
-	// ID = id-ServedGUAMIList, PRESENCE = optional L:8055
+	// ID = id-ServedGUAMIList, PRESENCE = optional L:8487
 	SI_AMF_DT_ServedGUAMIList * servedGUAMIList;
 	int servedGUAMIList_isset;
 
-	// ID = id-RelativeAMFCapacity, PRESENCE = optional L:8055
+	// ID = id-RelativeAMFCapacity, PRESENCE = optional L:8487
 	unsigned long long int relativeAMFCapacity;
 	int relativeAMFCapacity_isset;
 
-	// ID = id-PLMNSupportList, PRESENCE = optional L:8055
+	// ID = id-PLMNSupportList, PRESENCE = optional L:8487
 	SI_AMF_DT_PLMNSupportList * pLMNSupportList;
 	int pLMNSupportList_isset;
 
-	// ID = id-AMF-TNLAssociationToAddList, PRESENCE = optional L:8055
+	// ID = id-AMF-TNLAssociationToAddList, PRESENCE = optional L:8487
 	SI_AMF_DT_AMF_TNLAssociationToAddList * aMFTNLAssociationToAddList;
 	int aMFTNLAssociationToAddList_isset;
 
-	// ID = id-AMF-TNLAssociationToRemoveList, PRESENCE = optional L:8055
+	// ID = id-AMF-TNLAssociationToRemoveList, PRESENCE = optional L:8487
 	SI_AMF_DT_AMF_TNLAssociationToRemoveList * aMFTNLAssociationToRemoveList;
 	int aMFTNLAssociationToRemoveList_isset;
 
-	// ID = id-AMF-TNLAssociationToUpdateList, PRESENCE = optional L:8055
+	// ID = id-AMF-TNLAssociationToUpdateList, PRESENCE = optional L:8487
 	SI_AMF_DT_AMF_TNLAssociationToUpdateList * aMFTNLAssociationToUpdateList;
 	int aMFTNLAssociationToUpdateList_isset;
 
@@ -17755,22 +18113,26 @@ typedef struct __si_amf_dt_AMFConfigurationUpdate
 } SI_AMF_DT_PDU_AMFConfigurationUpdate;
 
 
-//ELEMENTARY-PROCEDURE = [2] aMFConfigurationUpdate  L:8021
+//ELEMENTARY-PROCEDURE = [2] aMFConfigurationUpdate  L:8448
 
 typedef struct __si_amf_dt_AMFConfigurationUpdateAcknowledge
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-TNLAssociationSetupList, PRESENCE = optional L:8055
+	// ID = id-AMF-TNLAssociationSetupList, PRESENCE = optional L:8487
 	SI_AMF_DT_AMF_TNLAssociationSetupList * aMFTNLAssociationSetupList;
 	int aMFTNLAssociationSetupList_isset;
 
-	// ID = id-AMF-TNLAssociationFailedToSetupList, PRESENCE = optional L:8055
+	// ID = id-AMF-TNLAssociationFailedToSetupList, PRESENCE = optional L:8487
 	SI_AMF_DT_TNLAssociationList * aMFTNLAssociationFailedToSetupList;
 	int aMFTNLAssociationFailedToSetupList_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17778,22 +18140,26 @@ typedef struct __si_amf_dt_AMFConfigurationUpdateAcknowledge
 } SI_AMF_DT_PDU_AMFConfigurationUpdateAcknowledge;
 
 
-//ELEMENTARY-PROCEDURE = [2] aMFConfigurationUpdate  L:8021
+//ELEMENTARY-PROCEDURE = [2] aMFConfigurationUpdate  L:8448
 
 typedef struct __si_amf_dt_AMFConfigurationUpdateFailure
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-TimeToWait, PRESENCE = optional L:8055
+	// ID = id-TimeToWait, PRESENCE = optional L:8487
 	uint8_t timeToWait;
 	int timeToWait_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17801,14 +18167,18 @@ typedef struct __si_amf_dt_AMFConfigurationUpdateFailure
 } SI_AMF_DT_PDU_AMFConfigurationUpdateFailure;
 
 
-//ELEMENTARY-PROCEDURE = [2] aMFStatusIndication  L:8021
+//ELEMENTARY-PROCEDURE = [2] aMFStatusIndication  L:8448
 
 typedef struct __si_amf_dt_AMFStatusIndication
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-UnavailableGUAMIList, PRESENCE = mandatory L:8055
+	// ID = id-UnavailableGUAMIList, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UnavailableGUAMIList * unavailableGUAMIList;
 	int unavailableGUAMIList_isset;
 
@@ -17816,18 +18186,22 @@ typedef struct __si_amf_dt_AMFStatusIndication
 } SI_AMF_DT_PDU_AMFStatusIndication;
 
 
-//ELEMENTARY-PROCEDURE = [2] nGReset  L:8021
+//ELEMENTARY-PROCEDURE = [2] nGReset  L:8448
 
 typedef struct __si_amf_dt_NGReset
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-ResetType, PRESENCE = mandatory L:8055
+	// ID = id-ResetType, PRESENCE = mandatory L:8487
 	SI_AMF_DT_ResetType * resetType;
 	int resetType_isset;
 
@@ -17835,18 +18209,22 @@ typedef struct __si_amf_dt_NGReset
 } SI_AMF_DT_PDU_NGReset;
 
 
-//ELEMENTARY-PROCEDURE = [2] nGReset  L:8021
+//ELEMENTARY-PROCEDURE = [2] nGReset  L:8448
 
 typedef struct __si_amf_dt_NGResetAcknowledge
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-UE-associatedLogicalNG-connectionList, PRESENCE = optional L:8055
+	// ID = id-UE-associatedLogicalNG-connectionList, PRESENCE = optional L:8487
 	SI_AMF_DT_UE_associatedLogicalNG_connectionList * uEassociatedLogicalNGconnectionList;
 	int uEassociatedLogicalNGconnectionList_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17854,26 +18232,30 @@ typedef struct __si_amf_dt_NGResetAcknowledge
 } SI_AMF_DT_PDU_NGResetAcknowledge;
 
 
-//ELEMENTARY-PROCEDURE = [2] errorIndication  L:8021
+//ELEMENTARY-PROCEDURE = [2] errorIndication  L:8448
 
 typedef struct __si_amf_dt_ErrorIndication
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = optional L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = optional L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = optional L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = optional L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-Cause, PRESENCE = optional L:8055
+	// ID = id-Cause, PRESENCE = optional L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -17881,22 +18263,26 @@ typedef struct __si_amf_dt_ErrorIndication
 } SI_AMF_DT_PDU_ErrorIndication;
 
 
-//ELEMENTARY-PROCEDURE = [2] overloadStart  L:8021
+//ELEMENTARY-PROCEDURE = [2] overloadStart  L:8448
 
 typedef struct __si_amf_dt_OverloadStart
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMFOverloadResponse, PRESENCE = optional L:8055
+	// ID = id-AMFOverloadResponse, PRESENCE = optional L:8487
 	SI_AMF_DT_OverloadResponse * aMFOverloadResponse;
 	int aMFOverloadResponse_isset;
 
-	// ID = id-AMFTrafficLoadReductionIndication, PRESENCE = optional L:8055
+	// ID = id-AMFTrafficLoadReductionIndication, PRESENCE = optional L:8487
 	unsigned long long int aMFTrafficLoadReductionIndication;
 	int aMFTrafficLoadReductionIndication_isset;
 
-	// ID = id-OverloadStartNSSAIList, PRESENCE = optional L:8055
+	// ID = id-OverloadStartNSSAIList, PRESENCE = optional L:8487
 	SI_AMF_DT_OverloadStartNSSAIList * overloadStartNSSAIList;
 	int overloadStartNSSAIList_isset;
 
@@ -17905,30 +18291,38 @@ typedef struct __si_amf_dt_OverloadStart
 
 
 // GOT-NULL 
-//ELEMENTARY-PROCEDURE = [2] overloadStop  L:8021
+//ELEMENTARY-PROCEDURE = [2] overloadStop  L:8448
 
 typedef struct __si_amf_dt_OverloadStop
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
 	//:
 	
 } SI_AMF_DT_PDU_OverloadStop;
 
 
-//ELEMENTARY-PROCEDURE = [2] uplinkRANConfigurationTransfer  L:8021
+//ELEMENTARY-PROCEDURE = [2] uplinkRANConfigurationTransfer  L:8448
 
 typedef struct __si_amf_dt_UplinkRANConfigurationTransfer
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-SONConfigurationTransferUL, PRESENCE = optional L:8055
+	// ID = id-SONConfigurationTransferUL, PRESENCE = optional L:8487
 	SI_AMF_DT_SONConfigurationTransfer * sONConfigurationTransferUL;
 	int sONConfigurationTransferUL_isset;
 
-	// ID = id-ENDC-SONConfigurationTransferUL, PRESENCE = optional L:8055
+	// ID = id-ENDC-SONConfigurationTransferUL, PRESENCE = optional L:8487
 	SI_AMF_DT_EN_DCSONConfigurationTransfer * eNDCSONConfigurationTransferUL;
 	int eNDCSONConfigurationTransferUL_isset;
 
@@ -17936,18 +18330,22 @@ typedef struct __si_amf_dt_UplinkRANConfigurationTransfer
 } SI_AMF_DT_PDU_UplinkRANConfigurationTransfer;
 
 
-//ELEMENTARY-PROCEDURE = [2] downlinkRANConfigurationTransfer  L:8021
+//ELEMENTARY-PROCEDURE = [2] downlinkRANConfigurationTransfer  L:8448
 
 typedef struct __si_amf_dt_DownlinkRANConfigurationTransfer
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-SONConfigurationTransferDL, PRESENCE = optional L:8055
+	// ID = id-SONConfigurationTransferDL, PRESENCE = optional L:8487
 	SI_AMF_DT_SONConfigurationTransfer * sONConfigurationTransferDL;
 	int sONConfigurationTransferDL_isset;
 
-	// ID = id-ENDC-SONConfigurationTransferDL, PRESENCE = optional L:8055
+	// ID = id-ENDC-SONConfigurationTransferDL, PRESENCE = optional L:8487
 	SI_AMF_DT_EN_DCSONConfigurationTransfer * eNDCSONConfigurationTransferDL;
 	int eNDCSONConfigurationTransferDL_isset;
 
@@ -17955,54 +18353,58 @@ typedef struct __si_amf_dt_DownlinkRANConfigurationTransfer
 } SI_AMF_DT_PDU_DownlinkRANConfigurationTransfer;
 
 
-//ELEMENTARY-PROCEDURE = [2] writeReplaceWarning  L:8021
+//ELEMENTARY-PROCEDURE = [2] writeReplaceWarning  L:8448
 
 typedef struct __si_amf_dt_WriteReplaceWarningRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-MessageIdentifier, PRESENCE = mandatory L:8055
+	// ID = id-MessageIdentifier, PRESENCE = mandatory L:8487
 	SI_AMF_DT_MessageIdentifier * messageIdentifier;
 	int messageIdentifier_isset;
 
-	// ID = id-SerialNumber, PRESENCE = mandatory L:8055
+	// ID = id-SerialNumber, PRESENCE = mandatory L:8487
 	SI_AMF_DT_SerialNumber * serialNumber;
 	int serialNumber_isset;
 
-	// ID = id-WarningAreaList, PRESENCE = optional L:8055
+	// ID = id-WarningAreaList, PRESENCE = optional L:8487
 	SI_AMF_DT_WarningAreaList * warningAreaList;
 	int warningAreaList_isset;
 
-	// ID = id-RepetitionPeriod, PRESENCE = mandatory L:8055
+	// ID = id-RepetitionPeriod, PRESENCE = mandatory L:8487
 	unsigned long long int repetitionPeriod;
 	int repetitionPeriod_isset;
 
-	// ID = id-NumberOfBroadcastsRequested, PRESENCE = mandatory L:8055
+	// ID = id-NumberOfBroadcastsRequested, PRESENCE = mandatory L:8487
 	unsigned long long int numberOfBroadcastsRequested;
 	int numberOfBroadcastsRequested_isset;
 
-	// ID = id-WarningType, PRESENCE = optional L:8055
+	// ID = id-WarningType, PRESENCE = optional L:8487
 	SI_AMF_DT_WarningType * warningType;
 	int warningType_isset;
 
-	// ID = id-WarningSecurityInfo, PRESENCE = optional L:8055
+	// ID = id-WarningSecurityInfo, PRESENCE = optional L:8487
 	SI_AMF_DT_WarningSecurityInfo * warningSecurityInfo;
 	int warningSecurityInfo_isset;
 
-	// ID = id-DataCodingScheme, PRESENCE = optional L:8055
+	// ID = id-DataCodingScheme, PRESENCE = optional L:8487
 	SI_AMF_DT_DataCodingScheme * dataCodingScheme;
 	int dataCodingScheme_isset;
 
-	// ID = id-WarningMessageContents, PRESENCE = optional L:8055
+	// ID = id-WarningMessageContents, PRESENCE = optional L:8487
 	SI_AMF_DT_WarningMessageContents * warningMessageContents;
 	int warningMessageContents_isset;
 
-	// ID = id-ConcurrentWarningMessageInd, PRESENCE = optional L:8055
+	// ID = id-ConcurrentWarningMessageInd, PRESENCE = optional L:8487
 	uint8_t concurrentWarningMessageInd;
 	int concurrentWarningMessageInd_isset;
 
-	// ID = id-WarningAreaCoordinates, PRESENCE = optional L:8055
+	// ID = id-WarningAreaCoordinates, PRESENCE = optional L:8487
 	SI_AMF_DT_WarningAreaCoordinates * warningAreaCoordinates;
 	int warningAreaCoordinates_isset;
 
@@ -18010,26 +18412,30 @@ typedef struct __si_amf_dt_WriteReplaceWarningRequest
 } SI_AMF_DT_PDU_WriteReplaceWarningRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] writeReplaceWarning  L:8021
+//ELEMENTARY-PROCEDURE = [2] writeReplaceWarning  L:8448
 
 typedef struct __si_amf_dt_WriteReplaceWarningResponse
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-MessageIdentifier, PRESENCE = mandatory L:8055
+	// ID = id-MessageIdentifier, PRESENCE = mandatory L:8487
 	SI_AMF_DT_MessageIdentifier * messageIdentifier;
 	int messageIdentifier_isset;
 
-	// ID = id-SerialNumber, PRESENCE = mandatory L:8055
+	// ID = id-SerialNumber, PRESENCE = mandatory L:8487
 	SI_AMF_DT_SerialNumber * serialNumber;
 	int serialNumber_isset;
 
-	// ID = id-BroadcastCompletedAreaList, PRESENCE = optional L:8055
+	// ID = id-BroadcastCompletedAreaList, PRESENCE = optional L:8487
 	SI_AMF_DT_BroadcastCompletedAreaList * broadcastCompletedAreaList;
 	int broadcastCompletedAreaList_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -18037,26 +18443,30 @@ typedef struct __si_amf_dt_WriteReplaceWarningResponse
 } SI_AMF_DT_PDU_WriteReplaceWarningResponse;
 
 
-//ELEMENTARY-PROCEDURE = [2] pWSCancel  L:8021
+//ELEMENTARY-PROCEDURE = [2] pWSCancel  L:8448
 
 typedef struct __si_amf_dt_PWSCancelRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-MessageIdentifier, PRESENCE = mandatory L:8055
+	// ID = id-MessageIdentifier, PRESENCE = mandatory L:8487
 	SI_AMF_DT_MessageIdentifier * messageIdentifier;
 	int messageIdentifier_isset;
 
-	// ID = id-SerialNumber, PRESENCE = mandatory L:8055
+	// ID = id-SerialNumber, PRESENCE = mandatory L:8487
 	SI_AMF_DT_SerialNumber * serialNumber;
 	int serialNumber_isset;
 
-	// ID = id-WarningAreaList, PRESENCE = optional L:8055
+	// ID = id-WarningAreaList, PRESENCE = optional L:8487
 	SI_AMF_DT_WarningAreaList * warningAreaList;
 	int warningAreaList_isset;
 
-	// ID = id-CancelAllWarningMessages, PRESENCE = optional L:8055
+	// ID = id-CancelAllWarningMessages, PRESENCE = optional L:8487
 	uint8_t cancelAllWarningMessages;
 	int cancelAllWarningMessages_isset;
 
@@ -18064,26 +18474,30 @@ typedef struct __si_amf_dt_PWSCancelRequest
 } SI_AMF_DT_PDU_PWSCancelRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] pWSCancel  L:8021
+//ELEMENTARY-PROCEDURE = [2] pWSCancel  L:8448
 
 typedef struct __si_amf_dt_PWSCancelResponse
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-MessageIdentifier, PRESENCE = mandatory L:8055
+	// ID = id-MessageIdentifier, PRESENCE = mandatory L:8487
 	SI_AMF_DT_MessageIdentifier * messageIdentifier;
 	int messageIdentifier_isset;
 
-	// ID = id-SerialNumber, PRESENCE = mandatory L:8055
+	// ID = id-SerialNumber, PRESENCE = mandatory L:8487
 	SI_AMF_DT_SerialNumber * serialNumber;
 	int serialNumber_isset;
 
-	// ID = id-BroadcastCancelledAreaList, PRESENCE = optional L:8055
+	// ID = id-BroadcastCancelledAreaList, PRESENCE = optional L:8487
 	SI_AMF_DT_BroadcastCancelledAreaList * broadcastCancelledAreaList;
 	int broadcastCancelledAreaList_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -18091,26 +18505,30 @@ typedef struct __si_amf_dt_PWSCancelResponse
 } SI_AMF_DT_PDU_PWSCancelResponse;
 
 
-//ELEMENTARY-PROCEDURE = [2] pWSRestartIndication  L:8021
+//ELEMENTARY-PROCEDURE = [2] pWSRestartIndication  L:8448
 
 typedef struct __si_amf_dt_PWSRestartIndication
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-CellIDListForRestart, PRESENCE = mandatory L:8055
+	// ID = id-CellIDListForRestart, PRESENCE = mandatory L:8487
 	SI_AMF_DT_CellIDListForRestart * cellIDListForRestart;
 	int cellIDListForRestart_isset;
 
-	// ID = id-GlobalRANNodeID, PRESENCE = mandatory L:8055
+	// ID = id-GlobalRANNodeID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_GlobalRANNodeID * globalRANNodeID;
 	int globalRANNodeID_isset;
 
-	// ID = id-TAIListForRestart, PRESENCE = mandatory L:8055
+	// ID = id-TAIListForRestart, PRESENCE = mandatory L:8487
 	SI_AMF_DT_TAIListForRestart * tAIListForRestart;
 	int tAIListForRestart_isset;
 
-	// ID = id-EmergencyAreaIDListForRestart, PRESENCE = optional L:8055
+	// ID = id-EmergencyAreaIDListForRestart, PRESENCE = optional L:8487
 	SI_AMF_DT_EmergencyAreaIDListForRestart * emergencyAreaIDListForRestart;
 	int emergencyAreaIDListForRestart_isset;
 
@@ -18118,18 +18536,22 @@ typedef struct __si_amf_dt_PWSRestartIndication
 } SI_AMF_DT_PDU_PWSRestartIndication;
 
 
-//ELEMENTARY-PROCEDURE = [2] pWSFailureIndication  L:8021
+//ELEMENTARY-PROCEDURE = [2] pWSFailureIndication  L:8448
 
 typedef struct __si_amf_dt_PWSFailureIndication
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-PWSFailedCellIDList, PRESENCE = mandatory L:8055
+	// ID = id-PWSFailedCellIDList, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PWSFailedCellIDList * pWSFailedCellIDList;
 	int pWSFailedCellIDList_isset;
 
-	// ID = id-GlobalRANNodeID, PRESENCE = mandatory L:8055
+	// ID = id-GlobalRANNodeID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_GlobalRANNodeID * globalRANNodeID;
 	int globalRANNodeID_isset;
 
@@ -18137,26 +18559,30 @@ typedef struct __si_amf_dt_PWSFailureIndication
 } SI_AMF_DT_PDU_PWSFailureIndication;
 
 
-//ELEMENTARY-PROCEDURE = [2] downlinkUEAssociatedNRPPaTransport  L:8021
+//ELEMENTARY-PROCEDURE = [2] downlinkUEAssociatedNRPPaTransport  L:8448
 
 typedef struct __si_amf_dt_DownlinkUEAssociatedNRPPaTransport
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-RoutingID, PRESENCE = mandatory L:8055
+	// ID = id-RoutingID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_RoutingID * routingID;
 	int routingID_isset;
 
-	// ID = id-NRPPa-PDU, PRESENCE = mandatory L:8055
+	// ID = id-NRPPa-PDU, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NRPPa_PDU * nRPPaPDU;
 	int nRPPaPDU_isset;
 
@@ -18164,26 +18590,30 @@ typedef struct __si_amf_dt_DownlinkUEAssociatedNRPPaTransport
 } SI_AMF_DT_PDU_DownlinkUEAssociatedNRPPaTransport;
 
 
-//ELEMENTARY-PROCEDURE = [2] uplinkUEAssociatedNRPPaTransport  L:8021
+//ELEMENTARY-PROCEDURE = [2] uplinkUEAssociatedNRPPaTransport  L:8448
 
 typedef struct __si_amf_dt_UplinkUEAssociatedNRPPaTransport
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-RoutingID, PRESENCE = mandatory L:8055
+	// ID = id-RoutingID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_RoutingID * routingID;
 	int routingID_isset;
 
-	// ID = id-NRPPa-PDU, PRESENCE = mandatory L:8055
+	// ID = id-NRPPa-PDU, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NRPPa_PDU * nRPPaPDU;
 	int nRPPaPDU_isset;
 
@@ -18191,18 +18621,22 @@ typedef struct __si_amf_dt_UplinkUEAssociatedNRPPaTransport
 } SI_AMF_DT_PDU_UplinkUEAssociatedNRPPaTransport;
 
 
-//ELEMENTARY-PROCEDURE = [2] downlinkNonUEAssociatedNRPPaTransport  L:8021
+//ELEMENTARY-PROCEDURE = [2] downlinkNonUEAssociatedNRPPaTransport  L:8448
 
 typedef struct __si_amf_dt_DownlinkNonUEAssociatedNRPPaTransport
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-RoutingID, PRESENCE = mandatory L:8055
+	// ID = id-RoutingID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_RoutingID * routingID;
 	int routingID_isset;
 
-	// ID = id-NRPPa-PDU, PRESENCE = mandatory L:8055
+	// ID = id-NRPPa-PDU, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NRPPa_PDU * nRPPaPDU;
 	int nRPPaPDU_isset;
 
@@ -18210,18 +18644,22 @@ typedef struct __si_amf_dt_DownlinkNonUEAssociatedNRPPaTransport
 } SI_AMF_DT_PDU_DownlinkNonUEAssociatedNRPPaTransport;
 
 
-//ELEMENTARY-PROCEDURE = [2] uplinkNonUEAssociatedNRPPaTransport  L:8021
+//ELEMENTARY-PROCEDURE = [2] uplinkNonUEAssociatedNRPPaTransport  L:8448
 
 typedef struct __si_amf_dt_UplinkNonUEAssociatedNRPPaTransport
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-RoutingID, PRESENCE = mandatory L:8055
+	// ID = id-RoutingID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_RoutingID * routingID;
 	int routingID_isset;
 
-	// ID = id-NRPPa-PDU, PRESENCE = mandatory L:8055
+	// ID = id-NRPPa-PDU, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NRPPa_PDU * nRPPaPDU;
 	int nRPPaPDU_isset;
 
@@ -18229,22 +18667,26 @@ typedef struct __si_amf_dt_UplinkNonUEAssociatedNRPPaTransport
 } SI_AMF_DT_PDU_UplinkNonUEAssociatedNRPPaTransport;
 
 
-//ELEMENTARY-PROCEDURE = [2] traceStart  L:8021
+//ELEMENTARY-PROCEDURE = [2] traceStart  L:8448
 
 typedef struct __si_amf_dt_TraceStart
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-TraceActivation, PRESENCE = mandatory L:8055
+	// ID = id-TraceActivation, PRESENCE = mandatory L:8487
 	SI_AMF_DT_TraceActivation * traceActivation;
 	int traceActivation_isset;
 
@@ -18252,26 +18694,30 @@ typedef struct __si_amf_dt_TraceStart
 } SI_AMF_DT_PDU_TraceStart;
 
 
-//ELEMENTARY-PROCEDURE = [2] traceFailureIndication  L:8021
+//ELEMENTARY-PROCEDURE = [2] traceFailureIndication  L:8448
 
 typedef struct __si_amf_dt_TraceFailureIndication
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-NGRANTraceID, PRESENCE = mandatory L:8055
+	// ID = id-NGRANTraceID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NGRANTraceID * nGRANTraceID;
 	int nGRANTraceID_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
@@ -18279,22 +18725,26 @@ typedef struct __si_amf_dt_TraceFailureIndication
 } SI_AMF_DT_PDU_TraceFailureIndication;
 
 
-//ELEMENTARY-PROCEDURE = [2] deactivateTrace  L:8021
+//ELEMENTARY-PROCEDURE = [2] deactivateTrace  L:8448
 
 typedef struct __si_amf_dt_DeactivateTrace
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-NGRANTraceID, PRESENCE = mandatory L:8055
+	// ID = id-NGRANTraceID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NGRANTraceID * nGRANTraceID;
 	int nGRANTraceID_isset;
 
@@ -18302,30 +18752,34 @@ typedef struct __si_amf_dt_DeactivateTrace
 } SI_AMF_DT_PDU_DeactivateTrace;
 
 
-//ELEMENTARY-PROCEDURE = [2] cellTrafficTrace  L:8021
+//ELEMENTARY-PROCEDURE = [2] cellTrafficTrace  L:8448
 
 typedef struct __si_amf_dt_CellTrafficTrace
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-NGRANTraceID, PRESENCE = mandatory L:8055
+	// ID = id-NGRANTraceID, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NGRANTraceID * nGRANTraceID;
 	int nGRANTraceID_isset;
 
-	// ID = id-NGRAN-CGI, PRESENCE = mandatory L:8055
+	// ID = id-NGRAN-CGI, PRESENCE = mandatory L:8487
 	SI_AMF_DT_NGRAN_CGI * nGRANCGI;
 	int nGRANCGI_isset;
 
-	// ID = id-TraceCollectionEntityIPAddress, PRESENCE = mandatory L:8055
+	// ID = id-TraceCollectionEntityIPAddress, PRESENCE = mandatory L:8487
 	SI_AMF_DT_TransportLayerAddress * traceCollectionEntityIPAddress;
 	int traceCollectionEntityIPAddress_isset;
 
@@ -18333,22 +18787,26 @@ typedef struct __si_amf_dt_CellTrafficTrace
 } SI_AMF_DT_PDU_CellTrafficTrace;
 
 
-//ELEMENTARY-PROCEDURE = [2] locationReportingControl  L:8021
+//ELEMENTARY-PROCEDURE = [2] locationReportingControl  L:8448
 
 typedef struct __si_amf_dt_LocationReportingControl
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-LocationReportingRequestType, PRESENCE = mandatory L:8055
+	// ID = id-LocationReportingRequestType, PRESENCE = mandatory L:8487
 	SI_AMF_DT_LocationReportingRequestType * locationReportingRequestType;
 	int locationReportingRequestType_isset;
 
@@ -18356,22 +18814,26 @@ typedef struct __si_amf_dt_LocationReportingControl
 } SI_AMF_DT_PDU_LocationReportingControl;
 
 
-//ELEMENTARY-PROCEDURE = [2] locationReportingFailureIndication  L:8021
+//ELEMENTARY-PROCEDURE = [2] locationReportingFailureIndication  L:8448
 
 typedef struct __si_amf_dt_LocationReportingFailureIndication
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-Cause, PRESENCE = mandatory L:8055
+	// ID = id-Cause, PRESENCE = mandatory L:8487
 	SI_AMF_DT_Cause * cause;
 	int cause_isset;
 
@@ -18379,30 +18841,34 @@ typedef struct __si_amf_dt_LocationReportingFailureIndication
 } SI_AMF_DT_PDU_LocationReportingFailureIndication;
 
 
-//ELEMENTARY-PROCEDURE = [2] locationReport  L:8021
+//ELEMENTARY-PROCEDURE = [2] locationReport  L:8448
 
 typedef struct __si_amf_dt_LocationReport
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8055
+	// ID = id-UserLocationInformation, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
-	// ID = id-UEPresenceInAreaOfInterestList, PRESENCE = optional L:8055
+	// ID = id-UEPresenceInAreaOfInterestList, PRESENCE = optional L:8487
 	SI_AMF_DT_UEPresenceInAreaOfInterestList * uEPresenceInAreaOfInterestList;
 	int uEPresenceInAreaOfInterestList_isset;
 
-	// ID = id-LocationReportingRequestType, PRESENCE = mandatory L:8055
+	// ID = id-LocationReportingRequestType, PRESENCE = mandatory L:8487
 	SI_AMF_DT_LocationReportingRequestType * locationReportingRequestType;
 	int locationReportingRequestType_isset;
 
@@ -18410,18 +18876,22 @@ typedef struct __si_amf_dt_LocationReport
 } SI_AMF_DT_PDU_LocationReport;
 
 
-//ELEMENTARY-PROCEDURE = [2] uETNLABindingRelease  L:8021
+//ELEMENTARY-PROCEDURE = [2] uETNLABindingRelease  L:8448
 
 typedef struct __si_amf_dt_UETNLABindingReleaseRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
@@ -18429,26 +18899,30 @@ typedef struct __si_amf_dt_UETNLABindingReleaseRequest
 } SI_AMF_DT_PDU_UETNLABindingReleaseRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] uERadioCapabilityInfoIndication  L:8021
+//ELEMENTARY-PROCEDURE = [2] uERadioCapabilityInfoIndication  L:8448
 
 typedef struct __si_amf_dt_UERadioCapabilityInfoIndication
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-UERadioCapability, PRESENCE = mandatory L:8055
+	// ID = id-UERadioCapability, PRESENCE = mandatory L:8487
 	SI_AMF_DT_UERadioCapability * uERadioCapability;
 	int uERadioCapability_isset;
 
-	// ID = id-UERadioCapabilityForPaging, PRESENCE = optional L:8055
+	// ID = id-UERadioCapabilityForPaging, PRESENCE = optional L:8487
 	SI_AMF_DT_UERadioCapabilityForPaging * uERadioCapabilityForPaging;
 	int uERadioCapabilityForPaging_isset;
 
@@ -18456,22 +18930,26 @@ typedef struct __si_amf_dt_UERadioCapabilityInfoIndication
 } SI_AMF_DT_PDU_UERadioCapabilityInfoIndication;
 
 
-//ELEMENTARY-PROCEDURE = [2] uERadioCapabilityCheck  L:8021
+//ELEMENTARY-PROCEDURE = [2] uERadioCapabilityCheck  L:8448
 
 typedef struct __si_amf_dt_UERadioCapabilityCheckRequest
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-UERadioCapability, PRESENCE = optional L:8055
+	// ID = id-UERadioCapability, PRESENCE = optional L:8487
 	SI_AMF_DT_UERadioCapability * uERadioCapability;
 	int uERadioCapability_isset;
 
@@ -18479,26 +18957,30 @@ typedef struct __si_amf_dt_UERadioCapabilityCheckRequest
 } SI_AMF_DT_PDU_UERadioCapabilityCheckRequest;
 
 
-//ELEMENTARY-PROCEDURE = [2] uERadioCapabilityCheck  L:8021
+//ELEMENTARY-PROCEDURE = [2] uERadioCapabilityCheck  L:8448
 
 typedef struct __si_amf_dt_UERadioCapabilityCheckResponse
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-IMSVoiceSupportIndicator, PRESENCE = mandatory L:8055
+	// ID = id-IMSVoiceSupportIndicator, PRESENCE = mandatory L:8487
 	uint8_t iMSVoiceSupportIndicator;
 	int iMSVoiceSupportIndicator_isset;
 
-	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8055
+	// ID = id-CriticalityDiagnostics, PRESENCE = optional L:8487
 	SI_AMF_DT_CriticalityDiagnostics * criticalityDiagnostics;
 	int criticalityDiagnostics_isset;
 
@@ -18506,42 +18988,50 @@ typedef struct __si_amf_dt_UERadioCapabilityCheckResponse
 } SI_AMF_DT_PDU_UERadioCapabilityCheckResponse;
 
 
-//ELEMENTARY-PROCEDURE = [2] privateMessage  L:8021
+//ELEMENTARY-PROCEDURE = [2] privateMessage  L:8448
 
 typedef struct __si_amf_dt_PrivateMessage
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
 	//:
 	
 } SI_AMF_DT_PDU_PrivateMessage;
 
 
-//ELEMENTARY-PROCEDURE = [2] secondaryRATDataUsageReport  L:8021
+//ELEMENTARY-PROCEDURE = [2] secondaryRATDataUsageReport  L:8448
 
 typedef struct __si_amf_dt_SecondaryRATDataUsageReport
 {
 	uint8_t pduIEExtension;
 	uint8_t pduMessageChoice;
+	uint8_t messageId;
+	uint8_t * transportObject;
+	uint16_t iECount;
+	uint8_t decodingError;
 
-	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-AMF-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int aMFUENGAPID;
 	int aMFUENGAPID_isset;
 
-	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8055
+	// ID = id-RAN-UE-NGAP-ID, PRESENCE = mandatory L:8487
 	unsigned long long int rANUENGAPID;
 	int rANUENGAPID_isset;
 
-	// ID = id-PDUSessionResourceSecondaryRATUsageList, PRESENCE = mandatory L:8055
+	// ID = id-PDUSessionResourceSecondaryRATUsageList, PRESENCE = mandatory L:8487
 	SI_AMF_DT_PDUSessionResourceSecondaryRATUsageList * pDUSessionResourceSecondaryRATUsageList;
 	int pDUSessionResourceSecondaryRATUsageList_isset;
 
-	// ID = id-HandoverFlag, PRESENCE = optional L:8055
+	// ID = id-HandoverFlag, PRESENCE = optional L:8487
 	uint8_t handoverFlag;
 	int handoverFlag_isset;
 
-	// ID = id-UserLocationInformation, PRESENCE = optional L:8055
+	// ID = id-UserLocationInformation, PRESENCE = optional L:8487
 	SI_AMF_DT_UserLocationInformation * userLocationInformation;
 	int userLocationInformation_isset;
 
@@ -18552,7 +19042,7 @@ typedef struct __si_amf_dt_SecondaryRATDataUsageReport
 void __si_amf_debug_pdu( uint8_t * buffer, int len);
 
 
-// ELEMENTARY-PROCEDURE = [0] aMFConfigurationUpdate
+// ELEMENTARY-PROCEDURE = [0] aMFConfigurationUpdate  L:6944
 // ProcedureCode = 0
 // ProcedureCodeName = id-AMFConfigurationUpdate
 // Criticality = reject
@@ -18563,9 +19053,11 @@ int __si_amf_decode_pdu_AMFConfigurationUpdate( SI_AMF_DT_PDU_AMFConfigurationUp
 
 int __si_amf_debug_pdu_AMFConfigurationUpdate( SI_AMF_DT_PDU_AMFConfigurationUpdate * objPDUAMFConfigurationUpdate);
 
+int __si_amf_memfree_pdu_AMFConfigurationUpdate( SI_AMF_DT_PDU_AMFConfigurationUpdate * objPDUAMFConfigurationUpdate);
 
 
-// ELEMENTARY-PROCEDURE = [0] aMFConfigurationUpdate
+
+// ELEMENTARY-PROCEDURE = [0] aMFConfigurationUpdate  L:6944
 // ProcedureCode = 0
 // ProcedureCodeName = id-AMFConfigurationUpdate
 // Criticality = reject
@@ -18576,9 +19068,11 @@ int __si_amf_decode_pdu_AMFConfigurationUpdateAcknowledge( SI_AMF_DT_PDU_AMFConf
 
 int __si_amf_debug_pdu_AMFConfigurationUpdateAcknowledge( SI_AMF_DT_PDU_AMFConfigurationUpdateAcknowledge * objPDUAMFConfigurationUpdateAcknowledge);
 
+int __si_amf_memfree_pdu_AMFConfigurationUpdateAcknowledge( SI_AMF_DT_PDU_AMFConfigurationUpdateAcknowledge * objPDUAMFConfigurationUpdateAcknowledge);
 
 
-// ELEMENTARY-PROCEDURE = [0] aMFConfigurationUpdate
+
+// ELEMENTARY-PROCEDURE = [0] aMFConfigurationUpdate  L:6944
 // ProcedureCode = 0
 // ProcedureCodeName = id-AMFConfigurationUpdate
 // Criticality = reject
@@ -18589,9 +19083,11 @@ int __si_amf_decode_pdu_AMFConfigurationUpdateFailure( SI_AMF_DT_PDU_AMFConfigur
 
 int __si_amf_debug_pdu_AMFConfigurationUpdateFailure( SI_AMF_DT_PDU_AMFConfigurationUpdateFailure * objPDUAMFConfigurationUpdateFailure);
 
+int __si_amf_memfree_pdu_AMFConfigurationUpdateFailure( SI_AMF_DT_PDU_AMFConfigurationUpdateFailure * objPDUAMFConfigurationUpdateFailure);
 
 
-// ELEMENTARY-PROCEDURE = [0] aMFStatusIndication
+
+// ELEMENTARY-PROCEDURE = [0] aMFStatusIndication  L:6944
 // ProcedureCode = 1
 // ProcedureCodeName = id-AMFStatusIndication
 // Criticality = ignore
@@ -18602,9 +19098,11 @@ int __si_amf_decode_pdu_AMFStatusIndication( SI_AMF_DT_PDU_AMFStatusIndication *
 
 int __si_amf_debug_pdu_AMFStatusIndication( SI_AMF_DT_PDU_AMFStatusIndication * objPDUAMFStatusIndication);
 
+int __si_amf_memfree_pdu_AMFStatusIndication( SI_AMF_DT_PDU_AMFStatusIndication * objPDUAMFStatusIndication);
 
 
-// ELEMENTARY-PROCEDURE = [0] cellTrafficTrace
+
+// ELEMENTARY-PROCEDURE = [0] cellTrafficTrace  L:6944
 // ProcedureCode = 2
 // ProcedureCodeName = id-CellTrafficTrace
 // Criticality = ignore
@@ -18615,9 +19113,11 @@ int __si_amf_decode_pdu_CellTrafficTrace( SI_AMF_DT_PDU_CellTrafficTrace * objPD
 
 int __si_amf_debug_pdu_CellTrafficTrace( SI_AMF_DT_PDU_CellTrafficTrace * objPDUCellTrafficTrace);
 
+int __si_amf_memfree_pdu_CellTrafficTrace( SI_AMF_DT_PDU_CellTrafficTrace * objPDUCellTrafficTrace);
 
 
-// ELEMENTARY-PROCEDURE = [0] deactivateTrace
+
+// ELEMENTARY-PROCEDURE = [0] deactivateTrace  L:6944
 // ProcedureCode = 3
 // ProcedureCodeName = id-DeactivateTrace
 // Criticality = ignore
@@ -18628,9 +19128,11 @@ int __si_amf_decode_pdu_DeactivateTrace( SI_AMF_DT_PDU_DeactivateTrace * objPDUD
 
 int __si_amf_debug_pdu_DeactivateTrace( SI_AMF_DT_PDU_DeactivateTrace * objPDUDeactivateTrace);
 
+int __si_amf_memfree_pdu_DeactivateTrace( SI_AMF_DT_PDU_DeactivateTrace * objPDUDeactivateTrace);
 
 
-// ELEMENTARY-PROCEDURE = [0] downlinkNASTransport
+
+// ELEMENTARY-PROCEDURE = [0] downlinkNASTransport  L:6944
 // ProcedureCode = 4
 // ProcedureCodeName = id-DownlinkNASTransport
 // Criticality = ignore
@@ -18641,9 +19143,11 @@ int __si_amf_decode_pdu_DownlinkNASTransport( SI_AMF_DT_PDU_DownlinkNASTransport
 
 int __si_amf_debug_pdu_DownlinkNASTransport( SI_AMF_DT_PDU_DownlinkNASTransport * objPDUDownlinkNASTransport);
 
+int __si_amf_memfree_pdu_DownlinkNASTransport( SI_AMF_DT_PDU_DownlinkNASTransport * objPDUDownlinkNASTransport);
 
 
-// ELEMENTARY-PROCEDURE = [0] downlinkNonUEAssociatedNRPPaTransport
+
+// ELEMENTARY-PROCEDURE = [0] downlinkNonUEAssociatedNRPPaTransport  L:6944
 // ProcedureCode = 5
 // ProcedureCodeName = id-DownlinkNonUEAssociatedNRPPaTransport
 // Criticality = ignore
@@ -18654,9 +19158,11 @@ int __si_amf_decode_pdu_DownlinkNonUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_Dow
 
 int __si_amf_debug_pdu_DownlinkNonUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_DownlinkNonUEAssociatedNRPPaTransport * objPDUDownlinkNonUEAssociatedNRPPaTransport);
 
+int __si_amf_memfree_pdu_DownlinkNonUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_DownlinkNonUEAssociatedNRPPaTransport * objPDUDownlinkNonUEAssociatedNRPPaTransport);
 
 
-// ELEMENTARY-PROCEDURE = [0] downlinkRANConfigurationTransfer
+
+// ELEMENTARY-PROCEDURE = [0] downlinkRANConfigurationTransfer  L:6944
 // ProcedureCode = 6
 // ProcedureCodeName = id-DownlinkRANConfigurationTransfer
 // Criticality = ignore
@@ -18667,9 +19173,11 @@ int __si_amf_decode_pdu_DownlinkRANConfigurationTransfer( SI_AMF_DT_PDU_Downlink
 
 int __si_amf_debug_pdu_DownlinkRANConfigurationTransfer( SI_AMF_DT_PDU_DownlinkRANConfigurationTransfer * objPDUDownlinkRANConfigurationTransfer);
 
+int __si_amf_memfree_pdu_DownlinkRANConfigurationTransfer( SI_AMF_DT_PDU_DownlinkRANConfigurationTransfer * objPDUDownlinkRANConfigurationTransfer);
 
 
-// ELEMENTARY-PROCEDURE = [0] downlinkRANStatusTransfer
+
+// ELEMENTARY-PROCEDURE = [0] downlinkRANStatusTransfer  L:6944
 // ProcedureCode = 7
 // ProcedureCodeName = id-DownlinkRANStatusTransfer
 // Criticality = ignore
@@ -18680,9 +19188,11 @@ int __si_amf_decode_pdu_DownlinkRANStatusTransfer( SI_AMF_DT_PDU_DownlinkRANStat
 
 int __si_amf_debug_pdu_DownlinkRANStatusTransfer( SI_AMF_DT_PDU_DownlinkRANStatusTransfer * objPDUDownlinkRANStatusTransfer);
 
+int __si_amf_memfree_pdu_DownlinkRANStatusTransfer( SI_AMF_DT_PDU_DownlinkRANStatusTransfer * objPDUDownlinkRANStatusTransfer);
 
 
-// ELEMENTARY-PROCEDURE = [0] downlinkUEAssociatedNRPPaTransport
+
+// ELEMENTARY-PROCEDURE = [0] downlinkUEAssociatedNRPPaTransport  L:6944
 // ProcedureCode = 8
 // ProcedureCodeName = id-DownlinkUEAssociatedNRPPaTransport
 // Criticality = ignore
@@ -18693,9 +19203,11 @@ int __si_amf_decode_pdu_DownlinkUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_Downli
 
 int __si_amf_debug_pdu_DownlinkUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_DownlinkUEAssociatedNRPPaTransport * objPDUDownlinkUEAssociatedNRPPaTransport);
 
+int __si_amf_memfree_pdu_DownlinkUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_DownlinkUEAssociatedNRPPaTransport * objPDUDownlinkUEAssociatedNRPPaTransport);
 
 
-// ELEMENTARY-PROCEDURE = [0] errorIndication
+
+// ELEMENTARY-PROCEDURE = [0] errorIndication  L:6944
 // ProcedureCode = 9
 // ProcedureCodeName = id-ErrorIndication
 // Criticality = ignore
@@ -18706,9 +19218,11 @@ int __si_amf_decode_pdu_ErrorIndication( SI_AMF_DT_PDU_ErrorIndication * objPDUE
 
 int __si_amf_debug_pdu_ErrorIndication( SI_AMF_DT_PDU_ErrorIndication * objPDUErrorIndication);
 
+int __si_amf_memfree_pdu_ErrorIndication( SI_AMF_DT_PDU_ErrorIndication * objPDUErrorIndication);
 
 
-// ELEMENTARY-PROCEDURE = [0] handoverCancel
+
+// ELEMENTARY-PROCEDURE = [0] handoverCancel  L:6944
 // ProcedureCode = 10
 // ProcedureCodeName = id-HandoverCancel
 // Criticality = reject
@@ -18719,9 +19233,11 @@ int __si_amf_decode_pdu_HandoverCancel( SI_AMF_DT_PDU_HandoverCancel * objPDUHan
 
 int __si_amf_debug_pdu_HandoverCancel( SI_AMF_DT_PDU_HandoverCancel * objPDUHandoverCancel);
 
+int __si_amf_memfree_pdu_HandoverCancel( SI_AMF_DT_PDU_HandoverCancel * objPDUHandoverCancel);
 
 
-// ELEMENTARY-PROCEDURE = [0] handoverCancel
+
+// ELEMENTARY-PROCEDURE = [0] handoverCancel  L:6944
 // ProcedureCode = 10
 // ProcedureCodeName = id-HandoverCancel
 // Criticality = reject
@@ -18732,9 +19248,11 @@ int __si_amf_decode_pdu_HandoverCancelAcknowledge( SI_AMF_DT_PDU_HandoverCancelA
 
 int __si_amf_debug_pdu_HandoverCancelAcknowledge( SI_AMF_DT_PDU_HandoverCancelAcknowledge * objPDUHandoverCancelAcknowledge);
 
+int __si_amf_memfree_pdu_HandoverCancelAcknowledge( SI_AMF_DT_PDU_HandoverCancelAcknowledge * objPDUHandoverCancelAcknowledge);
 
 
-// ELEMENTARY-PROCEDURE = [0] handoverNotification
+
+// ELEMENTARY-PROCEDURE = [0] handoverNotification  L:6944
 // ProcedureCode = 11
 // ProcedureCodeName = id-HandoverNotification
 // Criticality = ignore
@@ -18745,9 +19263,11 @@ int __si_amf_decode_pdu_HandoverNotify( SI_AMF_DT_PDU_HandoverNotify * objPDUHan
 
 int __si_amf_debug_pdu_HandoverNotify( SI_AMF_DT_PDU_HandoverNotify * objPDUHandoverNotify);
 
+int __si_amf_memfree_pdu_HandoverNotify( SI_AMF_DT_PDU_HandoverNotify * objPDUHandoverNotify);
 
 
-// ELEMENTARY-PROCEDURE = [0] handoverPreparation
+
+// ELEMENTARY-PROCEDURE = [0] handoverPreparation  L:6944
 // ProcedureCode = 12
 // ProcedureCodeName = id-HandoverPreparation
 // Criticality = reject
@@ -18758,9 +19278,11 @@ int __si_amf_decode_pdu_HandoverRequired( SI_AMF_DT_PDU_HandoverRequired * objPD
 
 int __si_amf_debug_pdu_HandoverRequired( SI_AMF_DT_PDU_HandoverRequired * objPDUHandoverRequired);
 
+int __si_amf_memfree_pdu_HandoverRequired( SI_AMF_DT_PDU_HandoverRequired * objPDUHandoverRequired);
 
 
-// ELEMENTARY-PROCEDURE = [0] handoverPreparation
+
+// ELEMENTARY-PROCEDURE = [0] handoverPreparation  L:6944
 // ProcedureCode = 12
 // ProcedureCodeName = id-HandoverPreparation
 // Criticality = reject
@@ -18771,9 +19293,11 @@ int __si_amf_decode_pdu_HandoverCommand( SI_AMF_DT_PDU_HandoverCommand * objPDUH
 
 int __si_amf_debug_pdu_HandoverCommand( SI_AMF_DT_PDU_HandoverCommand * objPDUHandoverCommand);
 
+int __si_amf_memfree_pdu_HandoverCommand( SI_AMF_DT_PDU_HandoverCommand * objPDUHandoverCommand);
 
 
-// ELEMENTARY-PROCEDURE = [0] handoverPreparation
+
+// ELEMENTARY-PROCEDURE = [0] handoverPreparation  L:6944
 // ProcedureCode = 12
 // ProcedureCodeName = id-HandoverPreparation
 // Criticality = reject
@@ -18784,9 +19308,11 @@ int __si_amf_decode_pdu_HandoverPreparationFailure( SI_AMF_DT_PDU_HandoverPrepar
 
 int __si_amf_debug_pdu_HandoverPreparationFailure( SI_AMF_DT_PDU_HandoverPreparationFailure * objPDUHandoverPreparationFailure);
 
+int __si_amf_memfree_pdu_HandoverPreparationFailure( SI_AMF_DT_PDU_HandoverPreparationFailure * objPDUHandoverPreparationFailure);
 
 
-// ELEMENTARY-PROCEDURE = [0] handoverResourceAllocation
+
+// ELEMENTARY-PROCEDURE = [0] handoverResourceAllocation  L:6944
 // ProcedureCode = 13
 // ProcedureCodeName = id-HandoverResourceAllocation
 // Criticality = reject
@@ -18797,9 +19323,11 @@ int __si_amf_decode_pdu_HandoverRequest( SI_AMF_DT_PDU_HandoverRequest * objPDUH
 
 int __si_amf_debug_pdu_HandoverRequest( SI_AMF_DT_PDU_HandoverRequest * objPDUHandoverRequest);
 
+int __si_amf_memfree_pdu_HandoverRequest( SI_AMF_DT_PDU_HandoverRequest * objPDUHandoverRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] handoverResourceAllocation
+
+// ELEMENTARY-PROCEDURE = [0] handoverResourceAllocation  L:6944
 // ProcedureCode = 13
 // ProcedureCodeName = id-HandoverResourceAllocation
 // Criticality = reject
@@ -18810,9 +19338,11 @@ int __si_amf_decode_pdu_HandoverRequestAcknowledge( SI_AMF_DT_PDU_HandoverReques
 
 int __si_amf_debug_pdu_HandoverRequestAcknowledge( SI_AMF_DT_PDU_HandoverRequestAcknowledge * objPDUHandoverRequestAcknowledge);
 
+int __si_amf_memfree_pdu_HandoverRequestAcknowledge( SI_AMF_DT_PDU_HandoverRequestAcknowledge * objPDUHandoverRequestAcknowledge);
 
 
-// ELEMENTARY-PROCEDURE = [0] handoverResourceAllocation
+
+// ELEMENTARY-PROCEDURE = [0] handoverResourceAllocation  L:6944
 // ProcedureCode = 13
 // ProcedureCodeName = id-HandoverResourceAllocation
 // Criticality = reject
@@ -18823,9 +19353,11 @@ int __si_amf_decode_pdu_HandoverFailure( SI_AMF_DT_PDU_HandoverFailure * objPDUH
 
 int __si_amf_debug_pdu_HandoverFailure( SI_AMF_DT_PDU_HandoverFailure * objPDUHandoverFailure);
 
+int __si_amf_memfree_pdu_HandoverFailure( SI_AMF_DT_PDU_HandoverFailure * objPDUHandoverFailure);
 
 
-// ELEMENTARY-PROCEDURE = [0] initialContextSetup
+
+// ELEMENTARY-PROCEDURE = [0] initialContextSetup  L:6944
 // ProcedureCode = 14
 // ProcedureCodeName = id-InitialContextSetup
 // Criticality = reject
@@ -18836,9 +19368,11 @@ int __si_amf_decode_pdu_InitialContextSetupRequest( SI_AMF_DT_PDU_InitialContext
 
 int __si_amf_debug_pdu_InitialContextSetupRequest( SI_AMF_DT_PDU_InitialContextSetupRequest * objPDUInitialContextSetupRequest);
 
+int __si_amf_memfree_pdu_InitialContextSetupRequest( SI_AMF_DT_PDU_InitialContextSetupRequest * objPDUInitialContextSetupRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] initialContextSetup
+
+// ELEMENTARY-PROCEDURE = [0] initialContextSetup  L:6944
 // ProcedureCode = 14
 // ProcedureCodeName = id-InitialContextSetup
 // Criticality = reject
@@ -18849,9 +19383,11 @@ int __si_amf_decode_pdu_InitialContextSetupResponse( SI_AMF_DT_PDU_InitialContex
 
 int __si_amf_debug_pdu_InitialContextSetupResponse( SI_AMF_DT_PDU_InitialContextSetupResponse * objPDUInitialContextSetupResponse);
 
+int __si_amf_memfree_pdu_InitialContextSetupResponse( SI_AMF_DT_PDU_InitialContextSetupResponse * objPDUInitialContextSetupResponse);
 
 
-// ELEMENTARY-PROCEDURE = [0] initialContextSetup
+
+// ELEMENTARY-PROCEDURE = [0] initialContextSetup  L:6944
 // ProcedureCode = 14
 // ProcedureCodeName = id-InitialContextSetup
 // Criticality = reject
@@ -18862,9 +19398,11 @@ int __si_amf_decode_pdu_InitialContextSetupFailure( SI_AMF_DT_PDU_InitialContext
 
 int __si_amf_debug_pdu_InitialContextSetupFailure( SI_AMF_DT_PDU_InitialContextSetupFailure * objPDUInitialContextSetupFailure);
 
+int __si_amf_memfree_pdu_InitialContextSetupFailure( SI_AMF_DT_PDU_InitialContextSetupFailure * objPDUInitialContextSetupFailure);
 
 
-// ELEMENTARY-PROCEDURE = [0] initialUEMessage
+
+// ELEMENTARY-PROCEDURE = [0] initialUEMessage  L:6944
 // ProcedureCode = 15
 // ProcedureCodeName = id-InitialUEMessage
 // Criticality = ignore
@@ -18875,9 +19413,11 @@ int __si_amf_decode_pdu_InitialUEMessage( SI_AMF_DT_PDU_InitialUEMessage * objPD
 
 int __si_amf_debug_pdu_InitialUEMessage( SI_AMF_DT_PDU_InitialUEMessage * objPDUInitialUEMessage);
 
+int __si_amf_memfree_pdu_InitialUEMessage( SI_AMF_DT_PDU_InitialUEMessage * objPDUInitialUEMessage);
 
 
-// ELEMENTARY-PROCEDURE = [0] locationReport
+
+// ELEMENTARY-PROCEDURE = [0] locationReport  L:6944
 // ProcedureCode = 18
 // ProcedureCodeName = id-LocationReport
 // Criticality = ignore
@@ -18888,9 +19428,11 @@ int __si_amf_decode_pdu_LocationReport( SI_AMF_DT_PDU_LocationReport * objPDULoc
 
 int __si_amf_debug_pdu_LocationReport( SI_AMF_DT_PDU_LocationReport * objPDULocationReport);
 
+int __si_amf_memfree_pdu_LocationReport( SI_AMF_DT_PDU_LocationReport * objPDULocationReport);
 
 
-// ELEMENTARY-PROCEDURE = [0] locationReportingControl
+
+// ELEMENTARY-PROCEDURE = [0] locationReportingControl  L:6944
 // ProcedureCode = 16
 // ProcedureCodeName = id-LocationReportingControl
 // Criticality = ignore
@@ -18901,9 +19443,11 @@ int __si_amf_decode_pdu_LocationReportingControl( SI_AMF_DT_PDU_LocationReportin
 
 int __si_amf_debug_pdu_LocationReportingControl( SI_AMF_DT_PDU_LocationReportingControl * objPDULocationReportingControl);
 
+int __si_amf_memfree_pdu_LocationReportingControl( SI_AMF_DT_PDU_LocationReportingControl * objPDULocationReportingControl);
 
 
-// ELEMENTARY-PROCEDURE = [0] locationReportingFailureIndication
+
+// ELEMENTARY-PROCEDURE = [0] locationReportingFailureIndication  L:6944
 // ProcedureCode = 17
 // ProcedureCodeName = id-LocationReportingFailureIndication
 // Criticality = ignore
@@ -18914,9 +19458,11 @@ int __si_amf_decode_pdu_LocationReportingFailureIndication( SI_AMF_DT_PDU_Locati
 
 int __si_amf_debug_pdu_LocationReportingFailureIndication( SI_AMF_DT_PDU_LocationReportingFailureIndication * objPDULocationReportingFailureIndication);
 
+int __si_amf_memfree_pdu_LocationReportingFailureIndication( SI_AMF_DT_PDU_LocationReportingFailureIndication * objPDULocationReportingFailureIndication);
 
 
-// ELEMENTARY-PROCEDURE = [0] nASNonDeliveryIndication
+
+// ELEMENTARY-PROCEDURE = [0] nASNonDeliveryIndication  L:6944
 // ProcedureCode = 19
 // ProcedureCodeName = id-NASNonDeliveryIndication
 // Criticality = ignore
@@ -18927,9 +19473,11 @@ int __si_amf_decode_pdu_NASNonDeliveryIndication( SI_AMF_DT_PDU_NASNonDeliveryIn
 
 int __si_amf_debug_pdu_NASNonDeliveryIndication( SI_AMF_DT_PDU_NASNonDeliveryIndication * objPDUNASNonDeliveryIndication);
 
+int __si_amf_memfree_pdu_NASNonDeliveryIndication( SI_AMF_DT_PDU_NASNonDeliveryIndication * objPDUNASNonDeliveryIndication);
 
 
-// ELEMENTARY-PROCEDURE = [0] nGReset
+
+// ELEMENTARY-PROCEDURE = [0] nGReset  L:6944
 // ProcedureCode = 20
 // ProcedureCodeName = id-NGReset
 // Criticality = reject
@@ -18940,9 +19488,11 @@ int __si_amf_decode_pdu_NGReset( SI_AMF_DT_PDU_NGReset * objPDUNGReset, SI_ASN_C
 
 int __si_amf_debug_pdu_NGReset( SI_AMF_DT_PDU_NGReset * objPDUNGReset);
 
+int __si_amf_memfree_pdu_NGReset( SI_AMF_DT_PDU_NGReset * objPDUNGReset);
 
 
-// ELEMENTARY-PROCEDURE = [0] nGReset
+
+// ELEMENTARY-PROCEDURE = [0] nGReset  L:6944
 // ProcedureCode = 20
 // ProcedureCodeName = id-NGReset
 // Criticality = reject
@@ -18953,9 +19503,11 @@ int __si_amf_decode_pdu_NGResetAcknowledge( SI_AMF_DT_PDU_NGResetAcknowledge * o
 
 int __si_amf_debug_pdu_NGResetAcknowledge( SI_AMF_DT_PDU_NGResetAcknowledge * objPDUNGResetAcknowledge);
 
+int __si_amf_memfree_pdu_NGResetAcknowledge( SI_AMF_DT_PDU_NGResetAcknowledge * objPDUNGResetAcknowledge);
 
 
-// ELEMENTARY-PROCEDURE = [0] nGSetup
+
+// ELEMENTARY-PROCEDURE = [0] nGSetup  L:6944
 // ProcedureCode = 21
 // ProcedureCodeName = id-NGSetup
 // Criticality = reject
@@ -18966,9 +19518,11 @@ int __si_amf_decode_pdu_NGSetupRequest( SI_AMF_DT_PDU_NGSetupRequest * objPDUNGS
 
 int __si_amf_debug_pdu_NGSetupRequest( SI_AMF_DT_PDU_NGSetupRequest * objPDUNGSetupRequest);
 
+int __si_amf_memfree_pdu_NGSetupRequest( SI_AMF_DT_PDU_NGSetupRequest * objPDUNGSetupRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] nGSetup
+
+// ELEMENTARY-PROCEDURE = [0] nGSetup  L:6944
 // ProcedureCode = 21
 // ProcedureCodeName = id-NGSetup
 // Criticality = reject
@@ -18979,9 +19533,11 @@ int __si_amf_decode_pdu_NGSetupResponse( SI_AMF_DT_PDU_NGSetupResponse * objPDUN
 
 int __si_amf_debug_pdu_NGSetupResponse( SI_AMF_DT_PDU_NGSetupResponse * objPDUNGSetupResponse);
 
+int __si_amf_memfree_pdu_NGSetupResponse( SI_AMF_DT_PDU_NGSetupResponse * objPDUNGSetupResponse);
 
 
-// ELEMENTARY-PROCEDURE = [0] nGSetup
+
+// ELEMENTARY-PROCEDURE = [0] nGSetup  L:6944
 // ProcedureCode = 21
 // ProcedureCodeName = id-NGSetup
 // Criticality = reject
@@ -18992,9 +19548,11 @@ int __si_amf_decode_pdu_NGSetupFailure( SI_AMF_DT_PDU_NGSetupFailure * objPDUNGS
 
 int __si_amf_debug_pdu_NGSetupFailure( SI_AMF_DT_PDU_NGSetupFailure * objPDUNGSetupFailure);
 
+int __si_amf_memfree_pdu_NGSetupFailure( SI_AMF_DT_PDU_NGSetupFailure * objPDUNGSetupFailure);
 
 
-// ELEMENTARY-PROCEDURE = [0] overloadStart
+
+// ELEMENTARY-PROCEDURE = [0] overloadStart  L:6944
 // ProcedureCode = 22
 // ProcedureCodeName = id-OverloadStart
 // Criticality = ignore
@@ -19005,9 +19563,11 @@ int __si_amf_decode_pdu_OverloadStart( SI_AMF_DT_PDU_OverloadStart * objPDUOverl
 
 int __si_amf_debug_pdu_OverloadStart( SI_AMF_DT_PDU_OverloadStart * objPDUOverloadStart);
 
+int __si_amf_memfree_pdu_OverloadStart( SI_AMF_DT_PDU_OverloadStart * objPDUOverloadStart);
 
 
-// ELEMENTARY-PROCEDURE = [0] overloadStop
+
+// ELEMENTARY-PROCEDURE = [0] overloadStop  L:6944
 // ProcedureCode = 23
 // ProcedureCodeName = id-OverloadStop
 // Criticality = reject
@@ -19018,9 +19578,11 @@ int __si_amf_decode_pdu_OverloadStop( SI_AMF_DT_PDU_OverloadStop * objPDUOverloa
 
 int __si_amf_debug_pdu_OverloadStop( SI_AMF_DT_PDU_OverloadStop * objPDUOverloadStop);
 
+int __si_amf_memfree_pdu_OverloadStop( SI_AMF_DT_PDU_OverloadStop * objPDUOverloadStop);
 
 
-// ELEMENTARY-PROCEDURE = [0] paging
+
+// ELEMENTARY-PROCEDURE = [0] paging  L:6944
 // ProcedureCode = 24
 // ProcedureCodeName = id-Paging
 // Criticality = ignore
@@ -19031,9 +19593,11 @@ int __si_amf_decode_pdu_Paging( SI_AMF_DT_PDU_Paging * objPDUPaging, SI_ASN_Codi
 
 int __si_amf_debug_pdu_Paging( SI_AMF_DT_PDU_Paging * objPDUPaging);
 
+int __si_amf_memfree_pdu_Paging( SI_AMF_DT_PDU_Paging * objPDUPaging);
 
 
-// ELEMENTARY-PROCEDURE = [0] pathSwitchRequest
+
+// ELEMENTARY-PROCEDURE = [0] pathSwitchRequest  L:6944
 // ProcedureCode = 25
 // ProcedureCodeName = id-PathSwitchRequest
 // Criticality = reject
@@ -19044,9 +19608,11 @@ int __si_amf_decode_pdu_PathSwitchRequest( SI_AMF_DT_PDU_PathSwitchRequest * obj
 
 int __si_amf_debug_pdu_PathSwitchRequest( SI_AMF_DT_PDU_PathSwitchRequest * objPDUPathSwitchRequest);
 
+int __si_amf_memfree_pdu_PathSwitchRequest( SI_AMF_DT_PDU_PathSwitchRequest * objPDUPathSwitchRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] pathSwitchRequest
+
+// ELEMENTARY-PROCEDURE = [0] pathSwitchRequest  L:6944
 // ProcedureCode = 25
 // ProcedureCodeName = id-PathSwitchRequest
 // Criticality = reject
@@ -19057,9 +19623,11 @@ int __si_amf_decode_pdu_PathSwitchRequestAcknowledge( SI_AMF_DT_PDU_PathSwitchRe
 
 int __si_amf_debug_pdu_PathSwitchRequestAcknowledge( SI_AMF_DT_PDU_PathSwitchRequestAcknowledge * objPDUPathSwitchRequestAcknowledge);
 
+int __si_amf_memfree_pdu_PathSwitchRequestAcknowledge( SI_AMF_DT_PDU_PathSwitchRequestAcknowledge * objPDUPathSwitchRequestAcknowledge);
 
 
-// ELEMENTARY-PROCEDURE = [0] pathSwitchRequest
+
+// ELEMENTARY-PROCEDURE = [0] pathSwitchRequest  L:6944
 // ProcedureCode = 25
 // ProcedureCodeName = id-PathSwitchRequest
 // Criticality = reject
@@ -19070,9 +19638,11 @@ int __si_amf_decode_pdu_PathSwitchRequestFailure( SI_AMF_DT_PDU_PathSwitchReques
 
 int __si_amf_debug_pdu_PathSwitchRequestFailure( SI_AMF_DT_PDU_PathSwitchRequestFailure * objPDUPathSwitchRequestFailure);
 
+int __si_amf_memfree_pdu_PathSwitchRequestFailure( SI_AMF_DT_PDU_PathSwitchRequestFailure * objPDUPathSwitchRequestFailure);
 
 
-// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceModify
+
+// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceModify  L:6944
 // ProcedureCode = 26
 // ProcedureCodeName = id-PDUSessionResourceModify
 // Criticality = reject
@@ -19083,9 +19653,11 @@ int __si_amf_decode_pdu_PDUSessionResourceModifyRequest( SI_AMF_DT_PDU_PDUSessio
 
 int __si_amf_debug_pdu_PDUSessionResourceModifyRequest( SI_AMF_DT_PDU_PDUSessionResourceModifyRequest * objPDUPDUSessionResourceModifyRequest);
 
+int __si_amf_memfree_pdu_PDUSessionResourceModifyRequest( SI_AMF_DT_PDU_PDUSessionResourceModifyRequest * objPDUPDUSessionResourceModifyRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceModify
+
+// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceModify  L:6944
 // ProcedureCode = 26
 // ProcedureCodeName = id-PDUSessionResourceModify
 // Criticality = reject
@@ -19096,9 +19668,11 @@ int __si_amf_decode_pdu_PDUSessionResourceModifyResponse( SI_AMF_DT_PDU_PDUSessi
 
 int __si_amf_debug_pdu_PDUSessionResourceModifyResponse( SI_AMF_DT_PDU_PDUSessionResourceModifyResponse * objPDUPDUSessionResourceModifyResponse);
 
+int __si_amf_memfree_pdu_PDUSessionResourceModifyResponse( SI_AMF_DT_PDU_PDUSessionResourceModifyResponse * objPDUPDUSessionResourceModifyResponse);
 
 
-// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceModifyIndication
+
+// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceModifyIndication  L:6944
 // ProcedureCode = 27
 // ProcedureCodeName = id-PDUSessionResourceModifyIndication
 // Criticality = reject
@@ -19109,9 +19683,11 @@ int __si_amf_decode_pdu_PDUSessionResourceModifyIndication( SI_AMF_DT_PDU_PDUSes
 
 int __si_amf_debug_pdu_PDUSessionResourceModifyIndication( SI_AMF_DT_PDU_PDUSessionResourceModifyIndication * objPDUPDUSessionResourceModifyIndication);
 
+int __si_amf_memfree_pdu_PDUSessionResourceModifyIndication( SI_AMF_DT_PDU_PDUSessionResourceModifyIndication * objPDUPDUSessionResourceModifyIndication);
 
 
-// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceModifyIndication
+
+// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceModifyIndication  L:6944
 // ProcedureCode = 27
 // ProcedureCodeName = id-PDUSessionResourceModifyIndication
 // Criticality = reject
@@ -19122,9 +19698,11 @@ int __si_amf_decode_pdu_PDUSessionResourceModifyConfirm( SI_AMF_DT_PDU_PDUSessio
 
 int __si_amf_debug_pdu_PDUSessionResourceModifyConfirm( SI_AMF_DT_PDU_PDUSessionResourceModifyConfirm * objPDUPDUSessionResourceModifyConfirm);
 
+int __si_amf_memfree_pdu_PDUSessionResourceModifyConfirm( SI_AMF_DT_PDU_PDUSessionResourceModifyConfirm * objPDUPDUSessionResourceModifyConfirm);
 
 
-// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceNotify
+
+// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceNotify  L:6944
 // ProcedureCode = 30
 // ProcedureCodeName = id-PDUSessionResourceNotify
 // Criticality = ignore
@@ -19135,9 +19713,11 @@ int __si_amf_decode_pdu_PDUSessionResourceNotify( SI_AMF_DT_PDU_PDUSessionResour
 
 int __si_amf_debug_pdu_PDUSessionResourceNotify( SI_AMF_DT_PDU_PDUSessionResourceNotify * objPDUPDUSessionResourceNotify);
 
+int __si_amf_memfree_pdu_PDUSessionResourceNotify( SI_AMF_DT_PDU_PDUSessionResourceNotify * objPDUPDUSessionResourceNotify);
 
 
-// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceRelease
+
+// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceRelease  L:6944
 // ProcedureCode = 28
 // ProcedureCodeName = id-PDUSessionResourceRelease
 // Criticality = reject
@@ -19148,9 +19728,11 @@ int __si_amf_decode_pdu_PDUSessionResourceReleaseCommand( SI_AMF_DT_PDU_PDUSessi
 
 int __si_amf_debug_pdu_PDUSessionResourceReleaseCommand( SI_AMF_DT_PDU_PDUSessionResourceReleaseCommand * objPDUPDUSessionResourceReleaseCommand);
 
+int __si_amf_memfree_pdu_PDUSessionResourceReleaseCommand( SI_AMF_DT_PDU_PDUSessionResourceReleaseCommand * objPDUPDUSessionResourceReleaseCommand);
 
 
-// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceRelease
+
+// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceRelease  L:6944
 // ProcedureCode = 28
 // ProcedureCodeName = id-PDUSessionResourceRelease
 // Criticality = reject
@@ -19161,9 +19743,11 @@ int __si_amf_decode_pdu_PDUSessionResourceReleaseResponse( SI_AMF_DT_PDU_PDUSess
 
 int __si_amf_debug_pdu_PDUSessionResourceReleaseResponse( SI_AMF_DT_PDU_PDUSessionResourceReleaseResponse * objPDUPDUSessionResourceReleaseResponse);
 
+int __si_amf_memfree_pdu_PDUSessionResourceReleaseResponse( SI_AMF_DT_PDU_PDUSessionResourceReleaseResponse * objPDUPDUSessionResourceReleaseResponse);
 
 
-// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceSetup
+
+// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceSetup  L:6944
 // ProcedureCode = 29
 // ProcedureCodeName = id-PDUSessionResourceSetup
 // Criticality = reject
@@ -19174,9 +19758,11 @@ int __si_amf_decode_pdu_PDUSessionResourceSetupRequest( SI_AMF_DT_PDU_PDUSession
 
 int __si_amf_debug_pdu_PDUSessionResourceSetupRequest( SI_AMF_DT_PDU_PDUSessionResourceSetupRequest * objPDUPDUSessionResourceSetupRequest);
 
+int __si_amf_memfree_pdu_PDUSessionResourceSetupRequest( SI_AMF_DT_PDU_PDUSessionResourceSetupRequest * objPDUPDUSessionResourceSetupRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceSetup
+
+// ELEMENTARY-PROCEDURE = [0] pDUSessionResourceSetup  L:6944
 // ProcedureCode = 29
 // ProcedureCodeName = id-PDUSessionResourceSetup
 // Criticality = reject
@@ -19187,9 +19773,11 @@ int __si_amf_decode_pdu_PDUSessionResourceSetupResponse( SI_AMF_DT_PDU_PDUSessio
 
 int __si_amf_debug_pdu_PDUSessionResourceSetupResponse( SI_AMF_DT_PDU_PDUSessionResourceSetupResponse * objPDUPDUSessionResourceSetupResponse);
 
+int __si_amf_memfree_pdu_PDUSessionResourceSetupResponse( SI_AMF_DT_PDU_PDUSessionResourceSetupResponse * objPDUPDUSessionResourceSetupResponse);
 
 
-// ELEMENTARY-PROCEDURE = [0] privateMessage
+
+// ELEMENTARY-PROCEDURE = [0] privateMessage  L:6944
 // ProcedureCode = 31
 // ProcedureCodeName = id-PrivateMessage
 // Criticality = ignore
@@ -19200,9 +19788,11 @@ int __si_amf_decode_pdu_PrivateMessage( SI_AMF_DT_PDU_PrivateMessage * objPDUPri
 
 int __si_amf_debug_pdu_PrivateMessage( SI_AMF_DT_PDU_PrivateMessage * objPDUPrivateMessage);
 
+int __si_amf_memfree_pdu_PrivateMessage( SI_AMF_DT_PDU_PrivateMessage * objPDUPrivateMessage);
 
 
-// ELEMENTARY-PROCEDURE = [0] pWSCancel
+
+// ELEMENTARY-PROCEDURE = [0] pWSCancel  L:6944
 // ProcedureCode = 32
 // ProcedureCodeName = id-PWSCancel
 // Criticality = reject
@@ -19213,9 +19803,11 @@ int __si_amf_decode_pdu_PWSCancelRequest( SI_AMF_DT_PDU_PWSCancelRequest * objPD
 
 int __si_amf_debug_pdu_PWSCancelRequest( SI_AMF_DT_PDU_PWSCancelRequest * objPDUPWSCancelRequest);
 
+int __si_amf_memfree_pdu_PWSCancelRequest( SI_AMF_DT_PDU_PWSCancelRequest * objPDUPWSCancelRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] pWSCancel
+
+// ELEMENTARY-PROCEDURE = [0] pWSCancel  L:6944
 // ProcedureCode = 32
 // ProcedureCodeName = id-PWSCancel
 // Criticality = reject
@@ -19226,9 +19818,11 @@ int __si_amf_decode_pdu_PWSCancelResponse( SI_AMF_DT_PDU_PWSCancelResponse * obj
 
 int __si_amf_debug_pdu_PWSCancelResponse( SI_AMF_DT_PDU_PWSCancelResponse * objPDUPWSCancelResponse);
 
+int __si_amf_memfree_pdu_PWSCancelResponse( SI_AMF_DT_PDU_PWSCancelResponse * objPDUPWSCancelResponse);
 
 
-// ELEMENTARY-PROCEDURE = [0] pWSFailureIndication
+
+// ELEMENTARY-PROCEDURE = [0] pWSFailureIndication  L:6944
 // ProcedureCode = 33
 // ProcedureCodeName = id-PWSFailureIndication
 // Criticality = ignore
@@ -19239,9 +19833,11 @@ int __si_amf_decode_pdu_PWSFailureIndication( SI_AMF_DT_PDU_PWSFailureIndication
 
 int __si_amf_debug_pdu_PWSFailureIndication( SI_AMF_DT_PDU_PWSFailureIndication * objPDUPWSFailureIndication);
 
+int __si_amf_memfree_pdu_PWSFailureIndication( SI_AMF_DT_PDU_PWSFailureIndication * objPDUPWSFailureIndication);
 
 
-// ELEMENTARY-PROCEDURE = [0] pWSRestartIndication
+
+// ELEMENTARY-PROCEDURE = [0] pWSRestartIndication  L:6944
 // ProcedureCode = 34
 // ProcedureCodeName = id-PWSRestartIndication
 // Criticality = ignore
@@ -19252,9 +19848,11 @@ int __si_amf_decode_pdu_PWSRestartIndication( SI_AMF_DT_PDU_PWSRestartIndication
 
 int __si_amf_debug_pdu_PWSRestartIndication( SI_AMF_DT_PDU_PWSRestartIndication * objPDUPWSRestartIndication);
 
+int __si_amf_memfree_pdu_PWSRestartIndication( SI_AMF_DT_PDU_PWSRestartIndication * objPDUPWSRestartIndication);
 
 
-// ELEMENTARY-PROCEDURE = [0] rANConfigurationUpdate
+
+// ELEMENTARY-PROCEDURE = [0] rANConfigurationUpdate  L:6944
 // ProcedureCode = 35
 // ProcedureCodeName = id-RANConfigurationUpdate
 // Criticality = reject
@@ -19265,9 +19863,11 @@ int __si_amf_decode_pdu_RANConfigurationUpdate( SI_AMF_DT_PDU_RANConfigurationUp
 
 int __si_amf_debug_pdu_RANConfigurationUpdate( SI_AMF_DT_PDU_RANConfigurationUpdate * objPDURANConfigurationUpdate);
 
+int __si_amf_memfree_pdu_RANConfigurationUpdate( SI_AMF_DT_PDU_RANConfigurationUpdate * objPDURANConfigurationUpdate);
 
 
-// ELEMENTARY-PROCEDURE = [0] rANConfigurationUpdate
+
+// ELEMENTARY-PROCEDURE = [0] rANConfigurationUpdate  L:6944
 // ProcedureCode = 35
 // ProcedureCodeName = id-RANConfigurationUpdate
 // Criticality = reject
@@ -19278,9 +19878,11 @@ int __si_amf_decode_pdu_RANConfigurationUpdateAcknowledge( SI_AMF_DT_PDU_RANConf
 
 int __si_amf_debug_pdu_RANConfigurationUpdateAcknowledge( SI_AMF_DT_PDU_RANConfigurationUpdateAcknowledge * objPDURANConfigurationUpdateAcknowledge);
 
+int __si_amf_memfree_pdu_RANConfigurationUpdateAcknowledge( SI_AMF_DT_PDU_RANConfigurationUpdateAcknowledge * objPDURANConfigurationUpdateAcknowledge);
 
 
-// ELEMENTARY-PROCEDURE = [0] rANConfigurationUpdate
+
+// ELEMENTARY-PROCEDURE = [0] rANConfigurationUpdate  L:6944
 // ProcedureCode = 35
 // ProcedureCodeName = id-RANConfigurationUpdate
 // Criticality = reject
@@ -19291,9 +19893,11 @@ int __si_amf_decode_pdu_RANConfigurationUpdateFailure( SI_AMF_DT_PDU_RANConfigur
 
 int __si_amf_debug_pdu_RANConfigurationUpdateFailure( SI_AMF_DT_PDU_RANConfigurationUpdateFailure * objPDURANConfigurationUpdateFailure);
 
+int __si_amf_memfree_pdu_RANConfigurationUpdateFailure( SI_AMF_DT_PDU_RANConfigurationUpdateFailure * objPDURANConfigurationUpdateFailure);
 
 
-// ELEMENTARY-PROCEDURE = [0] rerouteNASRequest
+
+// ELEMENTARY-PROCEDURE = [0] rerouteNASRequest  L:6944
 // ProcedureCode = 36
 // ProcedureCodeName = id-RerouteNASRequest
 // Criticality = reject
@@ -19304,9 +19908,11 @@ int __si_amf_decode_pdu_RerouteNASRequest( SI_AMF_DT_PDU_RerouteNASRequest * obj
 
 int __si_amf_debug_pdu_RerouteNASRequest( SI_AMF_DT_PDU_RerouteNASRequest * objPDURerouteNASRequest);
 
+int __si_amf_memfree_pdu_RerouteNASRequest( SI_AMF_DT_PDU_RerouteNASRequest * objPDURerouteNASRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] rRCInactiveTransitionReport
+
+// ELEMENTARY-PROCEDURE = [0] rRCInactiveTransitionReport  L:6944
 // ProcedureCode = 37
 // ProcedureCodeName = id-RRCInactiveTransitionReport
 // Criticality = ignore
@@ -19317,9 +19923,11 @@ int __si_amf_decode_pdu_RRCInactiveTransitionReport( SI_AMF_DT_PDU_RRCInactiveTr
 
 int __si_amf_debug_pdu_RRCInactiveTransitionReport( SI_AMF_DT_PDU_RRCInactiveTransitionReport * objPDURRCInactiveTransitionReport);
 
+int __si_amf_memfree_pdu_RRCInactiveTransitionReport( SI_AMF_DT_PDU_RRCInactiveTransitionReport * objPDURRCInactiveTransitionReport);
 
 
-// ELEMENTARY-PROCEDURE = [0] secondaryRATDataUsageReport
+
+// ELEMENTARY-PROCEDURE = [0] secondaryRATDataUsageReport  L:6944
 // ProcedureCode = 52
 // ProcedureCodeName = id-SecondaryRATDataUsageReport
 // Criticality = ignore
@@ -19330,9 +19938,11 @@ int __si_amf_decode_pdu_SecondaryRATDataUsageReport( SI_AMF_DT_PDU_SecondaryRATD
 
 int __si_amf_debug_pdu_SecondaryRATDataUsageReport( SI_AMF_DT_PDU_SecondaryRATDataUsageReport * objPDUSecondaryRATDataUsageReport);
 
+int __si_amf_memfree_pdu_SecondaryRATDataUsageReport( SI_AMF_DT_PDU_SecondaryRATDataUsageReport * objPDUSecondaryRATDataUsageReport);
 
 
-// ELEMENTARY-PROCEDURE = [0] traceFailureIndication
+
+// ELEMENTARY-PROCEDURE = [0] traceFailureIndication  L:6944
 // ProcedureCode = 38
 // ProcedureCodeName = id-TraceFailureIndication
 // Criticality = ignore
@@ -19343,9 +19953,11 @@ int __si_amf_decode_pdu_TraceFailureIndication( SI_AMF_DT_PDU_TraceFailureIndica
 
 int __si_amf_debug_pdu_TraceFailureIndication( SI_AMF_DT_PDU_TraceFailureIndication * objPDUTraceFailureIndication);
 
+int __si_amf_memfree_pdu_TraceFailureIndication( SI_AMF_DT_PDU_TraceFailureIndication * objPDUTraceFailureIndication);
 
 
-// ELEMENTARY-PROCEDURE = [0] traceStart
+
+// ELEMENTARY-PROCEDURE = [0] traceStart  L:6944
 // ProcedureCode = 39
 // ProcedureCodeName = id-TraceStart
 // Criticality = ignore
@@ -19356,9 +19968,11 @@ int __si_amf_decode_pdu_TraceStart( SI_AMF_DT_PDU_TraceStart * objPDUTraceStart,
 
 int __si_amf_debug_pdu_TraceStart( SI_AMF_DT_PDU_TraceStart * objPDUTraceStart);
 
+int __si_amf_memfree_pdu_TraceStart( SI_AMF_DT_PDU_TraceStart * objPDUTraceStart);
 
 
-// ELEMENTARY-PROCEDURE = [0] uEContextModification
+
+// ELEMENTARY-PROCEDURE = [0] uEContextModification  L:6944
 // ProcedureCode = 40
 // ProcedureCodeName = id-UEContextModification
 // Criticality = reject
@@ -19369,9 +19983,11 @@ int __si_amf_decode_pdu_UEContextModificationRequest( SI_AMF_DT_PDU_UEContextMod
 
 int __si_amf_debug_pdu_UEContextModificationRequest( SI_AMF_DT_PDU_UEContextModificationRequest * objPDUUEContextModificationRequest);
 
+int __si_amf_memfree_pdu_UEContextModificationRequest( SI_AMF_DT_PDU_UEContextModificationRequest * objPDUUEContextModificationRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] uEContextModification
+
+// ELEMENTARY-PROCEDURE = [0] uEContextModification  L:6944
 // ProcedureCode = 40
 // ProcedureCodeName = id-UEContextModification
 // Criticality = reject
@@ -19382,9 +19998,11 @@ int __si_amf_decode_pdu_UEContextModificationResponse( SI_AMF_DT_PDU_UEContextMo
 
 int __si_amf_debug_pdu_UEContextModificationResponse( SI_AMF_DT_PDU_UEContextModificationResponse * objPDUUEContextModificationResponse);
 
+int __si_amf_memfree_pdu_UEContextModificationResponse( SI_AMF_DT_PDU_UEContextModificationResponse * objPDUUEContextModificationResponse);
 
 
-// ELEMENTARY-PROCEDURE = [0] uEContextModification
+
+// ELEMENTARY-PROCEDURE = [0] uEContextModification  L:6944
 // ProcedureCode = 40
 // ProcedureCodeName = id-UEContextModification
 // Criticality = reject
@@ -19395,9 +20013,11 @@ int __si_amf_decode_pdu_UEContextModificationFailure( SI_AMF_DT_PDU_UEContextMod
 
 int __si_amf_debug_pdu_UEContextModificationFailure( SI_AMF_DT_PDU_UEContextModificationFailure * objPDUUEContextModificationFailure);
 
+int __si_amf_memfree_pdu_UEContextModificationFailure( SI_AMF_DT_PDU_UEContextModificationFailure * objPDUUEContextModificationFailure);
 
 
-// ELEMENTARY-PROCEDURE = [0] uEContextRelease
+
+// ELEMENTARY-PROCEDURE = [0] uEContextRelease  L:6944
 // ProcedureCode = 41
 // ProcedureCodeName = id-UEContextRelease
 // Criticality = reject
@@ -19408,9 +20028,11 @@ int __si_amf_decode_pdu_UEContextReleaseCommand( SI_AMF_DT_PDU_UEContextReleaseC
 
 int __si_amf_debug_pdu_UEContextReleaseCommand( SI_AMF_DT_PDU_UEContextReleaseCommand * objPDUUEContextReleaseCommand);
 
+int __si_amf_memfree_pdu_UEContextReleaseCommand( SI_AMF_DT_PDU_UEContextReleaseCommand * objPDUUEContextReleaseCommand);
 
 
-// ELEMENTARY-PROCEDURE = [0] uEContextRelease
+
+// ELEMENTARY-PROCEDURE = [0] uEContextRelease  L:6944
 // ProcedureCode = 41
 // ProcedureCodeName = id-UEContextRelease
 // Criticality = reject
@@ -19421,9 +20043,11 @@ int __si_amf_decode_pdu_UEContextReleaseComplete( SI_AMF_DT_PDU_UEContextRelease
 
 int __si_amf_debug_pdu_UEContextReleaseComplete( SI_AMF_DT_PDU_UEContextReleaseComplete * objPDUUEContextReleaseComplete);
 
+int __si_amf_memfree_pdu_UEContextReleaseComplete( SI_AMF_DT_PDU_UEContextReleaseComplete * objPDUUEContextReleaseComplete);
 
 
-// ELEMENTARY-PROCEDURE = [0] uEContextReleaseRequest
+
+// ELEMENTARY-PROCEDURE = [0] uEContextReleaseRequest  L:6944
 // ProcedureCode = 42
 // ProcedureCodeName = id-UEContextReleaseRequest
 // Criticality = ignore
@@ -19434,9 +20058,11 @@ int __si_amf_decode_pdu_UEContextReleaseRequest( SI_AMF_DT_PDU_UEContextReleaseR
 
 int __si_amf_debug_pdu_UEContextReleaseRequest( SI_AMF_DT_PDU_UEContextReleaseRequest * objPDUUEContextReleaseRequest);
 
+int __si_amf_memfree_pdu_UEContextReleaseRequest( SI_AMF_DT_PDU_UEContextReleaseRequest * objPDUUEContextReleaseRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] uERadioCapabilityCheck
+
+// ELEMENTARY-PROCEDURE = [0] uERadioCapabilityCheck  L:6944
 // ProcedureCode = 43
 // ProcedureCodeName = id-UERadioCapabilityCheck
 // Criticality = reject
@@ -19447,9 +20073,11 @@ int __si_amf_decode_pdu_UERadioCapabilityCheckRequest( SI_AMF_DT_PDU_UERadioCapa
 
 int __si_amf_debug_pdu_UERadioCapabilityCheckRequest( SI_AMF_DT_PDU_UERadioCapabilityCheckRequest * objPDUUERadioCapabilityCheckRequest);
 
+int __si_amf_memfree_pdu_UERadioCapabilityCheckRequest( SI_AMF_DT_PDU_UERadioCapabilityCheckRequest * objPDUUERadioCapabilityCheckRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] uERadioCapabilityCheck
+
+// ELEMENTARY-PROCEDURE = [0] uERadioCapabilityCheck  L:6944
 // ProcedureCode = 43
 // ProcedureCodeName = id-UERadioCapabilityCheck
 // Criticality = reject
@@ -19460,9 +20088,11 @@ int __si_amf_decode_pdu_UERadioCapabilityCheckResponse( SI_AMF_DT_PDU_UERadioCap
 
 int __si_amf_debug_pdu_UERadioCapabilityCheckResponse( SI_AMF_DT_PDU_UERadioCapabilityCheckResponse * objPDUUERadioCapabilityCheckResponse);
 
+int __si_amf_memfree_pdu_UERadioCapabilityCheckResponse( SI_AMF_DT_PDU_UERadioCapabilityCheckResponse * objPDUUERadioCapabilityCheckResponse);
 
 
-// ELEMENTARY-PROCEDURE = [0] uERadioCapabilityInfoIndication
+
+// ELEMENTARY-PROCEDURE = [0] uERadioCapabilityInfoIndication  L:6944
 // ProcedureCode = 44
 // ProcedureCodeName = id-UERadioCapabilityInfoIndication
 // Criticality = ignore
@@ -19473,9 +20103,11 @@ int __si_amf_decode_pdu_UERadioCapabilityInfoIndication( SI_AMF_DT_PDU_UERadioCa
 
 int __si_amf_debug_pdu_UERadioCapabilityInfoIndication( SI_AMF_DT_PDU_UERadioCapabilityInfoIndication * objPDUUERadioCapabilityInfoIndication);
 
+int __si_amf_memfree_pdu_UERadioCapabilityInfoIndication( SI_AMF_DT_PDU_UERadioCapabilityInfoIndication * objPDUUERadioCapabilityInfoIndication);
 
 
-// ELEMENTARY-PROCEDURE = [0] uETNLABindingRelease
+
+// ELEMENTARY-PROCEDURE = [0] uETNLABindingRelease  L:6944
 // ProcedureCode = 45
 // ProcedureCodeName = id-UETNLABindingRelease
 // Criticality = ignore
@@ -19486,9 +20118,11 @@ int __si_amf_decode_pdu_UETNLABindingReleaseRequest( SI_AMF_DT_PDU_UETNLABinding
 
 int __si_amf_debug_pdu_UETNLABindingReleaseRequest( SI_AMF_DT_PDU_UETNLABindingReleaseRequest * objPDUUETNLABindingReleaseRequest);
 
+int __si_amf_memfree_pdu_UETNLABindingReleaseRequest( SI_AMF_DT_PDU_UETNLABindingReleaseRequest * objPDUUETNLABindingReleaseRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] uplinkNASTransport
+
+// ELEMENTARY-PROCEDURE = [0] uplinkNASTransport  L:6944
 // ProcedureCode = 46
 // ProcedureCodeName = id-UplinkNASTransport
 // Criticality = ignore
@@ -19499,9 +20133,11 @@ int __si_amf_decode_pdu_UplinkNASTransport( SI_AMF_DT_PDU_UplinkNASTransport * o
 
 int __si_amf_debug_pdu_UplinkNASTransport( SI_AMF_DT_PDU_UplinkNASTransport * objPDUUplinkNASTransport);
 
+int __si_amf_memfree_pdu_UplinkNASTransport( SI_AMF_DT_PDU_UplinkNASTransport * objPDUUplinkNASTransport);
 
 
-// ELEMENTARY-PROCEDURE = [0] uplinkNonUEAssociatedNRPPaTransport
+
+// ELEMENTARY-PROCEDURE = [0] uplinkNonUEAssociatedNRPPaTransport  L:6944
 // ProcedureCode = 47
 // ProcedureCodeName = id-UplinkNonUEAssociatedNRPPaTransport
 // Criticality = ignore
@@ -19512,9 +20148,11 @@ int __si_amf_decode_pdu_UplinkNonUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_Uplin
 
 int __si_amf_debug_pdu_UplinkNonUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_UplinkNonUEAssociatedNRPPaTransport * objPDUUplinkNonUEAssociatedNRPPaTransport);
 
+int __si_amf_memfree_pdu_UplinkNonUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_UplinkNonUEAssociatedNRPPaTransport * objPDUUplinkNonUEAssociatedNRPPaTransport);
 
 
-// ELEMENTARY-PROCEDURE = [0] uplinkRANConfigurationTransfer
+
+// ELEMENTARY-PROCEDURE = [0] uplinkRANConfigurationTransfer  L:6944
 // ProcedureCode = 48
 // ProcedureCodeName = id-UplinkRANConfigurationTransfer
 // Criticality = ignore
@@ -19525,9 +20163,11 @@ int __si_amf_decode_pdu_UplinkRANConfigurationTransfer( SI_AMF_DT_PDU_UplinkRANC
 
 int __si_amf_debug_pdu_UplinkRANConfigurationTransfer( SI_AMF_DT_PDU_UplinkRANConfigurationTransfer * objPDUUplinkRANConfigurationTransfer);
 
+int __si_amf_memfree_pdu_UplinkRANConfigurationTransfer( SI_AMF_DT_PDU_UplinkRANConfigurationTransfer * objPDUUplinkRANConfigurationTransfer);
 
 
-// ELEMENTARY-PROCEDURE = [0] uplinkRANStatusTransfer
+
+// ELEMENTARY-PROCEDURE = [0] uplinkRANStatusTransfer  L:6944
 // ProcedureCode = 49
 // ProcedureCodeName = id-UplinkRANStatusTransfer
 // Criticality = ignore
@@ -19538,9 +20178,11 @@ int __si_amf_decode_pdu_UplinkRANStatusTransfer( SI_AMF_DT_PDU_UplinkRANStatusTr
 
 int __si_amf_debug_pdu_UplinkRANStatusTransfer( SI_AMF_DT_PDU_UplinkRANStatusTransfer * objPDUUplinkRANStatusTransfer);
 
+int __si_amf_memfree_pdu_UplinkRANStatusTransfer( SI_AMF_DT_PDU_UplinkRANStatusTransfer * objPDUUplinkRANStatusTransfer);
 
 
-// ELEMENTARY-PROCEDURE = [0] uplinkUEAssociatedNRPPaTransport
+
+// ELEMENTARY-PROCEDURE = [0] uplinkUEAssociatedNRPPaTransport  L:6944
 // ProcedureCode = 50
 // ProcedureCodeName = id-UplinkUEAssociatedNRPPaTransport
 // Criticality = ignore
@@ -19551,9 +20193,11 @@ int __si_amf_decode_pdu_UplinkUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_UplinkUE
 
 int __si_amf_debug_pdu_UplinkUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_UplinkUEAssociatedNRPPaTransport * objPDUUplinkUEAssociatedNRPPaTransport);
 
+int __si_amf_memfree_pdu_UplinkUEAssociatedNRPPaTransport( SI_AMF_DT_PDU_UplinkUEAssociatedNRPPaTransport * objPDUUplinkUEAssociatedNRPPaTransport);
 
 
-// ELEMENTARY-PROCEDURE = [0] writeReplaceWarning
+
+// ELEMENTARY-PROCEDURE = [0] writeReplaceWarning  L:6944
 // ProcedureCode = 51
 // ProcedureCodeName = id-WriteReplaceWarning
 // Criticality = reject
@@ -19564,9 +20208,11 @@ int __si_amf_decode_pdu_WriteReplaceWarningRequest( SI_AMF_DT_PDU_WriteReplaceWa
 
 int __si_amf_debug_pdu_WriteReplaceWarningRequest( SI_AMF_DT_PDU_WriteReplaceWarningRequest * objPDUWriteReplaceWarningRequest);
 
+int __si_amf_memfree_pdu_WriteReplaceWarningRequest( SI_AMF_DT_PDU_WriteReplaceWarningRequest * objPDUWriteReplaceWarningRequest);
 
 
-// ELEMENTARY-PROCEDURE = [0] writeReplaceWarning
+
+// ELEMENTARY-PROCEDURE = [0] writeReplaceWarning  L:6944
 // ProcedureCode = 51
 // ProcedureCodeName = id-WriteReplaceWarning
 // Criticality = reject
@@ -19576,6 +20222,11 @@ int __si_amf_encode_pdu_WriteReplaceWarningResponse( SI_AMF_DT_PDU_WriteReplaceW
 int __si_amf_decode_pdu_WriteReplaceWarningResponse( SI_AMF_DT_PDU_WriteReplaceWarningResponse * objPDUWriteReplaceWarningResponse, SI_ASN_CodingContext * codingContext);
 
 int __si_amf_debug_pdu_WriteReplaceWarningResponse( SI_AMF_DT_PDU_WriteReplaceWarningResponse * objPDUWriteReplaceWarningResponse);
+
+int __si_amf_memfree_pdu_WriteReplaceWarningResponse( SI_AMF_DT_PDU_WriteReplaceWarningResponse * objPDUWriteReplaceWarningResponse);
+
+
+
 
 
 

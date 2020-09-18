@@ -23,6 +23,9 @@
 #include <net/if.h> 
 #include <resolv.h>
 
+//#include "sirik_core.h"
+//#include "libAsn.h"
+
 #ifndef SIRIK_NASPDU_H
 #define SIRIK_NASPDU_H
 
@@ -168,6 +171,25 @@
 
 #define SI_5GS_SM_EPD														46
 #define SI_5GS_MM_EPD														126
+
+
+
+// 5G MM CONSTANTS
+// REGISTRATION_TYPE
+#define SI_5GS_MM_REGISTRATION_TYPE__INITIAL_REGISTRATION							1
+#define SI_5GS_MM_REGISTRATION_TYPE__MOBILE_REGISTRATION_UPDATING					2
+#define SI_5GS_MM_REGISTRATION_TYPE__PERIODIC_REGISTRATION_UPDATING					3
+#define SI_5GS_MM_REGISTRATION_TYPE__EMERGENCY_REGISTRATION							4
+
+// SMS over NAS transport requested (SMS requested) (octet 3, bit 4)
+#define SI_5GS_MM_SMS_OVER_NAS_NOT_SUPPORTED										0
+#define SI_5GS_MM_SMS_OVER_NAS_SUPPORTED											1
+
+// Follow-on request bit (FOR) (octet 3, bit 5)
+#define SI_5GS_MM_NO_FOLLOW_ON_REQUEST_PENDING										0
+#define SI_5GS_MM_FOLLOW_ON_REQUEST_PENDING											1
+
+
 
 
 typedef struct __si_nibbleHelper
@@ -500,7 +522,7 @@ typedef struct __naspdu_AuthenticationParameterAUTN
 {
 	uint8_t IEI;
 	uint8_t Length;
-	uint8_t data[20];
+	uint8_t data[40];
 	uint8_t isset;
 } NASPdu_AuthenticationParameterAUTN;
 
@@ -509,7 +531,7 @@ typedef struct __naspdu_AuthenticationParameterAUTN
 typedef struct __naspdu_AuthenticationParameterRAND
 {
 	uint8_t IEI;
-	uint8_t data[20];
+	uint8_t data[40];
 	uint8_t isset;
 } NASPdu_AuthenticationParameterRAND;
 
@@ -519,7 +541,7 @@ typedef struct __naspdu_AuthenticationResponseParameter
 {
 	uint8_t IEI;
 	uint8_t Length;
-	uint8_t data[16];	
+	uint8_t data[16];
 	uint8_t isset;
 } NASPdu_AuthenticationResponseParameter;
 
@@ -637,7 +659,45 @@ typedef struct __naspdu_DRXParameter
 	uint8_t isset;
 } NASPdu_DRXParameter;
 
-
+/*
+	2	IMSI unknown in HSS
+	3	Illegal UE
+	5	IMEI not accepted
+	6	Illegal ME
+	7	EPS services not allowed
+	8	EPS services and non-EPS services not allowed
+	9	UE identity cannot be derived by the network
+	10	Implicitly detached
+	11	PLMN not allowed
+	12	Tracking Area not allowed
+	13	Roaming not allowed in this tracking area
+	14	EPS services not allowed in this PLMN
+	15	No Suitable Cells In tracking area
+	16	MSC temporarily not reachable
+	17	Network failure
+	18	CS domain not available
+	19	ESM failure
+	20	MAC failure
+	21	Synch failure
+	22	Congestion
+	23	UE security capabilities mismatch
+	24	Security mode rejected, unspecified
+	25	Not authorized for this CSG
+	26	Non-EPS authentication unacceptable
+	35	Requested service option not authorized in this PLMN
+	39	CS service temporarily not available
+	40	No EPS bearer context activated
+	42	Severe network failure
+	95	Semantically incorrect message
+	96	Invalid mandatory information
+	97	Message type non-existent or not implemented
+	98	Message type not compatible with the protocol state
+	99	Information element non-existent or not implemented
+	100	Conditional IE error
+	101	Message not compatible with the protocol state
+	111	Protocol error, unspecified
+		
+*/
 // decode done
 typedef struct __naspdu_EMMCause
 {
@@ -2597,12 +2657,42 @@ typedef struct __naspdu_fgs_identity_type
 	uint8_t isset;
 } NASPdu_FGSIdentityType;
 
+typedef struct __naspdu_fgs_update_type
+{
+	uint8_t IEI;
+	uint8_t Length;
+	struct
+	{
+		uint8_t SMSRequested:1;
+		uint8_t NGRAN_RCU:1;
+		uint8_t Spare:6;
+	} b1;
+	uint8_t isset;
+} NASPdu_FGSUpdateType;
+
+
+#define FGS_MOBILE_IDENTITY_NONE			0
+#define FGS_MOBILE_IDENTITY_SUCI			1
+#define FGS_MOBILE_IDENTITY_5G_GUTI			2
+#define FGS_MOBILE_IDENTITY_IMEI			3
+#define FGS_MOBILE_IDENTITY_5G_S_TMSI		4
+#define FGS_MOBILE_IDENTITY_IMEISV			5
+
 typedef struct __naspdu_fgs_mobile_identity
 {
 	uint8_t IEI;
 	uint16_t Length;
 	u_char data[255];
-	uint8_t isset;	
+	uint8_t isset;
+	
+	/*
+	uint8_t typeOfId;
+	u_char mccmnc[3];
+	uint8_t AMFReginId;
+	uint16_t AMFSetId;
+	uint8_t AMFPointer;
+	*/
+		
 } NASPdu_FGSMobileIdentity;
 
 typedef struct __naspdu_fgs_network_feature_support
@@ -3054,7 +3144,7 @@ typedef struct __naspdu_pdu_address
 		uint8_t Spare : 5;
 	} b1;
 	
-	u_char data[20];
+	u_char data[40];
 	uint8_t isset;	
 } NASPdu_PDUAddress;
 
@@ -3119,6 +3209,12 @@ typedef struct __naspdu_ssc_mode
 
 
 // ----------------------------------------------------------------------------------------------
+
+typedef struct __naspduBase
+{
+	NASPduSecurityHeader sHeader;
+	NASPduHeader pHeader;	
+} NASPduBase;
 
 typedef struct __naspduAttachAccept
 {
@@ -4067,6 +4163,7 @@ typedef struct __naspduFGMM_RegistrationRequest
 	NASPdu_DRXParameter mRequestedDRXparameters;
 	NASPdu_EPSNASMessageContainer mEPSNASMessageContainer;
 	NASPdu_PayloadContainer mPayloadContainer;
+	NASPdu_FGSUpdateType mFGSUpdateType;
 	
 } NASPduFGMM_RegistrationRequest;
 
@@ -4284,7 +4381,8 @@ typedef struct __naspduFGMM_AuthenticationResult
 	
 	struct
 	{
-		uint8_t ngKSI : 4;
+		uint8_t ngKSI : 3;
+		uint8_t TSC : 1;
 		uint8_t Spare : 4;
 	} b1;
 	
@@ -4499,6 +4597,7 @@ typedef struct __naspduFGSM_PDUSessionModificationRequest
 	NASPduFGHeader pHeader;
 	
 	NASPdu_FGSMCapability mFGSMCapability;
+	NASPdu_FGSMCause mFGSMCause;
 	NASPdu_MaximumNumberOfSupportedPacketFilters mMaximumNumberOfSupportedPacketFilters;
 	NASPdu_QosRules mRequestedQoSRules;
 	NASPdu_ExtendedProtocolConfigurationOptions mExtendedProtocolConfigurationOptions;
@@ -4604,7 +4703,7 @@ typedef struct __si_csn_plainHeader
 typedef struct __naspduDecode
 {
 	int MessageType;
-	void * messageObj;
+	uint8_t * messageObj;
 	unsigned char * buffer;
 	int length;
 	int pos;
@@ -4614,6 +4713,7 @@ typedef struct __naspduDecode
 	uint8_t iUnSuccessfulElementId;
 	uint8_t MMType;
 	uint8_t ProtocolDiscriminator;
+	uint32_t errorLineNo;
 } SI_NASPduDecode;
 
 int __si_naspdu_DecodeMessage( SI_NASPduDecode * decodePdu);
@@ -4860,9 +4960,11 @@ void __si_naspdu_TrackingAreaIdentityList_addItem( NASPdu_TrackingAreaIdentityLi
 void __si_naspdu_EmergencyNumberList_addItem( NASPdu_EmergencyNumberList * oEmergencyNumberList, uint8_t servCategory, uint64_t emergencyNumber);
 void __si_naspdu_ExtendedEmergencyNumberList_addItem( NASPdu_ExtendedEmergencyNumberList * oEENL, uint64_t emergencyNumber, char * subServiceField, uint8_t subServiceFieldLen);
 void __si_naspdu_addMobileIdentity( NASPdu_MobileIdentity * oMobileIdentity, uint8_t type, uint8_t OddEven, char * data, uint8_t dataLen);
+void __si_naspdu_getMobileIdentity( NASPdu_MobileIdentity * oMobileIdentity, uint8_t * type, uint8_t * OddEven, u_char * data, uint8_t * dataLen);
 
 void __si_naspdu_addProtocolConfigurationOptions( NASPdu_ProtocolConfigurationOptions * pPCO, uint16_t pProtocolId, uint8_t pLength, u_char * pContents);
 
+void __si_naspdu_freeNASPduDecode( SI_NASPduDecode * decodePdu);
 
 #endif
 
