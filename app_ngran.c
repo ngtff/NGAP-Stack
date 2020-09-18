@@ -955,6 +955,84 @@ void __ngran_ngap_transport_of_nas_messages()
 	}
 }
 
+void __ngran_ngap_create_and_send_NGSetupRequest()
+{
+	char sNodeName[20];
+	memset( sNodeName, 0, sizeof(sNodeName));
+	strcpy( sNodeName, "NG-Ran-1");
+	
+	char eNB_ID_Type[30];
+	memset( eNB_ID_Type, 0, sizeof( eNB_ID_Type));
+	strcpy( eNB_ID_Type, "GlobalGNB-ID");
+	// strcpy( eNB_ID_Type, "GlobalNgENB-ID");
+	// strcpy( eNB_ID_Type, "GlobalN3IWF-ID");
+	
+	
+	SI_AMF_DT_PDU_NGSetupRequest objNGSetupRequest;
+	memset( &objNGSetupRequest, 0, sizeof(SI_AMF_DT_PDU_NGSetupRequest));
+	
+	objNGSetupRequest.rANNodeName = (SI_AMF_DT_RANNodeName *) __si_allocM( sizeof( SI_AMF_DT_RANNodeName));
+	objNGSetupRequest.rANNodeName->data = (unsigned char *) __si_allocM( strlen(sNodeName) + 1 );
+	objNGSetupRequest.rANNodeName->length = strlen(sNodeName);
+	memcpy( objNGSetupRequest.rANNodeName->data, sNodeName, objNGSetupRequest.rANNodeName->length);
+	objNGSetupRequest.rANNodeName_isset = 1;
+
+	__si_amf_init_GlobalRANNodeID( &objNGSetupRequest.globalRANNodeID);
+
+	if( strcmp( "GlobalGNB-ID", eNB_ID_Type) == 0)
+	{
+		objNGSetupRequest.globalRANNodeID->SelectedChoice = GlobalRANNodeID_globalGNB_ID_val;
+		
+		__si_amf_init_GlobalGNB_ID( &objNGSetupRequest.globalRANNodeID->u.globalGNB_ID);
+		__si_amf_init_PLMNIdentity( &objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->pLMNIdentity);							// SI_AMF_DT_PLMNIdentity
+		__si_amf_init_GNB_ID(       &objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID);								// SI_AMF_DT_GNB_ID
+		__si_amf_init_GNB_IDBS(     &objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->u.gNB_ID);
+		
+		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->pLMNIdentity->data = (unsigned char *) __si_allocM( 3);
+		memcpy( objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->pLMNIdentity->data, "\x09\x71\x0F", 3); 
+		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->pLMNIdentity->length = 3;		
+		
+		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->SelectedChoice = 0;
+		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->u.gNB_ID->data = (unsigned char *) __si_allocM( 3);
+		memcpy( objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->u.gNB_ID->data, "123", 3);
+		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->u.gNB_ID->length = 3;
+		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->u.gNB_ID->bitslen = 24;
+		
+		objNGSetupRequest.globalRANNodeID_isset = 1;
+	}
+	else if( strcmp( "GlobalNgENB-ID", eNB_ID_Type) == 0)
+	{
+		objNGSetupRequest.globalRANNodeID->SelectedChoice = GlobalRANNodeID_globalNgENB_ID_val;
+
+		__si_amf_init_GlobalNgENB_ID( &objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID);
+		__si_amf_init_NgENB_ID( &objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID);
+		
+		
+		objNGSetupRequest.globalRANNodeID_isset = 1;
+	}
+	else if( strcmp( "GlobalN3IWF-ID", eNB_ID_Type) == 0)
+	{
+		objNGSetupRequest.globalRANNodeID->SelectedChoice = GlobalRANNodeID_globalN3IWF_ID_val;
+		
+		__si_amf_init_GlobalN3IWF_ID( &objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID);
+		__si_amf_init_PLMNIdentity(   &objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->pLMNIdentity);	
+		__si_amf_init_N3IWF_ID(       &objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->n3IWF_ID);								// SI_AMF_DT_GNB_ID
+		__si_amf_init_N3IWF_IDBS(     &objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->n3IWF_ID->u.n3IWF_ID);
+		
+		
+		objNGSetupRequest.globalRANNodeID_isset = 1;
+	}
+
+	objNGSetupRequest.defaultPagingDRX = 3;
+	objNGSetupRequest.defaultPagingDRX_isset = 1;	
+	
+	objNGSetupRequest.uERetentionInformation = 0;
+	objNGSetupRequest.uERetentionInformation_isset = 1;
+	
+	SI_NGAPNode * ngranNode = __si_ngap_get_amf_connection();
+	int sts = __si_ngap_send_NGSetupRequest( &objNGSetupRequest, ngranNode);
+}
+
 void __ngran_ngap_create_and_send_RANConfigurationUpdate()
 {
 	SI_AMF_DT_PDU_RANConfigurationUpdate objRANConfigurationUpdate;
@@ -1082,6 +1160,7 @@ void __ngran_ngap_interface_management()
 			switch(selected)
 			{
 				case 1:
+					__ngran_ngap_create_and_send_NGSetupRequest();
 					break;
 				case 2:
 					__ngran_ngap_create_and_send_RANConfigurationUpdate();
