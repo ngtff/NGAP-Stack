@@ -22,7 +22,7 @@
 #include <sys/ioctl.h>
 #include <net/if.h> 
 
-void __si_node_start_amf( int argc, char* argv[]);
+void __si_node_start_ngamf( int argc, char* argv[]);
 void __si_core_wait();
 void com_ngap_set_message_handler();
 
@@ -30,7 +30,7 @@ void com_ngap_set_message_handler();
 
 int main( int argc, char* argv[])
 {
-	__si_node_start_amf( argc, argv);
+	__si_node_start_ngamf( argc, argv);
 	com_ngap_set_message_handler();
 	
 	__si_core_wait();

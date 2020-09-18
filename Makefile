@@ -14,6 +14,6 @@ all:
 	gcc -g3 -c amf_ngap_procedures/amf_warning_message_transmission_procedures.c -I.
 	gcc -g3 -c amf_config.c -I.
 	gcc -g3 -c amf_core.c -I.
-	gcc -g3 -o ngAmf amf_ngap_message_handlers.c app_amf.c *.o libsicore.so
-	gcc -g3 -o ngRAN ran_ngap_message_handlers.c app_ngran.c app_ngap_test_data.c amf_core.c libsicore.so
+	gcc -g3 -o ngAmf amf_ngap_message_handlers.c app_amf.c *.o libngtffcore.so
+	gcc -g3 -o ngRAN ran_ngap_message_handlers.c app_ngran.c app_ngap_test_data.c amf_core.c libngtffcore.so
 	rm *.o
