@@ -23,10 +23,14 @@
 #include <net/if.h> 
 #include <math.h> 
 
-
-
 #include "amf.h"
 #include "app_ngap_test_data.h"
+
+char sPLMN[4] = "\x09\xF1\x07\x00";
+uint8_t amfRegionId = 33;
+uint16_t amfSetID = 2;
+
+	
 
 int __si_amf_debug_pdu_PDUSessionResourceSetupRequest( SI_AMF_DT_PDU_PDUSessionResourceSetupRequest * objPDUPDUSessionResourceSetupRequest);
 
@@ -967,6 +971,11 @@ void __ngran_ngap_create_and_send_NGSetupRequest()
 	// strcpy( eNB_ID_Type, "GlobalNgENB-ID");
 	// strcpy( eNB_ID_Type, "GlobalN3IWF-ID");
 	
+	char cNgENB_TYPE[30];
+	memset( cNgENB_TYPE, 0, sizeof( cNgENB_TYPE));	
+	strcpy( cNgENB_TYPE, "shortMacroNgENB");
+	// strcpy( cNgENB_TYPE, "longMacroNgENB");
+	
 	
 	SI_AMF_DT_PDU_NGSetupRequest objNGSetupRequest;
 	memset( &objNGSetupRequest, 0, sizeof(SI_AMF_DT_PDU_NGSetupRequest));
@@ -989,7 +998,7 @@ void __ngran_ngap_create_and_send_NGSetupRequest()
 		__si_amf_init_GNB_IDBS(     &objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->u.gNB_ID);
 		
 		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->pLMNIdentity->data = (unsigned char *) __si_allocM( 3);
-		memcpy( objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->pLMNIdentity->data, "\x09\x71\x0F", 3); 
+		memcpy( objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->pLMNIdentity->data, sPLMN, 3); 
 		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->pLMNIdentity->length = 3;		
 		
 		objNGSetupRequest.globalRANNodeID->u.globalGNB_ID->gNB_ID->SelectedChoice = 0;
@@ -1009,6 +1018,57 @@ void __ngran_ngap_create_and_send_NGSetupRequest()
 		__si_amf_init_NgENB_ID( &objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID);
 		
 		
+		__si_amf_init_GlobalNgENB_ID( &objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID);
+		__si_amf_init_NgENB_ID( &objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID);
+		
+		objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->SelectedChoice = 0;
+		
+		if( strcmp( "shortMacroNgENB", cNgENB_TYPE) == 0)
+		{
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->SelectedChoice = 1;
+		}
+		else if( strcmp( "longMacroNgENB", cNgENB_TYPE) == 0 )
+		{
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->SelectedChoice = 2;
+		}
+		
+		__si_amf_init_PLMNIdentity( &objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->pLMNIdentity);
+		
+		objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->pLMNIdentity->data = (unsigned char *) __si_allocM( 3);
+		memset( objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->pLMNIdentity->data, 0, 3); 
+		memcpy( objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->pLMNIdentity->data, sPLMN, 3); 
+		objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->pLMNIdentity->length = 3;
+		
+		
+		if( objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->SelectedChoice == 0)
+		{
+			__si_amf_init_NgENB_IDmacroNgENB_ID( &objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.macroNgENB_ID);
+			
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.macroNgENB_ID->data = (unsigned char *) __si_allocM( 3);
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.macroNgENB_ID->bitslen = 20;
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.macroNgENB_ID->length = 3;
+			memcpy( objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.macroNgENB_ID->data, "123", 3);
+		}
+		else if( objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->SelectedChoice == 1)
+		{	
+			__si_amf_init_NgENB_IDshortMacroNgENB_ID( &objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.shortMacroNgENB_ID);
+			
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.shortMacroNgENB_ID->data = (unsigned char *) __si_allocM( 3);
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.shortMacroNgENB_ID->bitslen = 18;
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.shortMacroNgENB_ID->length = 3;
+			memcpy( objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.shortMacroNgENB_ID->data, "123", 3);
+		}
+		else if( objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->SelectedChoice == 2)
+		{
+			__si_amf_init_NgENB_IDlongMacroNgENB_ID( &objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.longMacroNgENB_ID);
+			
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.longMacroNgENB_ID->data = (unsigned char *) __si_allocM( 3);
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.longMacroNgENB_ID->bitslen = 21;
+			objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.longMacroNgENB_ID->length = 3;
+			memcpy( objNGSetupRequest.globalRANNodeID->u.globalNgENB_ID->ngENB_ID->u.longMacroNgENB_ID->data, "123", 3);
+		}
+		
+		
 		objNGSetupRequest.globalRANNodeID_isset = 1;
 	}
 	else if( strcmp( "GlobalN3IWF-ID", eNB_ID_Type) == 0)
@@ -1020,6 +1080,16 @@ void __ngran_ngap_create_and_send_NGSetupRequest()
 		__si_amf_init_N3IWF_ID(       &objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->n3IWF_ID);								// SI_AMF_DT_GNB_ID
 		__si_amf_init_N3IWF_IDBS(     &objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->n3IWF_ID->u.n3IWF_ID);
 		
+		objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->pLMNIdentity->data = (unsigned char *) __si_allocM( 3);
+		memcpy( objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->pLMNIdentity->data, sPLMN, 3); 
+		objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->pLMNIdentity->length = 3;
+		
+		objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->n3IWF_ID->SelectedChoice = 0;
+		
+		objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->n3IWF_ID->u.n3IWF_ID->data = (unsigned char *) __si_allocM( 3);
+		objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->n3IWF_ID->u.n3IWF_ID->bitslen = 21;
+		objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->n3IWF_ID->u.n3IWF_ID->length = 3;
+		memcpy( objNGSetupRequest.globalRANNodeID->u.globalN3IWF_ID->n3IWF_ID->u.n3IWF_ID->data, "123", 3);
 		
 		objNGSetupRequest.globalRANNodeID_isset = 1;
 	}
@@ -1944,32 +2014,32 @@ void __ngran_nas_mmm_RegistrationRequest()
 	objRequest.mFGSMobileIdentity.data[0] = 242;
 	
 	//MCC
-	objRequest.mFGSMobileIdentity.data[1] = 0x04;
-	objRequest.mFGSMobileIdentity.data[2] = 0xF4;
-	objRequest.mFGSMobileIdentity.data[3] = 0x01;
+	objRequest.mFGSMobileIdentity.data[1] = sPLMN[0];
+	objRequest.mFGSMobileIdentity.data[2] = sPLMN[1];
+	objRequest.mFGSMobileIdentity.data[3] = sPLMN[2];
 	
 	//AMF Region ID
-	objRequest.mFGSMobileIdentity.data[4] = 33;
+	objRequest.mFGSMobileIdentity.data[4] = amfRegionId;
 	
 	//AMF SET ID
-	objRequest.mFGSMobileIdentity.data[5] = 233;	
-	objRequest.mFGSMobileIdentity.data[6] = 7;
-	
+	objRequest.mFGSMobileIdentity.data[5] = (amfSetID >> 8) & 0xFF;
+	objRequest.mFGSMobileIdentity.data[6] = amfSetID & 0xFF;
+
 	objRequest.mFGSMobileIdentity.data[7] = 8;
 	objRequest.mFGSMobileIdentity.data[8] = 9;
 	objRequest.mFGSMobileIdentity.data[9] = 10;
 	objRequest.mFGSMobileIdentity.data[10] = 11;
-	
+
 	objRequest.mNASKeySetIdentifier.isset = 1;
 	objRequest.mNASKeySetIdentifier.b1.Identifier = 2;
-	
+
 	objRequest.mFGMMCapability.isset = 1;
 	objRequest.mFGMMCapability.Length = 0;
 	objRequest.mFGMMCapability.b1.HOAttach = 1;
 	memcpy( &objRequest.mFGMMCapability.data, "\x10\x20", 2);
-	
+
 	__si_naspdu_fgmm_encodeRegistrationRequest( &objRequest, &context);
-	__ngran_nas_mm_send_msg( &context);	
+	__ngran_nas_mm_send_msg( &context);
 }
 
 void __ngran_nas_mmm_RegistrationAccept()
